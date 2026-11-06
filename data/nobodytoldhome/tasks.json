@@ -5,17 +5,25 @@
       "id": "t-onboard-channel",
       "text": "채널총괄: upload-map 일정·진행도 관리 인수",
       "detail": "https://github.com/AGLOP-1354/upload-map data/nobodytoldhome",
-      "done": false,
+      "done": true,
       "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "updatedAt": "2026-11-06T11:53:28.000Z"
     },
     {
       "id": "t-first-verify",
-      "text": "첫 영상(보일러 외출모드) 사실검증 착수",
+      "text": "1호 boiler-away-mode 게시완료 (h9bHcaWai_c)",
+      "videoId": "boiler-away-mode",
+      "done": true,
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T15:06:40.000Z"
+    },
+    {
+      "id": "t-ep1-analytics",
+      "text": "성과분석: 1호 h9bHcaWai_c 초기 지표 추적 (views vs Engaged views)",
       "videoId": "boiler-away-mode",
       "done": false,
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "createdAt": "2026-11-06T15:06:40.000Z",
+      "updatedAt": "2026-11-06T15:06:40.000Z"
     }
   ]
 }
