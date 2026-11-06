@@ -23,7 +23,7 @@ async function NewChannel() {
   const used = channels.map((c) => c.color);
   return (
     <>
-      <AppHeader channels={[]} now={kstNowLabel()}>
+      <AppHeader now={kstNowLabel()}>
         새 채널 등록
       </AppHeader>
       <div className="mx-auto w-full max-w-[1120px] px-4 pt-6 pb-14 sm:px-6">

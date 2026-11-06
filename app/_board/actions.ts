@@ -1,7 +1,6 @@
 "use server";
 
 import { refresh } from "next/cache";
-import { redirect } from "next/navigation";
 import { requireSession } from "@/lib/auth";
 import { kstDate } from "@/lib/dashboard";
 import {
@@ -14,7 +13,9 @@ import {
   updateTask,
   updateVideo,
 } from "@/lib/data";
-import { STEP_STATES, VIDEO_STATUSES, type ChecklistItem, type Credit, type Video, type VideoStatus } from "@/lib/types";
+import { setStatus } from "@/lib/data/videos";
+import { syncReady } from "@/lib/board";
+import { STEP_STATES, VIDEO_STATUSES, type ChecklistItem, type Credit, type StepState, type Video, type VideoStatus } from "@/lib/types";
 
 const str = (fd: FormData, k: string) => String(fd.get(k) ?? "");
 const text = (fd: FormData, k: string) => str(fd, k).replace(/\r\n/g, "\n").trim();
@@ -35,20 +36,33 @@ function makeId(title: string, prefix: string, used: Set<string>): string {
   for (let n = 1; ; n++) if (!used.has(`${base}-${n}`)) return `${base}-${n}`;
 }
 
-export type FormState = { error?: string; field?: string };
+// saved = 저장된 영상 id (편집 패널이 저장 뒤 보기로 돌아갈 때 쓴다)
+export type FormState = { error?: string; field?: string; saved?: string };
 
-// 진행표 칸: 대기 → 일부 → 완료 → 대기 순환
+// 세부 단계: to 가 있으면 그 상태로, 없으면 대기 → 일부 → 완료 → 대기 순환
 export async function cycleStep(formData: FormData): Promise<void> {
   await requireSession();
   const channel = await getChannel(str(formData, "channel"));
   if (!channel) return;
   const step = str(formData, "step");
+  const to = str(formData, "to") as StepState;
   await updateVideo(channel.id, str(formData, "video"), (v) => {
     if (!channel.steps[v.format].includes(step)) return;
     const cur = v.steps[step] ?? "wait";
     if (cur === "skip") return;
-    v.steps[step] = STEP_STATES[(STEP_STATES.indexOf(cur) + 1) % STEP_STATES.length];
+    v.steps[step] = STEP_STATES.includes(to) ? to : STEP_STATES[(STEP_STATES.indexOf(cur) + 1) % STEP_STATES.length];
+    syncReady(channel, v);
   });
+  refresh();
+}
+
+// 보드 열 이동·drawer 단계 선택. 보류는 사유가 필요하므로 dropVideo 로만.
+export async function setVideoStatus(formData: FormData): Promise<void> {
+  await requireSession();
+  const channel = await getChannel(str(formData, "channel"));
+  const status = str(formData, "status") as VideoStatus;
+  if (!channel || !VIDEO_STATUSES.includes(status) || status === "dropped") return;
+  await setStatus(channel.id, str(formData, "video"), status);
   refresh();
 }
 
@@ -154,7 +168,8 @@ export async function saveVideo(_prev: FormState, fd: FormData): Promise<FormSta
       throw e;
     }
   }
-  redirect(`/c/${channel.id}?s=${encodeURIComponent(seriesId || "_solo")}&v=${encodeURIComponent(id)}`);
+  refresh();
+  return { saved: id };
 }
 
 // 영상은 지우지 않고 보류(dropped)로 내린다. 사유는 notes 에 날짜와 함께 남긴다.
@@ -168,7 +183,7 @@ export async function dropVideo(fd: FormData): Promise<void> {
     v.status = "dropped";
     v.notes = v.notes ? `${v.notes}\n${note}` : note;
   });
-  redirect(`/c/${channel.id}`);
+  refresh();
 }
 
 // ---- 작은 폼 ----
@@ -183,7 +198,7 @@ export async function createSeries(fd: FormData): Promise<void> {
   const now = new Date().toISOString();
   const description = text(fd, "description").slice(0, 200);
   await addSeries(channel.id, { id, title, ...(description ? { description } : {}), createdAt: now, updatedAt: now });
-  redirect(`/c/${channel.id}?s=${encodeURIComponent(id)}`);
+  refresh();
 }
 
 export async function createTask(fd: FormData): Promise<void> {
