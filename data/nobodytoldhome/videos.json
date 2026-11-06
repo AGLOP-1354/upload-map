@@ -3,47 +3,54 @@
   "videos": [
     {
       "id": "boiler-away-mode",
-      "workingTitle": "보일러 외출모드 손해 보는 경우",
+      "workingTitle": "보일러 '외출', 3가지로 다르게 작동",
       "format": "short",
-      "status": "idea",
+      "status": "published",
       "seriesId": "winter-heating",
       "episode": 1,
       "pillarId": "heating",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "업로드": "wait"
+        "소재": "done",
+        "사실검증": "done",
+        "대본": "done",
+        "AI에셋": "done",
+        "음성": "done",
+        "편집": "done",
+        "업로드": "done",
+        "연출": "done",
+        "에셋": "done",
+        "검수": "done",
+        "게시": "done"
       },
       "checklist": [
         {
           "text": "사실검증 PASS",
-          "done": false
+          "done": true
         },
         {
           "text": "대본·제목 25자 이내",
-          "done": false
+          "done": true
         },
         {
           "text": "AI 에셋·ElevenLabs·편집",
-          "done": false
+          "done": true
         },
         {
           "text": "설명란 출처·고정댓글",
-          "done": false
+          "done": true
         },
         {
           "text": "해당 플레이리스트 추가",
-          "done": false
+          "done": true
         }
       ],
       "targetPublishDate": "2026-11-09",
       "metrics": [],
       "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "updatedAt": "2026-11-06T15:06:43.000Z",
+      "notes": "게시완료 · https://youtube.com/shorts/h9bHcaWai_c · 아동용 NO · PL A+시즌겨울 · 고정댓글",
+      "youtubeId": "h9bHcaWai_c",
+      "publishedAt": "2026-11-07T00:06:40.196596+09:00"
     },
     {
       "id": "boiler-pressure",
