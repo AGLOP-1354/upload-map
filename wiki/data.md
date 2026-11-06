@@ -18,7 +18,7 @@ sources:
   - app/c/[channel]/logo/route.ts
   - next.config.ts
   - vercel.json
-verified: 51e6b3ead6b72f55
+verified: 4ec5dbc329886b2b
 ---
 
 # 데이터

@@ -20,7 +20,7 @@ sources:
   - components/icons.tsx
   - lib/dashboard.ts
   - app/c/[channel]/settings/page.tsx
-verified: 4947cdcb172f8e71
+verified: 8cb76a328697ae0a
 ---
 
 # UI
@@ -75,11 +75,12 @@ verified: 4947cdcb172f8e71
 
 | 구역 | 내용 | 근거 |
 |---|---|---|
-| 머리 | 로고, 검색(⌘K·`/` 로 포커스), 현재 시각, "+ 새 영상"(선택한 채널 또는 첫 채널로 새 영상 drawer) | [app/_board/board.tsx:217-247](../app/_board/board.tsx#L217-L247) |
-| 왼쪽 사이드바 | "보기"(모든 작업·이번 주 업로드·일정 위험·지표 기록 필요·확인 대기, 각각 개수), "채널"(아바타·이름·영상 수. 누르면 그 채널만, 다시 누르면 전체), 채널 추가, 아래에 "채널 설정 · 시리즈 · 크레딧" 보기와 로그아웃. 넓은 화면에서 232px 세로 막대, 좁은 화면에서는 위에 쌓인다 | [app/_board/board.tsx:377-447](../app/_board/board.tsx#L377-L447) |
-| 필터 줄 | 형식(전체/쇼츠/롱폼), 시리즈 선택(채널별 묶음), 결과 수(`aria-live`), 필터가 있으면 "필터 초기화" | [app/_board/board.tsx:270-310](../app/_board/board.tsx#L270-L310) |
-| 6열 보드 | 열마다 단계 배지(기호 + 이름)와 개수. 카드를 다른 열에 끌어 놓으면 그 열의 첫 상태로 바뀐다. 빈 열은 그 열에 무엇이 오는지 안내(필터 중이면 "조건에 맞는 영상이 없습니다") | [app/_board/board.tsx:312-350](../app/_board/board.tsx#L312-L350), [app/_board/board.tsx:205-210](../app/_board/board.tsx#L205-L210) |
-| drawer | 카드를 누르면 오른쪽에 열린다(아래 절) | [app/_board/board.tsx:353-370](../app/_board/board.tsx#L353-L370) |
+| 머리 | 로고, 검색(⌘K·`/` 로 포커스), 현재 시각, "+ 새 영상"(선택한 채널 또는 첫 채널로 새 영상 drawer) | [app/_board/board.tsx:216-246](../app/_board/board.tsx#L216-L246) |
+| 왼쪽 사이드바 | "보기"(모든 작업·이번 주 업로드·일정 위험·지표 기록 필요·확인 대기, 각각 개수), "채널"(맨 위 "모든 채널"이 기본 선택이고 전체 영상 수, 그 아래 채널마다 로고·이름·영상 수. 채널을 누르면 그 채널만, "모든 채널"을 누르면 통합), 채널 추가, 아래에 "채널 설정 · 시리즈 · 크레딧" 보기와 로그아웃. 넓은 화면에서 232px 세로 막대, 좁은 화면에서는 위에 쌓인다 | [app/_board/board.tsx:394-480](../app/_board/board.tsx#L394-L480) |
+| 제목 줄 | 보기 이름 옆에 채널 필터가 없으면 "모든 채널 통합", 있으면 채널마다 로고·이름 칩(✕ 를 누르면 그 채널 필터 해제) | [app/_board/board.tsx:259-281](../app/_board/board.tsx#L259-L281) |
+| 필터 줄 | 형식(전체/쇼츠/롱폼), 시리즈 선택(채널별 묶음), 결과 수(`aria-live`), 필터가 있으면 "필터 초기화" | [app/_board/board.tsx:288-327](../app/_board/board.tsx#L288-L327) |
+| 6열 보드 | 열마다 단계 배지(기호 + 이름)와 개수. 카드를 다른 열에 끌어 놓으면 그 열의 첫 상태로 바뀐다. 빈 열은 그 열에 무엇이 오는지 안내(필터 중이면 "조건에 맞는 영상이 없습니다") | [app/_board/board.tsx:329-365](../app/_board/board.tsx#L329-L365), [app/_board/board.tsx:205-210](../app/_board/board.tsx#L205-L210) |
+| drawer | 카드를 누르면 오른쪽에 열린다(아래 절) | [app/_board/board.tsx:370-387](../app/_board/board.tsx#L370-L387) |
 
 보기 판정: 이번 주는 월~일(KST), 일정 위험·지표 기록 필요는 보드 항목의 플래그 — [app/_board/board.tsx:118-124](../app/_board/board.tsx#L118-L124). 사이드바 개수는 채널 필터만 적용한 값 — [app/_board/board.tsx:139-146](../app/_board/board.tsx#L139-L146). 카드 순서는 날짜(없으면 맨 뒤) → 화수 → 제목 — [app/_board/board.tsx:109-114](../app/_board/board.tsx#L109-L114).
 
