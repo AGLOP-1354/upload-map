@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "wiki:gen": "node scripts/wiki.mjs gen",
+    "wiki:check": "node scripts/wiki.mjs check",
+    "wiki:stamp": "node scripts/wiki.mjs stamp",
+    "prepare": "git config core.hooksPath .githooks || true"
   },
   "dependencies": {
     "next": "16.4.5",

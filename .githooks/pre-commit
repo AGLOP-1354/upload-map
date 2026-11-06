@@ -1,0 +1,9 @@
+#!/bin/sh
+# LLM Wiki: 생성 페이지를 갱신해 커밋에 포함하고, 서술 페이지가 코드와 어긋나면 커밋을 막는다.
+ROOT="$(git rev-parse --show-toplevel)"
+node "$ROOT/scripts/wiki.mjs" gen >/dev/null || exit 1
+git add "$ROOT/wiki/generated" "$ROOT/wiki/index.md"
+node "$ROOT/scripts/wiki.mjs" check || {
+  echo "커밋 중단: wiki 를 갱신하거나(AGENTS.md 'LLM Wiki' 참고) git commit --no-verify 로 우회하세요." >&2
+  exit 1
+}
