@@ -53,6 +53,12 @@ export const PlusIcon = ({ className }: P) => (
   </svg>
 );
 
+export const PencilIcon = ({ className }: P) => (
+  <svg viewBox="0 0 24 24" strokeWidth={2} className={className} {...base}>
+    <path d="M4 20h4L19 9l-4-4L4 16v4zM14 6l4 4" />
+  </svg>
+);
+
 export const XIcon = ({ className }: P) => (
   <svg viewBox="0 0 24 24" strokeWidth={2.4} className={className} {...base}>
     <path d="M6 6l12 12M18 6L6 18" />

@@ -14,7 +14,9 @@ sources:
   - components/channel-avatar.tsx
   - components/icons.tsx
   - lib/dashboard.ts
-verified: 59cdc5369decd25c
+  - app/c/[channel]/video-editor.tsx
+  - app/c/[channel]/settings/page.tsx
+verified: 5a54b158430e20d8
 ---
 
 # UI
@@ -55,28 +57,41 @@ verified: 59cdc5369decd25c
 
 ## 채널 대시보드 — `/c/[channel]` (`app/c/[channel]/dashboard.tsx`)
 
-Server Component. 모든 채널과 각 채널 데이터를 읽고 없는 채널이면 `notFound()` — [app/c/[channel]/dashboard.tsx:45-58](../app/c/[channel]/dashboard.tsx#L45-L58). 날짜 계산은 `lib/dashboard.ts` 의 순수 함수로 하며 모두 Asia/Seoul 기준 `YYYY-MM-DD` 문자열이다 — [lib/dashboard.ts:1-9](../lib/dashboard.ts#L1-L9).
+Server Component. 모든 채널과 각 채널 데이터를 읽고 없는 채널이면 `notFound()` — [app/c/[channel]/dashboard.tsx:48-59](../app/c/[channel]/dashboard.tsx#L48-L59). 날짜 계산은 `lib/dashboard.ts` 의 순수 함수로 하며 모두 Asia/Seoul 기준 `YYYY-MM-DD` 문자열이다 — [lib/dashboard.ts:1-9](../lib/dashboard.ts#L1-L9).
 
 ### 화면 상태는 URL 쿼리
 
-`s`(시리즈), `v`(선택 영상), `fmt`(형식 필터)를 쿼리로 들고 링크로만 바꾼다. 클라이언트 상태가 없다 — [app/c/[channel]/dashboard.tsx:33](../app/c/[channel]/dashboard.tsx#L33), [app/c/[channel]/dashboard.tsx:91-97](../app/c/[channel]/dashboard.tsx#L91-L97).
+`s`(시리즈), `v`(선택 영상), `fmt`(형식 필터), `edit`(편집 패널에 열 영상 id, 새 영상은 `new`)를 쿼리로 들고 링크로만 바꾼다 — [app/c/[channel]/dashboard.tsx:36](../app/c/[channel]/dashboard.tsx#L36), [app/c/[channel]/dashboard.tsx:95-101](../app/c/[channel]/dashboard.tsx#L95-L101). `edit` 은 링크가 직접 넘길 때만 붙고 다른 링크로 옮겨 가면 빠진다.
 
-- 시리즈 묶음: `series.json` 순서, 시리즈 없는 영상은 "단독 영상"(`_solo`). `dropped` 영상은 제외 — [app/c/[channel]/dashboard.tsx:65-75](../app/c/[channel]/dashboard.tsx#L65-L75).
-- 기본 시리즈는 다음 업로드 영상이 속한 묶음, 기본 선택 영상은 그 영상(같은 묶음일 때) 또는 첫 행 — [app/c/[channel]/dashboard.tsx:77-86](../app/c/[channel]/dashboard.tsx#L77-L86).
+- 시리즈 묶음: `series.json` 순서, 시리즈 없는 영상은 "단독 영상"(`_solo`). `dropped` 영상은 제외 — [app/c/[channel]/dashboard.tsx:69-80](../app/c/[channel]/dashboard.tsx#L69-L80).
+- 기본 시리즈는 다음 업로드 영상이 속한 묶음, 기본 선택 영상은 그 영상(같은 묶음일 때) 또는 첫 행 — [app/c/[channel]/dashboard.tsx:82-90](../app/c/[channel]/dashboard.tsx#L82-L90).
 
 ### 구역 (위에서 아래로)
 
 | 구역 | 내용 | 근거 |
 |---|---|---|
-| 헤더 | `AppHeader` + 각 채널의 이번 주 쇼츠/롱폼 수 | [app/c/[channel]/dashboard.tsx:59-63](../app/c/[channel]/dashboard.tsx#L59-L63), [app/c/[channel]/dashboard.tsx:103](../app/c/[channel]/dashboard.tsx#L103) |
-| 모든 채널 · 이번 주 업로드 | 채널마다 로고·다음 업로드·쇼츠/롱폼 수 카드(현재 채널은 구분 색 테두리 + "보는 중"), 끝에 새 채널 등록 링크 | [app/c/[channel]/dashboard.tsx:106-144](../app/c/[channel]/dashboard.tsx#L106-L144) |
-| 시리즈 제목 + 진행률 | 묶음이 둘 이상이면 시리즈 탭, 형식별 편수, `완료 단계 / 전체 단계` 막대 | [app/c/[channel]/dashboard.tsx:152-186](../app/c/[channel]/dashboard.tsx#L152-L186) |
-| 요약 카드 3개 | 다음 업로드(D-day, 남은 단계, 단계 막대) · 확인 대기(`tasks.json` 미완료, 항목별 완료 버튼) · 남은 크레딧(수동 기록, 최근 기록일) | [app/c/[channel]/dashboard.tsx:188-193](../app/c/[channel]/dashboard.tsx#L188-L193), [app/c/[channel]/dashboard.tsx:339-435](../app/c/[channel]/dashboard.tsx#L339-L435) |
-| 화별 진행 | 형식 필터(전체/쇼츠/롱폼, 두 형식이 섞일 때만), 영상 × 단계 표. 칸은 `cycleStep` 폼 버튼으로 대기→일부→완료 순환, 해당 없는 단계는 "해당 없음", "업로드" 칸이 대기면 "예정" | [app/c/[channel]/dashboard.tsx:195-274](../app/c/[channel]/dashboard.tsx#L195-L274), [app/c/[channel]/dashboard.tsx:317-337](../app/c/[channel]/dashboard.tsx#L317-L337) |
-| 선택 영상 상세 | 확정 카피(제목 오버레이·콜드오픈·지난 이야기·엔드카드, 유튜브 링크)와 남은 작업 체크리스트(`toggleChecklist`). 조립 단계가 남았으면 "캡컷이 있는 Mac에서만" 안내 | [app/c/[channel]/dashboard.tsx:437-530](../app/c/[channel]/dashboard.tsx#L437-L530) |
-| 업로드 일정 | 오늘부터 8일 칸, 날짜별 영상과 게시 여부 | [app/c/[channel]/dashboard.tsx:532-571](../app/c/[channel]/dashboard.tsx#L532-L571) |
+| 헤더 | `AppHeader` + 각 채널의 이번 주 쇼츠/롱폼 수 | [app/c/[channel]/dashboard.tsx:65-68](../app/c/[channel]/dashboard.tsx#L65-L68), [app/c/[channel]/dashboard.tsx:128](../app/c/[channel]/dashboard.tsx#L128) |
+| 모든 채널 · 이번 주 업로드 | 채널마다 로고·다음 업로드·쇼츠/롱폼 수 카드(현재 채널은 구분 색 테두리 + "보는 중"), 끝에 새 채널 등록 링크 | [app/c/[channel]/dashboard.tsx:132-170](../app/c/[channel]/dashboard.tsx#L132-L170) |
+| 도구 줄 | 묶음이 둘 이상이면 시리즈 탭, 「+ 시리즈」 펼침 폼, 「채널 설정」 링크, 「영상 추가」(`edit=new`) | [app/c/[channel]/dashboard.tsx:174-198](../app/c/[channel]/dashboard.tsx#L174-L198) |
+| 시리즈 제목 + 진행률 | 형식별 편수, `완료 단계 / 전체 단계` 막대 | [app/c/[channel]/dashboard.tsx:204-224](../app/c/[channel]/dashboard.tsx#L204-L224) |
+| 요약 카드 3개 | 다음 업로드(D-day, 남은 단계, 단계 막대) · 확인 대기(`tasks.json` 미완료, 항목별 완료 버튼, 「확인할 일 추가」 펼침 폼) · 남은 크레딧(수동 기록, 최근 기록일, 「크레딧 기록」 펼침 폼) | [app/c/[channel]/dashboard.tsx:226-231](../app/c/[channel]/dashboard.tsx#L226-L231), [app/c/[channel]/dashboard.tsx:410-550](../app/c/[channel]/dashboard.tsx#L410-L550) |
+| 화별 진행 | 형식 필터(전체/쇼츠/롱폼, 두 형식이 섞일 때만), 영상 × 단계 표. 영상 제목 옆 연필 링크가 `edit=<id>` 로 편집 패널을 연다. 칸은 `cycleStep` 폼 버튼으로 대기→일부→완료 순환, 해당 없는 단계는 "해당 없음", "업로드" 칸이 대기면 "예정" | [app/c/[channel]/dashboard.tsx:233-322](../app/c/[channel]/dashboard.tsx#L233-L322), [app/c/[channel]/dashboard.tsx:287](../app/c/[channel]/dashboard.tsx#L287), [app/c/[channel]/dashboard.tsx:390-408](../app/c/[channel]/dashboard.tsx#L390-L408) |
+| 선택 영상 상세 | 확정 카피(제목 오버레이·콜드오픈·지난 이야기·엔드카드, 유튜브 링크)와 남은 작업 체크리스트(`toggleChecklist`). 조립 단계가 남았으면 "캡컷이 있는 Mac에서만" 안내 | [app/c/[channel]/dashboard.tsx:552-645](../app/c/[channel]/dashboard.tsx#L552-L645) |
+| 업로드 일정 | 오늘부터 8일 칸, 날짜별 영상과 게시 여부 | [app/c/[channel]/dashboard.tsx:647-686](../app/c/[channel]/dashboard.tsx#L647-L686) |
 
-시리즈도 단독 영상도 없으면 위 구역 대신 빈 채널 안내를 보인다 — [app/c/[channel]/dashboard.tsx:148-149](../app/c/[channel]/dashboard.tsx#L148-L149), [app/c/[channel]/dashboard.tsx:286-296](../app/c/[channel]/dashboard.tsx#L286-L296).
+시리즈도 단독 영상도 없으면 시리즈 제목 이하 구역 대신 빈 채널 안내(도구 줄로 시리즈·영상을 만들라는 문구)를 보인다 — [app/c/[channel]/dashboard.tsx:200-201](../app/c/[channel]/dashboard.tsx#L200-L201), [app/c/[channel]/dashboard.tsx:336-344](../app/c/[channel]/dashboard.tsx#L336-L344).
+
+펼침 폼(시리즈·확인할 일·크레딧)은 헤더 채널 메뉴처럼 JS 없이 `<details>` 로 연다 — [app/c/[channel]/dashboard.tsx:350-367](../app/c/[channel]/dashboard.tsx#L350-L367), [app/c/[channel]/dashboard.tsx:485-504](../app/c/[channel]/dashboard.tsx#L485-L504), [app/c/[channel]/dashboard.tsx:529-546](../app/c/[channel]/dashboard.tsx#L529-L546). 크레딧 폼은 기존 서비스마다 한 줄 + 빈 줄 하나를 보이고, 서비스 이름을 지우면 그 줄이 빠진다.
+
+### 영상 편집 패널 — `app/c/[channel]/video-editor.tsx`
+
+`edit` 이 `new` 이거나 보류되지 않은 영상 id 면 대시보드 오른쪽에 `<aside>` 로 연다. 넓은 화면에서는 본문 옆에 붙어(`lg:sticky`) 따로 스크롤되고, 좁은 화면에서는 본문 위로 올라간다 — [app/c/[channel]/dashboard.tsx:105-124](../app/c/[channel]/dashboard.tsx#L105-L124), [app/c/[channel]/dashboard.tsx:130-131](../app/c/[channel]/dashboard.tsx#L130-L131), [app/c/[channel]/dashboard.tsx:330](../app/c/[channel]/dashboard.tsx#L330). 새 영상의 기본 시리즈는 보고 있던 묶음, 기본 형식은 채널이 쇼츠를 하면 쇼츠다.
+
+- Client Component. 탭 4개(기본·카피·체크리스트·게시·메모)는 클라이언트 상태이고, 숨긴 탭은 `hidden` 속성이라 입력이 폼에 남아 함께 저장된다 — [app/c/[channel]/video-editor.tsx:27-35](../app/c/[channel]/video-editor.tsx#L27-L35), [app/c/[channel]/video-editor.tsx:102-120](../app/c/[channel]/video-editor.tsx#L102-L120).
+- 기본 탭: 작업 제목, (새 영상만) id, 형식, 시리즈·화수, 게시 예정일, 제작 단계(`dropped` 제외), 채널 템플릿 중 해당 없는 단계(`skip`) — [app/c/[channel]/video-editor.tsx:120-180](../app/c/[channel]/video-editor.tsx#L120-L180). 카피 탭: 오버레이·콜드오픈·지난 이야기·엔드카드 — [app/c/[channel]/video-editor.tsx:182-199](../app/c/[channel]/video-editor.tsx#L182-L199). 체크리스트 탭: 항목·파일 경로·완료 추가/삭제, JSON 으로 hidden 필드 전송 — [app/c/[channel]/video-editor.tsx:93](../app/c/[channel]/video-editor.tsx#L93), [app/c/[channel]/video-editor.tsx:201-220](../app/c/[channel]/video-editor.tsx#L201-L220). 게시·메모 탭: 유튜브 영상 ID, 메모 — [app/c/[channel]/video-editor.tsx:222-232](../app/c/[channel]/video-editor.tsx#L222-L232).
+- 제출: 하이드레이션 뒤에는 `onSubmit` 에서 `startTransition(() => action(fd))` 로 보낸다. 폼 `action` 으로 보내면 끝난 뒤 입력이 초기화돼 오류 때 고친 값이 사라지기 때문이다. `action` 속성은 JS 가 붙기 전 제출용으로 함께 둔다 — [app/c/[channel]/video-editor.tsx:79-90](../app/c/[channel]/video-editor.tsx#L79-L90).
+- 오류가 오면 그 칸이 있는 탭으로 넘긴다(렌더 중 상태 갱신) — [app/c/[channel]/video-editor.tsx:56-61](../app/c/[channel]/video-editor.tsx#L56-L61).
+- 기존 영상에는 「보류로 내리기」 펼침 폼(사유 필수, `dropVideo`)이 있다 — [app/c/[channel]/video-editor.tsx:242-255](../app/c/[channel]/video-editor.tsx#L242-L255).
 
 ### 계산 규칙 — `lib/dashboard.ts`
 
@@ -86,16 +101,16 @@ Server Component. 모든 채널과 각 채널 데이터를 읽고 없는 채널�
 - 다음 업로드: 미게시·미폐기이고 목표일이 오늘 이후인 영상 중 가장 이른 것 — [lib/dashboard.ts:77-81](../lib/dashboard.ts#L77-L81).
 - "이번 주"는 달력 주가 아니라 오늘부터 7일(오늘 + 6일) — [lib/dashboard.ts:83-91](../lib/dashboard.ts#L83-L91).
 
-## 채널 등록 — `/channels/new` (`app/channels/new/channel-form.tsx`)
+## 채널 등록·설정 — `/channels/new`, `/c/[channel]/settings` (`app/channels/new/channel-form.tsx`)
 
-Client Component. `useActionState(createChannel)` 로 오류와 오류 필드를 받는다 — [app/channels/new/channel-form.tsx:14-15](../app/channels/new/channel-form.tsx#L14-L15), [app/channels/new/channel-form.tsx:51-56](../app/channels/new/channel-form.tsx#L51-L56).
+같은 Client Component 를 쓴다. `initial`(기존 채널)이 있으면 설정 화면으로 `updateChannelSettings`, 없으면 등록 화면으로 `createChannel` 을 `useActionState` 로 부르고 오류와 오류 필드를 받는다 — [app/channels/new/channel-form.tsx:16-17](../app/channels/new/channel-form.tsx#L16-L17), [app/channels/new/channel-form.tsx:71-76](../app/channels/new/channel-form.tsx#L71-L76).
 
 | 구역 | 내용 | 근거 |
 |---|---|---|
-| 기본 정보 | 로고 파일(PNG·JPG·WEBP, `createObjectURL` 미리보기·지우기), 채널 이름, 핸들(폴더 이름 미리보기 `data/<slug>/`), 주소, 니치, 구분 색 6개(이미 쓰는 색은 뒤로, "사용 중" 표시) | [app/channels/new/channel-form.tsx:18-20](../app/channels/new/channel-form.tsx#L18-L20), [app/channels/new/channel-form.tsx:58-169](../app/channels/new/channel-form.tsx#L58-L169) |
-| 형식 · 업로드 주기 | 쇼츠/롱폼 켜기, 주간 편수 −/+ (0~14), 기본 업로드 시각(기본 00:45) | [app/channels/new/channel-form.tsx:171-206](../app/channels/new/channel-form.tsx#L171-L206) |
-| 제작 단계 템플릿 | 켠 형식마다 단계 칩 추가·삭제, JSON 으로 hidden 필드 전송. 기본값 `DEFAULT_STEPS` | [app/channels/new/channel-form.tsx:208-242](../app/channels/new/channel-form.tsx#L208-L242) |
-| 확인 규칙 | `DEFAULT_GATES` 체크박스(앞 3개 기본 체크) | [app/channels/new/channel-form.tsx:244-253](../app/channels/new/channel-form.tsx#L244-L253) |
-| 미리보기 | 채널 전환 메뉴 모양(기존 채널 + 새 채널), 만들어질 파일 목록 | [app/channels/new/channel-form.tsx:263-288](../app/channels/new/channel-form.tsx#L263-L288) |
+| 기본 정보 | 로고 파일(PNG·JPG·WEBP, `createObjectURL` 미리보기·지우기. 설정 화면은 저장된 로고를 먼저 보임), 채널 이름, 핸들(폴더 이름 미리보기 `data/<slug>/`, 설정 화면은 읽기 전용), 주소, 니치, 구분 색 6개(이미 쓰는 색은 뒤로, "사용 중" 표시) | [app/channels/new/channel-form.tsx:21-25](../app/channels/new/channel-form.tsx#L21-L25), [app/channels/new/channel-form.tsx:78-190](../app/channels/new/channel-form.tsx#L78-L190) |
+| 형식 · 업로드 주기 | 쇼츠/롱폼 켜기, 주간 편수 −/+ (0~14), 기본 업로드 시각(등록 기본 00:45) | [app/channels/new/channel-form.tsx:192-227](../app/channels/new/channel-form.tsx#L192-L227) |
+| 제작 단계 템플릿 | 켠 형식마다 단계 칩 추가·삭제, JSON 으로 hidden 필드 전송. 등록 기본값 `DEFAULT_STEPS`. 설정 화면은 이름을 바꾸거나 빼면 그 단계의 기존 진행 상태가 표에 안 보인다고 안내 | [app/channels/new/channel-form.tsx:229-267](../app/channels/new/channel-form.tsx#L229-L267) |
+| 확인 규칙 | `DEFAULT_GATES` 체크박스(등록은 앞 3개, 설정은 저장된 값) | [app/channels/new/channel-form.tsx:269-278](../app/channels/new/channel-form.tsx#L269-L278) |
+| 미리보기 | 채널 전환 메뉴 모양(다른 채널 + 이 채널), 등록 화면만 만들어질 파일 목록 | [app/channels/new/channel-form.tsx:288-313](../app/channels/new/channel-form.tsx#L288-L313) |
 
-기존 채널 목록은 서버 페이지가 `ChannelAvatar` 로 렌더해 `existing` prop 으로 넘긴다 — [app/channels/new/page.tsx:36-51](../app/channels/new/page.tsx#L36-L51). 채널이 하나 이상이면 "대시보드로" 링크를 보인다 — [app/channels/new/page.tsx:30-35](../app/channels/new/page.tsx#L30-L35).
+기존 채널 목록은 서버 페이지가 `ChannelAvatar` 로 렌더해 `existing` prop 으로 넘긴다 — [app/channels/new/page.tsx:36-51](../app/channels/new/page.tsx#L36-L51). 등록 화면은 채널이 하나 이상이면 "대시보드로" 링크를 보인다 — [app/channels/new/page.tsx:30-35](../app/channels/new/page.tsx#L30-L35). 설정 화면은 없는 채널이면 `notFound()`, 자기 채널을 뺀 목록과 색을 넘긴다 — [app/c/[channel]/settings/page.tsx:22-57](../app/c/[channel]/settings/page.tsx#L22-L57).

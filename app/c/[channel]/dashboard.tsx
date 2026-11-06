@@ -7,6 +7,7 @@ import {
   CheckIcon,
   LandscapeIcon,
   MonitorIcon,
+  PencilIcon,
   PlusIcon,
   PortraitIcon,
 } from "@/components/icons";
@@ -27,10 +28,12 @@ import {
   videoDay,
 } from "@/lib/dashboard";
 import { getChannelData, listChannels } from "@/lib/data";
-import type { Channel, Format, StepState, Video } from "@/lib/types";
-import { cycleStep, toggleChecklist, toggleTask } from "./actions";
+import type { Channel, Credit, Format, StepState, Video } from "@/lib/types";
+import { createSeries, createTask, cycleStep, saveCredits, toggleChecklist, toggleTask } from "./actions";
+import { VideoEditor } from "./video-editor";
 
-type Query = { s?: string; v?: string; fmt?: string };
+// edit = 오른쪽 편집 패널에 열 영상 id, 새 영상은 "new"
+type Query = { s?: string; v?: string; fmt?: string; edit?: string };
 const SOLO = "_solo";
 
 const card = "rounded-2xl border border-line bg-panel p-5";
@@ -48,6 +51,7 @@ export async function Dashboard({
     s: typeof sp.s === "string" ? sp.s : undefined,
     v: typeof sp.v === "string" ? sp.v : undefined,
     fmt: typeof sp.fmt === "string" ? sp.fmt : undefined,
+    edit: typeof sp.edit === "string" ? sp.edit : undefined,
   };
 
   const channels = await listChannels();
@@ -98,11 +102,33 @@ export async function Dashboard({
 
   const gates = data.tasks.filter((t) => !t.done);
 
+  const editing = q.edit === "new" ? "new" : videos.find((v) => v.id === q.edit);
+  const editor = editing && (
+    <aside
+      aria-labelledby="editor-h"
+      className="w-full border-line bg-panel px-4 py-6 max-lg:order-first max-lg:border-b sm:px-6 lg:sticky lg:top-0 lg:max-h-screen lg:max-w-[520px] lg:flex-[1_1_440px] lg:overflow-y-auto lg:border-l"
+    >
+      <VideoEditor
+        key={q.edit}
+        channelId={channel.id}
+        steps={channel.steps}
+        series={data.series.map(({ id, title }) => ({ id, title }))}
+        video={editing === "new" ? undefined : editing}
+        defaults={{
+          seriesId: group && group.id !== SOLO ? group.id : undefined,
+          format: channel.cadence.shortsPerWeek > 0 || channel.cadence.longPerWeek === 0 ? "short" : "long",
+        }}
+        closeHref={href({})}
+      />
+    </aside>
+  );
+
   return (
     <>
       <AppHeader channels={headerChannels} current={channel} now={kstNowLabel()} />
 
-      <main className="mx-auto flex w-full max-w-[1200px] flex-col gap-6 px-4 pt-7 pb-12 sm:px-8">
+      <div className={editor ? "flex flex-wrap items-start lg:flex-nowrap" : undefined}>
+      <main className={`mx-auto flex w-full max-w-[1200px] min-w-0 flex-col gap-6 px-4 pt-7 pb-12 sm:px-8 ${editor ? "lg:flex-[999_1_640px]" : ""}`}>
         {/* 모든 채널 · 이번 주 */}
         <section aria-labelledby="all-h" className="flex flex-col gap-2.5">
           <h2 id="all-h" className="text-[13px] font-medium text-muted">모든 채널 · 이번 주 업로드</h2>
@@ -145,6 +171,32 @@ export async function Dashboard({
 
         <div className="h-px bg-line" />
 
+        {/* 시리즈 탭 · 시리즈 추가 · 채널 설정 · 영상 추가 */}
+        <div className="flex flex-wrap items-center gap-2">
+          {groups.length > 1 && (
+            <nav aria-label="시리즈" className="flex flex-wrap gap-1.5">
+              {groups.map((g) => (
+                <Link
+                  key={g.id}
+                  href={href({ s: g.id, v: undefined })}
+                  aria-current={g.id === group?.id ? "true" : undefined}
+                  className={`inline-flex min-h-8 items-center rounded-full px-3 text-xs no-underline ${g.id === group?.id ? "bg-raised text-fg" : "text-muted hover:text-fg"}`}
+                >
+                  {g.title}
+                </Link>
+              ))}
+            </nav>
+          )}
+          <SeriesAdder channelId={channel.id} />
+          <div className="flex-auto" />
+          <Link href={`/c/${channel.id}/settings`} className="inline-flex h-11 items-center rounded-[10px] border border-line-strong bg-raised px-3.5 text-[13px] text-fg no-underline hover:bg-line">
+            채널 설정
+          </Link>
+          <Link href={href({ edit: "new" })} scroll={false} className="inline-flex h-11 items-center gap-1.5 rounded-[10px] bg-accent px-4 text-[13px] font-bold text-accent-ink no-underline hover:bg-accent-2">
+            <PlusIcon className="size-3.5" />영상 추가
+          </Link>
+        </div>
+
         {groups.length === 0 ? (
           <EmptyChannel channel={channel} />
         ) : (
@@ -152,20 +204,6 @@ export async function Dashboard({
             {/* 시리즈 제목 + 진행률 */}
             <div className="flex flex-wrap items-end gap-x-6 gap-y-3">
               <div className="flex flex-col gap-1">
-                {groups.length > 1 && (
-                  <nav aria-label="시리즈" className="mb-1 flex flex-wrap gap-1.5">
-                    {groups.map((g) => (
-                      <Link
-                        key={g.id}
-                        href={href({ s: g.id, v: undefined })}
-                        aria-current={g.id === group.id ? "true" : undefined}
-                        className={`rounded-full px-3 py-1 text-xs no-underline ${g.id === group.id ? "bg-raised text-fg" : "text-muted hover:text-fg"}`}
-                      >
-                        {g.title}
-                      </Link>
-                    ))}
-                  </nav>
-                )}
                 <span className="text-xs text-muted">
                   {group.id === SOLO ? "시리즈에 묶이지 않은 영상" : "진행 중인 시리즈"}
                   {formatsInGroup.length > 0 && ` · ${formatsInGroup.map((f) => `${FORMAT_LABEL[f]} ${inGroup.filter((v) => v.format === f).length}`).join(" + ")}`}
@@ -188,8 +226,8 @@ export async function Dashboard({
             {/* 요약 카드 */}
             <section aria-label="요약" className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4">
               <NextUploadCard channel={channel} video={nextAll} today={today} />
-              <GatesCard channelId={channel.id} gates={gates} />
-              <CreditsCard credits={data.credits} />
+              <GatesCard channelId={channel.id} gates={gates} videos={videos} />
+              <CreditsCard channelId={channel.id} credits={data.credits} />
             </section>
 
             {/* 화별 진행 */}
@@ -235,15 +273,25 @@ export async function Dashboard({
                       return (
                         <tr key={v.id} className={`border-t border-line ${isSel ? "bg-raised" : ""}`}>
                           <th scope="row" className="px-1 py-1.5 text-left font-medium">
-                            <Link
-                              href={href({ v: v.id })}
-                              scroll={false}
-                              aria-current={isSel ? "true" : undefined}
-                              className="flex min-h-11 items-center gap-2 px-1.5 text-sm text-fg no-underline"
-                            >
-                              <span className={`h-5 w-[3px] rounded-sm ${isSel ? "bg-accent" : "bg-transparent"}`} />
-                              {v.workingTitle}
-                            </Link>
+                            <div className="flex items-center">
+                              <Link
+                                href={href({ v: v.id })}
+                                scroll={false}
+                                aria-current={isSel ? "true" : undefined}
+                                className="flex min-h-11 flex-auto items-center gap-2 px-1.5 text-sm text-fg no-underline"
+                              >
+                                <span className={`h-5 w-[3px] rounded-sm ${isSel ? "bg-accent" : "bg-transparent"}`} />
+                                {v.workingTitle}
+                              </Link>
+                              <Link
+                                href={href({ v: v.id, edit: v.id })}
+                                scroll={false}
+                                aria-label={`${v.workingTitle} 편집`}
+                                className={`flex size-9 flex-none items-center justify-center rounded-md no-underline hover:bg-line hover:text-fg ${q.edit === v.id ? "text-accent-2" : "text-muted"}`}
+                              >
+                                <PencilIcon className="size-3.5" />
+                              </Link>
+                            </div>
                           </th>
                           <td className="p-1.5">
                             <FormatChip format={v.format} />
@@ -279,6 +327,8 @@ export async function Dashboard({
           </>
         )}
       </main>
+      {editor}
+      </div>
     </>
   );
 }
@@ -288,10 +338,31 @@ function EmptyChannel({ channel }: { channel: Channel }) {
     <section className={`${card} flex flex-col items-start gap-2`}>
       <h1 className="font-serif text-2xl font-extrabold">{channel.name}</h1>
       <p className="text-fg-2">아직 등록된 시리즈나 영상이 없습니다.</p>
-      <p className="text-xs text-muted">
-        영상은 <code className="font-mono">data/{channel.id}/videos.json</code> 에 추가하면 여기에 나타납니다. 앱 안에서 영상을 추가하는 화면은 아직 없습니다.
-      </p>
+      <p className="text-xs text-muted">위의 「+ 시리즈」로 시리즈를 만들거나 「영상 추가」로 첫 영상을 등록하세요.</p>
     </section>
+  );
+}
+
+const smallField =
+  "h-10 w-full rounded-[9px] border border-line-strong bg-ink px-2.5 text-sm text-fg outline-none focus-visible:outline-2 focus-visible:outline-accent";
+const smallSubmit = "h-10 rounded-[9px] bg-accent px-4 text-[13px] font-bold text-accent-ink hover:bg-accent-2";
+
+// 펼침 폼은 JS 없이 <details> 로 연다(헤더 채널 메뉴와 같은 방식).
+function SeriesAdder({ channelId }: { channelId: string }) {
+  return (
+    <details className="relative">
+      <summary className="inline-flex min-h-8 cursor-pointer list-none items-center gap-1 rounded-full px-3 text-xs text-accent-2 hover:bg-raised">
+        <PlusIcon className="size-3" />시리즈
+      </summary>
+      <form action={createSeries} className="absolute top-full left-0 z-20 mt-2 flex w-72 flex-col gap-2.5 rounded-xl border border-line-strong bg-panel p-4">
+        <input type="hidden" name="channel" value={channelId} />
+        <label htmlFor="ns-title" className="text-xs text-fg-2">시리즈 제목 <span className="text-danger">*</span></label>
+        <input id="ns-title" name="title" required maxLength={40} className={smallField} />
+        <label htmlFor="ns-desc" className="text-xs text-fg-2">설명 <span className="text-muted">(선택)</span></label>
+        <input id="ns-desc" name="description" maxLength={200} className={smallField} />
+        <button type="submit" className={`${smallSubmit} self-start`}>추가</button>
+      </form>
+    </details>
   );
 }
 
@@ -374,7 +445,15 @@ function NextUploadCard({ channel, video, today }: { channel: Channel; video?: V
   );
 }
 
-function GatesCard({ channelId, gates }: { channelId: string; gates: { id: string; text: string; detail?: string }[] }) {
+function GatesCard({
+  channelId,
+  gates,
+  videos,
+}: {
+  channelId: string;
+  gates: { id: string; text: string; detail?: string }[];
+  videos: Video[];
+}) {
   return (
     <div className={`${card} flex flex-col gap-3`}>
       <div className="flex items-center gap-2">
@@ -403,11 +482,29 @@ function GatesCard({ channelId, gates }: { channelId: string; gates: { id: strin
           ))}
         </ul>
       )}
+      <details className="border-t border-line pt-2.5">
+        <summary className="inline-flex min-h-9 cursor-pointer list-none items-center gap-1 text-xs text-accent-2">
+          <PlusIcon className="size-3" />확인할 일 추가
+        </summary>
+        <form action={createTask} className="mt-2 flex flex-col gap-2">
+          <input type="hidden" name="channel" value={channelId} />
+          <label htmlFor="nt-text" className="text-xs text-fg-2">할 일 <span className="text-danger">*</span></label>
+          <input id="nt-text" name="text" required maxLength={80} className={smallField} />
+          <label htmlFor="nt-detail" className="text-xs text-fg-2">설명 <span className="text-muted">(선택)</span></label>
+          <input id="nt-detail" name="detail" maxLength={120} className={smallField} />
+          <label htmlFor="nt-video" className="text-xs text-fg-2">연결 영상</label>
+          <select id="nt-video" name="videoId" className={smallField}>
+            <option value="">없음</option>
+            {videos.map((v) => <option key={v.id} value={v.id}>{v.workingTitle}</option>)}
+          </select>
+          <button type="submit" className={`${smallSubmit} self-start`}>추가</button>
+        </form>
+      </details>
     </div>
   );
 }
 
-function CreditsCard({ credits }: { credits: { service: string; amount?: number; unit?: string; note?: string; recordedAt: string }[] }) {
+function CreditsCard({ channelId, credits }: { channelId: string; credits: Credit[] }) {
   const latest = credits.reduce((a, c) => (c.recordedAt > a ? c.recordedAt : a), "");
   return (
     <div className={`${card} flex flex-col gap-3`}>
@@ -429,6 +526,24 @@ function CreditsCard({ credits }: { credits: { service: string; amount?: number;
           </span>
         </div>
       ))}
+      <details className="border-t border-line pt-2.5">
+        <summary className="inline-flex min-h-9 cursor-pointer list-none items-center gap-1 text-xs text-accent-2">크레딧 기록</summary>
+        <form action={saveCredits} className="mt-2 flex flex-col gap-2">
+          <input type="hidden" name="channel" value={channelId} />
+          <div className="grid grid-cols-[minmax(0,1fr)_88px] gap-x-2 gap-y-1.5 text-xs text-muted">
+            <span>서비스</span><span>남은 양</span>
+          </div>
+          {[...credits, { service: "", recordedAt: "" } as Credit].map((c, i) => (
+            <div key={i} className="grid grid-cols-[minmax(0,1fr)_88px] gap-2">
+              <input name="service" defaultValue={c.service} placeholder={c.service ? undefined : "새 서비스"} aria-label={`${i + 1}번 서비스 이름`} maxLength={30} className={smallField} />
+              <input name="amount" inputMode="numeric" defaultValue={c.amount} aria-label={`${c.service || "새 서비스"} 남은 양`} className={`${smallField} font-mono`} />
+              <input type="hidden" name="note" value={c.note ?? ""} />
+            </div>
+          ))}
+          <span className="text-xs text-muted">이름을 지우면 그 줄은 빠집니다 · 오늘 날짜로 기록</span>
+          <button type="submit" className={`${smallSubmit} self-start`}>저장</button>
+        </form>
+      </details>
       <div className="border-t border-line pt-2.5 text-xs text-muted">승인 범위 밖 유료 생성은 먼저 확인</div>
     </div>
   );

@@ -11,11 +11,13 @@ sources:
   - lib/data/store-github.ts
   - app/c/[channel]/actions.ts
   - app/channels/new/actions.ts
+  - app/channels/new/parse-channel.ts
+  - app/c/[channel]/settings/actions.ts
   - app/c/[channel]/logo/route.ts
   - app/c/[channel]/dashboard.tsx
   - next.config.ts
   - vercel.json
-verified: d8116739473d4036
+verified: 53e0ca91717cef33
 ---
 
 # 데이터
@@ -84,31 +86,39 @@ env `DATA_STORE=github` 이면 GitHub, 아니면 fs — [lib/data/store.ts:28-30
 
 - `listChannels()`, `getChannelData(id)`: 첫 줄에서 `await connection()` 으로 요청 시점까지 기다린 뒤 읽는다 — [lib/data/index.ts:10-14](../lib/data/index.ts#L10-L14), [lib/data/index.ts:28-38](../lib/data/index.ts#L28-L38). (`connection()` — `node_modules/next/dist/docs/01-app/03-api-reference/04-functions/connection.md`.) 이 함수를 쓰는 컴포넌트는 `<Suspense>` 안에 있다([UI](ui.md)).
 - `getChannel(id)`: id 형식이 틀리면 `undefined` — [lib/data/index.ts:16-19](../lib/data/index.ts#L16-L19).
-- `readChannelLogo(id)`: `Channel.logo` 가 `logo.(png|jpg|webp)` 일 때만 `readBytes` 로 읽어 MIME 타입과 함께 반환 — [lib/data/index.ts:103-110](../lib/data/index.ts#L103-L110).
+- `readChannelLogo(id)`: `Channel.logo` 가 `logo.(png|jpg|webp)` 일 때만 `readBytes` 로 읽어 MIME 타입과 함께 반환 — [lib/data/index.ts:164-171](../lib/data/index.ts#L164-L171).
 
 쓰기 함수는 Server Action 에서만 호출하고, 모든 액션은 첫 줄에서 `requireSession()` 을 부른다([인증](auth.md)). 각 함수는 `mutate` 한 번 = 커밋 한 번이다.
 
-| 데이터 함수 | 동작 | 호출하는 액션 | 근거 |
-|---|---|---|---|
-| `updateVideo` | 영상 하나를 찾아 수정, `updatedAt` 갱신. 없으면 `false`(커밋 없음) | `cycleStep`, `toggleChecklist` | [lib/data/index.ts:55-70](../lib/data/index.ts#L55-L70), [app/c/[channel]/actions.ts:10-35](../app/c/[channel]/actions.ts#L10-L35) |
-| `updateTask` | 작업 하나 수정, `updatedAt` 갱신 | `toggleTask` | [lib/data/index.ts:72-87](../lib/data/index.ts#L72-L87), [app/c/[channel]/actions.ts:37-45](../app/c/[channel]/actions.ts#L37-L45) |
-| `initChannelFiles` | 빈 데이터 파일 5개(없을 때만)와 로고 바이너리를 한 커밋으로 | `createChannel` | [lib/data/index.ts:89-101](../lib/data/index.ts#L89-L101), [app/channels/new/actions.ts:83](../app/channels/new/actions.ts#L83) |
-| `addChannel` | `channels.json` 에 추가. 같은 id 가 있으면 `DUPLICATE` 예외 | `createChannel` | [lib/data/index.ts:42-53](../lib/data/index.ts#L42-L53), [app/channels/new/actions.ts:84-89](../app/channels/new/actions.ts#L84-L89) |
+| 데이터 함수 | 동작 | 근거 |
+|---|---|---|
+| `updateVideo` | 영상 하나를 찾아 수정, `updatedAt` 갱신. 없으면 `false`(커밋 없음) | [lib/data/index.ts:55-70](../lib/data/index.ts#L55-L70) |
+| `updateTask` | 작업 하나 수정, `updatedAt` 갱신 | [lib/data/index.ts:72-87](../lib/data/index.ts#L72-L87) |
+| `initChannelFiles` | 빈 데이터 파일 5개(없을 때만)와 로고 바이너리를 한 커밋으로 | [lib/data/index.ts:89-101](../lib/data/index.ts#L89-L101) |
+| `addChannel` · `addVideo` · `addSeries` | 목록에 추가. 같은 id 가 있으면 `DUPLICATE` 예외 | [lib/data/index.ts:42-53](../lib/data/index.ts#L42-L53), [lib/data/index.ts:103-123](../lib/data/index.ts#L103-L123) |
+| `addTask` | 확인 대기 작업 추가 | [lib/data/index.ts:125-132](../lib/data/index.ts#L125-L132) |
+| `setCredits` | 크레딧 목록을 통째로 교체(서비스별 최신 값만 둔다) | [lib/data/index.ts:134-142](../lib/data/index.ts#L134-L142) |
+| `updateChannel` | 채널 하나 수정. id 는 되돌려 고정, `updatedAt` 갱신, 새 로고는 같은 커밋 | [lib/data/index.ts:144-162](../lib/data/index.ts#L144-L162) |
 
 ### 대시보드 액션 — `app/c/[channel]/actions.ts`
 
-- `cycleStep`: 채널 템플릿에 있는 단계만, `skip` 이 아닌 경우 `STEP_STATES` 다음 값으로 바꾼다 — [app/c/[channel]/actions.ts:10-23](../app/c/[channel]/actions.ts#L10-L23).
-- `toggleChecklist`: `checklist[index].done` 반전 — [app/c/[channel]/actions.ts:25-35](../app/c/[channel]/actions.ts#L25-L35).
-- `toggleTask`: `Task.done` 반전 — [app/c/[channel]/actions.ts:37-45](../app/c/[channel]/actions.ts#L37-L45).
-- 셋 다 끝에서 `refresh()` 로 클라이언트 라우터를 새로 고친다 — [app/c/[channel]/actions.ts:22](../app/c/[channel]/actions.ts#L22) (`node_modules/next/dist/docs/01-app/03-api-reference/04-functions/refresh.md`).
+| 액션 | 동작 | 근거 |
+|---|---|---|
+| `cycleStep` | 채널 템플릿에 있는 단계만, `skip` 이 아닌 경우 `STEP_STATES` 다음 값으로 | [app/c/[channel]/actions.ts:40-53](../app/c/[channel]/actions.ts#L40-L53) |
+| `toggleChecklist` · `toggleTask` | `checklist[index].done` / `Task.done` 반전 | [app/c/[channel]/actions.ts:55-75](../app/c/[channel]/actions.ts#L55-L75) |
+| `saveVideo` | 편집 패널 저장(`useActionState`, `{ error, field }` 반환). 제목 1~60자, 시리즈는 `series.json` 에 있어야 함, 화수 0~999, 날짜·유튜브 ID 형식, 상태는 `dropped` 제외. 해당 없는 단계는 `steps[s] = "skip"`, 해제하면 키를 지워 대기로. 빈 값은 키를 지운다. `published` 로 바꾸면 `publishedAt` 기록. 새 영상 id 는 입력값, 없으면 `<시리즈>-ep<화수>`, 그것도 안 되면 제목 slug 또는 `video-N`. 끝나면 그 영상을 선택한 대시보드로 리다이렉트 | [app/c/[channel]/actions.ts:24-36](../app/c/[channel]/actions.ts#L24-L36), [app/c/[channel]/actions.ts:79-158](../app/c/[channel]/actions.ts#L79-L158) |
+| `dropVideo` | 사유 필수. `status: "dropped"` + `notes` 에 `[날짜 이전상태→dropped] 사유` 추가. 레코드는 지우지 않는다 | [app/c/[channel]/actions.ts:160-172](../app/c/[channel]/actions.ts#L160-L172) |
+| `createSeries` | 제목(40자) 필수, id 는 영문 제목 slug 또는 `series-N`. 만든 시리즈로 이동 | [app/c/[channel]/actions.ts:176-187](../app/c/[channel]/actions.ts#L176-L187) |
+| `createTask` | 할 일(80자) 필수, 설명·연결 영상(있는 영상만) 선택 | [app/c/[channel]/actions.ts:189-208](../app/c/[channel]/actions.ts#L189-L208) |
+| `saveCredits` | 서비스·남은 양·메모 줄들을 받아 이름이 빈 줄·중복은 빼고, 단위는 기존 값을 유지, 모두 지금 시각으로 기록 | [app/c/[channel]/actions.ts:210-237](../app/c/[channel]/actions.ts#L210-L237) |
 
-### 채널 등록 액션 — `app/channels/new/actions.ts`
+`refresh()` 를 부르는 액션은 클라이언트 라우터를 새로 고친다 — [app/c/[channel]/actions.ts:52](../app/c/[channel]/actions.ts#L52) (`node_modules/next/dist/docs/01-app/03-api-reference/04-functions/refresh.md`).
 
-- 검증: 이름 1~40자, 핸들 `[A-Za-z0-9._-]{3,30}`(앞 `@` 제거), 쇼츠·롱폼 중 하나 이상 — [app/channels/new/actions.ts:33-47](../app/channels/new/actions.ts#L33-L47). 실패 시 `{ error, field }` — [app/channels/new/actions.ts:8](../app/channels/new/actions.ts#L8).
-- 채널 id = 핸들 소문자에서 영숫자 외를 `-` 로 바꾼 값. 이미 있으면 거부 — [app/channels/new/actions.ts:39-43](../app/channels/new/actions.ts#L39-L43).
-- 로고: PNG·JPEG·WEBP, 2MB 이하 — [app/channels/new/actions.ts:10-15](../app/channels/new/actions.ts#L10-L15), [app/channels/new/actions.ts:49-56](../app/channels/new/actions.ts#L49-L56). Server Action 본문 한도를 `experimental.serverActions.bodySizeLimit: "3mb"` 로 올렸다 — [next.config.ts:5-9](../next.config.ts#L5-L9).
-- 정규화: 색·업로드 시각·주소·주간 편수·단계·확인 규칙 — [app/channels/new/actions.ts:17-28](../app/channels/new/actions.ts#L17-L28), [app/channels/new/actions.ts:58-81](../app/channels/new/actions.ts#L58-L81).
-- 순서: 채널 파일 생성 → `channels.json` 등록 → `/c/<id>` 로 리다이렉트 — [app/channels/new/actions.ts:83-90](../app/channels/new/actions.ts#L83-L90). github 백엔드에서는 커밋 2개가 생긴다.
+### 채널 등록·설정 액션
+
+- 공통 입력 해석 `parseChannelForm`: 이름 1~40자, 쇼츠·롱폼 중 하나 이상, 로고 PNG·JPEG·WEBP 2MB 이하, 색은 `CHANNEL_COLORS` 중 하나(아니면 첫 색), 업로드 시각 `HH:MM`, 주소는 `http(s)://` 일 때만, 주간 편수 0~14, 단계는 중복 제거·30자 이하·최대 12개, 확인 규칙은 `DEFAULT_GATES` 안의 값만 — [app/channels/new/parse-channel.ts:8-67](../app/channels/new/parse-channel.ts#L8-L67). Server Action 본문 한도를 `experimental.serverActions.bodySizeLimit: "3mb"` 로 올렸다 — [next.config.ts:5-9](../next.config.ts#L5-L9).
+- `createChannel`: 핸들 `[A-Za-z0-9._-]{3,30}`(앞 `@` 제거) → id = 소문자에서 영숫자 외를 `-` 로 바꾼 값, 이미 있으면 거부 → 채널 파일 생성 → `channels.json` 등록 → `/c/<id>` — [app/channels/new/actions.ts:11-53](../app/channels/new/actions.ts#L11-L53). github 백엔드에서는 커밋 2개가 생긴다.
+- `updateChannelSettings`: 같은 해석 후 이름·색·주기·단계·확인 규칙을 덮어쓰고, 주소·니치·업로드 시각은 비면 지우고, 새 로고가 있으면 교체. id·핸들은 바꾸지 않는다 — [app/c/[channel]/settings/actions.ts:9-34](../app/c/[channel]/settings/actions.ts#L9-L34).
 
 ## 로고 라우트 — `app/c/[channel]/logo/route.ts`
 
@@ -116,5 +126,5 @@ env `DATA_STORE=github` 이면 GitHub, 아니면 fs — [lib/data/store.ts:28-30
 
 ## 앱 화면에서 아직 쓰지 않는 데이터
 
-- 영상·시리즈·작업·크레딧을 추가하는 화면은 없다. 빈 채널 안내가 `videos.json` 을 직접 편집하라고 말한다 — [app/c/[channel]/dashboard.tsx:286-296](../app/c/[channel]/dashboard.tsx#L286-L296). 영상 추가·단계 변경·긴 글 저장은 [MCP](mcp.md) 도구로 할 수 있다.
-- `Channel.gates` 는 등록 시 저장되지만 "확인 대기" 카드는 `tasks.json` 의 미완료 항목을 보여준다 — [app/c/[channel]/dashboard.tsx:99](../app/c/[channel]/dashboard.tsx#L99).
+- 영상의 훅·패키징(제목 후보·썸네일), 필러·약속, 지표(`metrics`), 주간 계획(`plans.json`), 긴 글(`content/`)은 화면에서 보거나 고치지 않는다. [MCP](mcp.md) 도구로 다룬다.
+- `Channel.gates` 는 등록·설정에서 저장되지만 "확인 대기" 카드는 `tasks.json` 의 미완료 항목을 보여준다 — [app/c/[channel]/dashboard.tsx:103](../app/c/[channel]/dashboard.tsx#L103).
