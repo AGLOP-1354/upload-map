@@ -9,5 +9,6 @@
 | `/api/mcp` | route | [app/api/mcp/route.ts](../../app/api/mcp/route.ts) | - |
 | `/c/[channel]` | page | [app/c/[channel]/page.tsx](../../app/c/[channel]/page.tsx) | - |
 | `/c/[channel]/logo` | route | [app/c/[channel]/logo/route.ts](../../app/c/[channel]/logo/route.ts) | GET |
+| `/c/[channel]/settings` | page | [app/c/[channel]/settings/page.tsx](../../app/c/[channel]/settings/page.tsx) | - |
 | `/channels/new` | page | [app/channels/new/page.tsx](../../app/channels/new/page.tsx) | - |
 | `/login` | page | [app/login/page.tsx](../../app/login/page.tsx) | - |

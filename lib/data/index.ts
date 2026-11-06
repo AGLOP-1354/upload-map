@@ -100,6 +100,67 @@ export async function initChannelFiles(id: string, logo?: { name: string; bytes:
   });
 }
 
+// 새 영상. 같은 id 가 있으면 "DUPLICATE" 예외.
+export async function addVideo(channelId: string, video: Video): Promise<void> {
+  const path = PATHS.videos(channelId);
+  await mutate([path], (files) => {
+    const f = parse("videos", files[path], path);
+    if (f.videos.some((v) => v.id === video.id)) throw new Error("DUPLICATE");
+    f.videos.push(video);
+    return { changes: { [path]: serialize("videos", f, path) }, message: `영상: ${channelId}/${video.id} 추가`, result: {} };
+  });
+}
+
+// 새 시리즈. 같은 id 가 있으면 "DUPLICATE" 예외.
+export async function addSeries(channelId: string, series: Series): Promise<void> {
+  const path = PATHS.series(channelId);
+  await mutate([path], (files) => {
+    const f = parse("series", files[path], path);
+    if (f.series.some((s) => s.id === series.id)) throw new Error("DUPLICATE");
+    f.series.push(series);
+    return { changes: { [path]: serialize("series", f, path) }, message: `시리즈: ${channelId}/${series.id} 추가`, result: {} };
+  });
+}
+
+export async function addTask(channelId: string, task: Task): Promise<void> {
+  const path = PATHS.tasks(channelId);
+  await mutate([path], (files) => {
+    const f = parse("tasks", files[path], path);
+    f.tasks.push(task);
+    return { changes: { [path]: serialize("tasks", f, path) }, message: `확인 대기: ${channelId} "${task.text}" 추가`, result: {} };
+  });
+}
+
+// 크레딧 기록은 서비스별 최신 값만 두므로 목록을 통째로 바꾼다.
+export async function setCredits(channelId: string, credits: Credit[]): Promise<void> {
+  const path = PATHS.credits(channelId);
+  await mutate([path], (files) => {
+    const f = parse("credits", files[path], path);
+    f.credits = credits;
+    return { changes: { [path]: serialize("credits", f, path) }, message: `크레딧: ${channelId} 기록`, result: {} };
+  });
+}
+
+// 채널 설정 저장. id 는 바꾸지 않는다. 로고를 새로 올리면 같은 커밋에 쓴다.
+export async function updateChannel(
+  channelId: string,
+  fn: (c: Channel) => void,
+  logo?: { name: string; bytes: Uint8Array },
+): Promise<boolean> {
+  const r = await mutate([PATHS.channels], (files) => {
+    const f = parse("channels", files[PATHS.channels], PATHS.channels);
+    const c = f.channels.find((x) => x.id === channelId);
+    if (!c) return { changes: {}, message: "", result: { ok: false } };
+    fn(c);
+    c.id = channelId;
+    c.updatedAt = new Date().toISOString();
+    const changes: Record<string, string | Uint8Array> = { [PATHS.channels]: serialize("channels", f, PATHS.channels) };
+    if (logo) changes[PATHS.channelFile(channelId, logo.name)] = logo.bytes;
+    return { changes, message: `채널: ${channelId} 설정 수정`, result: { ok: true } };
+  });
+  return r.ok;
+}
+
 export async function readChannelLogo(id: string): Promise<{ bytes: Uint8Array; type: string } | null> {
   const ch = await getChannel(id);
   if (!ch?.logo || !/^logo\.(png|jpg|webp)$/.test(ch.logo)) return null;
