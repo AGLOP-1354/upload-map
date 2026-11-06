@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { startTransition, useActionState, useState } from "react";
+import { startTransition, useActionState, useEffect, useState } from "react";
 import { AlertIcon, PlusIcon, XIcon } from "@/components/icons";
+import { STATUS_LABEL } from "@/lib/board";
 import { VIDEO_STATUSES, type ChecklistItem, type Format, type Video } from "@/lib/types";
 import { dropVideo, saveVideo, type FormState } from "./actions";
 
@@ -10,19 +10,6 @@ const field =
   "h-11 w-full rounded-[10px] border border-line-strong bg-ink px-3 text-[15px] text-fg outline-none focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-accent aria-invalid:border-danger";
 const area = `${field.replace("h-11 ", "")} py-2.5 leading-relaxed`;
 const label = "text-[13px] text-fg-2";
-
-const STATUS_LABEL: Record<Video["status"], string> = {
-  idea: "아이디어",
-  research: "자료조사",
-  scripting: "대본",
-  packaging: "제목·썸네일",
-  filming: "촬영",
-  editing: "편집",
-  scheduled: "예약됨",
-  published: "게시됨",
-  reviewed: "회고 완료",
-  dropped: "보류",
-};
 
 const TABS = [
   { id: "basic", label: "기본" },
@@ -40,14 +27,18 @@ export function VideoEditor({
   series,
   video,
   defaults,
-  closeHref,
+  onClose,
+  onSaved,
+  onDropped,
 }: {
   channelId: string;
   steps: Record<Format, string[]>;
   series: { id: string; title: string }[];
   video?: Video;
   defaults: { seriesId?: string; format: Format };
-  closeHref: string;
+  onClose: () => void;
+  onSaved: (id: string) => void;
+  onDropped: () => void;
 }) {
   const [state, action, pending] = useActionState<FormState, FormData>(saveVideo, {});
   const [tab, setTab] = useState<Tab>("basic");
@@ -59,6 +50,10 @@ export function VideoEditor({
     setSeen(state);
     if (state.field) setTab(TAB_OF[state.field] ?? "basic");
   }
+  // 저장되면 부모가 보기 모드로 돌린다(부모 상태라 렌더 중이 아니라 effect 에서 알린다).
+  useEffect(() => {
+    if (state.saved) onSaved(state.saved);
+  }, [state, onSaved]);
   const shownTab = tab;
   const invalid = (f: string) => state.field === f || undefined;
   const title = video ? `${video.workingTitle} 편집` : "새 영상";
@@ -71,9 +66,9 @@ export function VideoEditor({
       <div className="flex items-center gap-2">
         <h2 id="editor-h" className="font-serif text-2xl font-extrabold">{title}</h2>
         {video && <span className="font-mono text-xs text-muted">{video.id}</span>}
-        <Link href={closeHref} scroll={false} aria-label="편집 패널 닫기" className="ml-auto flex size-11 items-center justify-center rounded-[10px] text-muted no-underline hover:bg-raised hover:text-fg">
+        <button type="button" onClick={onClose} aria-label="편집 닫기" className="ml-auto flex size-11 items-center justify-center rounded-[10px] text-muted hover:bg-raised hover:text-fg">
           <XIcon className="size-4" />
-        </Link>
+        </button>
       </div>
 
       {/* 하이드레이션 뒤에는 onSubmit 으로 보낸다: 폼 action 은 끝나면 입력을 초기화해 오류 때 고친 값이 사라진다.
@@ -234,14 +229,24 @@ export function VideoEditor({
           <button type="submit" disabled={pending} className="h-12 rounded-[10px] bg-accent px-6 font-bold text-accent-ink hover:bg-accent-2 disabled:opacity-60">
             {pending ? "저장 중…" : video ? "저장" : "영상 추가"}
           </button>
-          <Link href={closeHref} scroll={false} className="inline-flex h-12 items-center px-3 text-fg-2 no-underline hover:text-fg">닫기</Link>
+          <button type="button" onClick={onClose} className="inline-flex h-12 items-center px-3 text-fg-2 hover:text-fg">취소</button>
         </div>
       </form>
 
       {video && (
         <details className="rounded-[10px] border border-[#5a2a20] bg-danger-wash">
           <summary className="flex min-h-11 cursor-pointer items-center px-3.5 text-[13px] text-danger-2">보류로 내리기</summary>
-          <form action={dropVideo} className="flex flex-col gap-2 px-3.5 pb-3.5">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const fd = new FormData(e.currentTarget);
+              startTransition(async () => {
+                await dropVideo(fd);
+                onDropped();
+              });
+            }}
+            className="flex flex-col gap-2 px-3.5 pb-3.5"
+          >
             <input type="hidden" name="channel" value={channelId} />
             <input type="hidden" name="video" value={video.id} />
             <label htmlFor="ve-reason" className="text-xs text-danger-2">사유 <span className="text-danger">*</span> · 영상은 지우지 않고 진행표에서만 빠집니다</label>

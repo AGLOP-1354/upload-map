@@ -37,7 +37,7 @@ if (/^data\/.*\.json$/.test(rel) && !rel.startsWith("data/backup/")) {
     const ids = data.videos.map((v) => v.id);
     const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
     if (dup.length) fail(`[data-check] videos.json id 중복: ${[...new Set(dup)].join(", ")}`);
-    const STAGES = ["idea", "research", "scripting", "packaging", "filming", "editing", "scheduled", "published", "reviewed", "dropped"];
+    const STAGES = ["idea", "research", "scripting", "packaging", "filming", "editing", "ready", "scheduled", "published", "reviewed", "dropped"];
     const bad = data.videos.filter((v) => !STAGES.includes(v.status)).map((v) => `${v.id}:${v.status}`);
     if (bad.length) fail(`[data-check] 알 수 없는 status: ${bad.join(", ")} (허용: ${STAGES.join("|")})`);
   }

@@ -27,7 +27,7 @@ async function ChannelSettings({ params }: { params: PageProps<"/c/[channel]/set
   const others = channels.filter((c) => c.id !== id);
   return (
     <>
-      <AppHeader channels={[]} now={kstNowLabel()}>
+      <AppHeader now={kstNowLabel()}>
         채널 설정
       </AppHeader>
       <div className="mx-auto w-full max-w-[1120px] px-4 pt-6 pb-14 sm:px-6">

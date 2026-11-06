@@ -67,7 +67,7 @@ interface Channel {
 interface Series { id: string; title: string; description?: string; createdAt: string; updatedAt: string }
 
 type VideoStatus = "idea" | "research" | "scripting" | "packaging" | "filming"
-  | "editing" | "scheduled" | "published" | "reviewed" | "dropped";
+  | "editing" | "ready" | "scheduled" | "published" | "reviewed" | "dropped";
 
 interface Video {
   id: string;                 // kebab-case slug, 채널 안에서 유일, 불변

@@ -29,8 +29,8 @@ import {
 
 const INSTRUCTIONS = `유튜브 채널 운영자 1인의 기획·제작 진행도 앱이다. 채널이 여러 개일 수 있다. 영상 기획·제작을 도우면서 진행 상황을 이 도구로 기록한다.
 
-제작 단계(status): idea → research → scripting → packaging → filming → editing → scheduled → published → reviewed. 보류/폐기는 dropped(사유 필수).
-- 다음 단계 조건: idea=필러+시청자 약속 한 문장 / research=브리프 / scripting=훅 확정(점수 55+ WORKABLE, 72+ STRONG)+대본 초안 / packaging=제목 1개 선택+썸네일 문구·컨셉 / filming=촬영본 / editing=최종 렌더 / scheduled=게시 / published=48시간·7일 지표 기록.
+제작 단계(status): idea → research → scripting → packaging → filming → editing → ready → scheduled → published → reviewed. 보류/폐기는 dropped(사유 필수).
+- 다음 단계 조건: idea=필러+시청자 약속 한 문장 / research=브리프 / scripting=훅 확정(점수 55+ WORKABLE, 72+ STRONG)+대본 초안 / packaging=제목 1개 선택+썸네일 문구·컨셉 / filming=촬영본 / editing=최종 렌더 / ready=유튜브 예약 / scheduled=게시 / published=48시간·7일 지표 기록.
 - 쇼츠(format "short")는 research, packaging 을 건너뛸 수 있다. 패키징을 대본보다 먼저 해도 된다.
 - 핵심 원칙: 훅(첫 15~30초)·제목·썸네일은 같은 약속을 한다. 썸네일 문구는 제목을 반복하지 않는다.
 

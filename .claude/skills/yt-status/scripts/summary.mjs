@@ -31,7 +31,7 @@ if (!videosFile || videosFile.__error) {
   process.exit(0);
 }
 
-const ORDER = ["idea", "research", "scripting", "packaging", "filming", "editing", "scheduled", "published", "reviewed", "dropped"];
+const ORDER = ["idea", "research", "scripting", "packaging", "filming", "editing", "ready", "scheduled", "published", "reviewed", "dropped"];
 const videos = videosFile.videos ?? [];
 const today = new Date().toISOString().slice(0, 10);
 
