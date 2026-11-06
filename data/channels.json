@@ -22,6 +22,97 @@
       ],
       "createdAt": "2026-11-06T06:00:00.000Z",
       "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "nobodytoldhome",
+      "name": "아무도 안 알려준 집",
+      "handle": "nobodytoldhome",
+      "color": "#8DB37A",
+      "logo": "logo.png",
+      "url": "https://www.youtube.com/@nobodytoldhome",
+      "niche": "생활 설비 쇼츠",
+      "cadence": {
+        "shortsPerWeek": 5,
+        "longPerWeek": 0
+      },
+      "uploadTime": "19:00",
+      "steps": {
+        "short": [
+          "소재",
+          "사실검증",
+          "대본",
+          "AI에셋",
+          "음성",
+          "편집",
+          "업로드"
+        ],
+        "long": [
+          "소재",
+          "사실검증",
+          "대본",
+          "AI에셋",
+          "음성",
+          "편집",
+          "업로드"
+        ]
+      },
+      "gates": [
+        "사실검증 PASS(또는 조건부) 전 대본·제작 진행 금지",
+        "승인 범위를 넘는 유료 생성(클링·일레븐랩스·미드저니)",
+        "대본 컨펌 후 다음 단계",
+        "고정댓글·설명란 게시 전 문구 확인",
+        "영상 본문 제품 추천·구매유도 금지"
+      ],
+      "audience": "20~40대 자취·신혼·첫 내 집",
+      "stage": "<1k",
+      "pillars": [
+        {
+          "id": "heating",
+          "name": "난방·보일러",
+          "description": "분배기, 모드, 보충수, 에러코드"
+        },
+        {
+          "id": "water",
+          "name": "수도·누수",
+          "description": "계량기, 변기 수조, 샤워기 필터, 동파"
+        },
+        {
+          "id": "drain",
+          "name": "배수·냄새",
+          "description": "트랩, 봉수, 팝업 마개"
+        },
+        {
+          "id": "electric",
+          "name": "전기·콘센트",
+          "description": "두꺼비집, 멀티탭, 누전차단기"
+        },
+        {
+          "id": "air",
+          "name": "환기·공기·곰팡이",
+          "description": "환풍기, 결로, 실리콘 곰팡이"
+        },
+        {
+          "id": "kitchen",
+          "name": "주방·기타",
+          "description": "가스레인지, 식세기, 도어락, 인터폰"
+        }
+      ],
+      "voice": {
+        "tone": "옆에서 알려주는 친구, 간결한 존댓말",
+        "do": [
+          "숫자로 말하기",
+          "3단계 이내",
+          "집마다 다름 고지"
+        ],
+        "dont": [
+          "전문가 행세",
+          "과장·공포 조장",
+          "모음·꿀팁 묶음",
+          "클릭베이트"
+        ]
+      },
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
     }
   ]
 }

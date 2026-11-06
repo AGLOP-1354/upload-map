@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "weeks": [
+    {
+      "weekOf": "2026-11-09",
+      "hoursAvailable": 10,
+      "slots": [
+        {
+          "videoId": "boiler-away-mode",
+          "role": "anchor",
+          "due": "2026-11-09",
+          "done": false
+        },
+        {
+          "videoId": "boiler-pressure",
+          "role": "short",
+          "due": "2026-11-10",
+          "done": false
+        },
+        {
+          "videoId": "distributor-valves",
+          "role": "short",
+          "due": "2026-11-11",
+          "done": false
+        },
+        {
+          "videoId": "freeze-meter",
+          "role": "short",
+          "due": "2026-11-12",
+          "done": false
+        },
+        {
+          "videoId": "toilet-tank",
+          "role": "short",
+          "due": "2026-11-13",
+          "done": false
+        }
+      ]
+    },
+    {
+      "weekOf": "2026-11-16",
+      "hoursAvailable": 10,
+      "slots": [
+        {
+          "videoId": "shower-filter",
+          "role": "anchor",
+          "due": "2026-11-16",
+          "done": false
+        },
+        {
+          "videoId": "drain-trap",
+          "role": "short",
+          "due": "2026-11-17",
+          "done": false
+        },
+        {
+          "videoId": "popup-drain",
+          "role": "short",
+          "due": "2026-11-18",
+          "done": false
+        },
+        {
+          "videoId": "gfci-test",
+          "role": "short",
+          "due": "2026-11-19",
+          "done": false
+        },
+        {
+          "videoId": "breaker-box",
+          "role": "short",
+          "due": "2026-11-20",
+          "done": false
+        }
+      ]
+    },
+    {
+      "weekOf": "2026-11-23",
+      "hoursAvailable": 10,
+      "slots": [
+        {
+          "videoId": "multitap-watt",
+          "role": "anchor",
+          "due": "2026-11-23",
+          "done": false
+        },
+        {
+          "videoId": "bill-read",
+          "role": "short",
+          "due": "2026-11-24",
+          "done": false
+        },
+        {
+          "videoId": "condense-window",
+          "role": "short",
+          "due": "2026-11-25",
+          "done": false
+        },
+        {
+          "videoId": "fan-filter",
+          "role": "short",
+          "due": "2026-11-26",
+          "done": false
+        },
+        {
+          "videoId": "silicone-mold",
+          "role": "short",
+          "due": "2026-11-27",
+          "done": false
+        }
+      ]
+    },
+    {
+      "weekOf": "2026-11-30",
+      "hoursAvailable": 10,
+      "slots": [
+        {
+          "videoId": "hood-filter",
+          "role": "anchor",
+          "due": "2026-11-30",
+          "done": false
+        },
+        {
+          "videoId": "doorlock-battery",
+          "role": "short",
+          "due": "2026-12-01",
+          "done": false
+        },
+        {
+          "videoId": "gas-flame",
+          "role": "short",
+          "due": "2026-12-02",
+          "done": false
+        }
+      ]
+    }
+  ]
+}
