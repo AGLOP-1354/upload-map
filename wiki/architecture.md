@@ -7,7 +7,7 @@ sources:
   - eslint.config.mjs
   - package.json
   - .claude/launch.json
-verified: 03c0f60abd7b92a2
+verified: 6449d682cf021c12
 ---
 
 # 아키텍처
@@ -24,9 +24,10 @@ verified: 03c0f60abd7b92a2
 |---|---|---|---|
 | `experimental.agentFeedback` | `true` | `next dev` 가 AI 에이전트를 감지하면 AGENTS.md 에 피드백 보고 블록을 관리 | [next.config.ts:5-6](../next.config.ts#L5-L6) |
 | `experimental.serverActions.bodySizeLimit` | `"3mb"` | Server Action 요청 본문 한도(기본 1MB). 채널 로고 업로드(최대 2MB)용 — [데이터](data.md) | [next.config.ts:7-8](../next.config.ts#L7-L8) |
-| `cacheComponents` | `true` | Cache Components 활성화. 클라이언트 내비게이션 시 React `<Activity>` 로 상태 보존. 요청 시점 데이터는 `<Suspense>` 안에서 읽는다 | [next.config.ts:10](../next.config.ts#L10) |
-| `partialPrefetching` | `true` | 링크 prefetch 가 라우트의 정적 부분(App Shell)만 가져옴. `cacheComponents` 와 함께 사용 | [next.config.ts:11](../next.config.ts#L11) |
-| `turbopack.rules["*.css"]` | `@tailwindcss/turbopack` 로더 | CSS 를 Turbopack 로더로 Tailwind 처리. PostCSS 설정 파일은 없음 | [next.config.ts:12-19](../next.config.ts#L12-L19) |
+| `outputFileTracingIncludes` | `{ "/*": ["./data/**/*", "./content/**/*"] }` | 모든 라우트 서버 트레이스에 `data/`·`content/` 를 넣는다. fs 백엔드 경로는 추적에서 제외돼 있어서, `DATA_STORE` 가 빈 배포도 커밋된 데이터를 읽게 하려는 것 — [데이터](data.md) (`node_modules/next/dist/docs/01-app/03-api-reference/05-config/01-next-config-js/output.md`) | [next.config.ts:10-14](../next.config.ts#L10-L14) |
+| `cacheComponents` | `true` | Cache Components 활성화. 클라이언트 내비게이션 시 React `<Activity>` 로 상태 보존. 요청 시점 데이터는 `<Suspense>` 안에서 읽는다 | [next.config.ts:15](../next.config.ts#L15) |
+| `partialPrefetching` | `true` | 링크 prefetch 가 라우트의 정적 부분(App Shell)만 가져옴. `cacheComponents` 와 함께 사용 | [next.config.ts:16](../next.config.ts#L16) |
+| `turbopack.rules["*.css"]` | `@tailwindcss/turbopack` 로더 | CSS 를 Turbopack 로더로 Tailwind 처리. PostCSS 설정 파일은 없음 | [next.config.ts:17-24](../next.config.ts#L17-L24) |
 
 ## TypeScript
 

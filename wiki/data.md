@@ -17,7 +17,7 @@ sources:
   - app/c/[channel]/dashboard.tsx
   - next.config.ts
   - vercel.json
-verified: 53e0ca91717cef33
+verified: 6cf7515ebd33b63b
 ---
 
 # 데이터
@@ -71,6 +71,8 @@ env `DATA_STORE=github` 이면 GitHub, 아니면 fs — [lib/data/store.ts:28-30
 ### fs — `lib/data/store-fs.ts`
 
 프로젝트 루트의 파일을 `readFile` 로 읽고(없으면 `null`), 쓸 때는 디렉터리 생성 → `<파일>.<pid>.tmp` → `rename` — [lib/data/store-fs.ts:27-50](../lib/data/store-fs.ts#L27-L50). 리비전은 항상 `"local"` 이라 충돌 검사는 없다.
+
+경로 조립은 `turbopackIgnore` 로 파일 추적에서 빠지고 — [lib/data/store-fs.ts:12-16](../lib/data/store-fs.ts#L12-L16), 대신 `outputFileTracingIncludes` 가 `data/**`·`content/**` 를 모든 라우트 서버 번들에 넣는다 — [next.config.ts:10-14](../next.config.ts#L10-L14). 그래서 `DATA_STORE` 가 빈 배포에서도 fs 백엔드로 커밋된 데이터를 읽는다.
 
 ### github — `lib/data/store-github.ts`
 
