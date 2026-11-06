@@ -5,7 +5,7 @@ sources:
   - app/page.tsx
   - app/layout.tsx
   - package.json
-verified: b24e4b7b6fbbb321
+verified: 3c3c3ebef3408c8c
 ---
 
 # 개요
@@ -24,8 +24,6 @@ verified: b24e4b7b6fbbb321
 |---|---|---|
 | 화면 | `create-next-app` 기본 템플릿 페이지 하나뿐. 채널/계획/진행도 관련 UI 없음 | [app/page.tsx:3-68](../app/page.tsx#L3-L68) |
 | 메타데이터 | 템플릿 기본값 `"Create Next App"` 그대로 | [app/layout.tsx:15-18](../app/layout.tsx#L15-L18) |
-| 라우트 | `/` 하나 (layout + page) | [generated/routes.md](generated/routes.md) |
-| 데이터 저장 | 없음. 파일 I/O, API 라우트, Server Action, 데이터 디렉터리 모두 없음 | [generated/files.md](generated/files.md) |
-| 런타임 의존성 | `next`, `react`, `react-dom` 만 존재 | [package.json:15-19](../package.json#L15-L19) |
-
-데이터 계층이 생기면 `wiki/data.md` 를 만들어 스키마·저장 위치·읽기/쓰기 경로를 코드 근거로 기술한다.
+| 라우트 | 페이지 `/` 와 원격 MCP Route Handler `/api/mcp` | [generated/routes.md](generated/routes.md) |
+| 데이터 저장 | `lib/data` 저장 계층(fs·GitHub 커밋)과 MCP 도구 10개. 화면에서 데이터를 읽거나 쓰는 코드(Server Action 포함)는 아직 없음 | [data.md](data.md) |
+| 런타임 의존성 | `next`, `react`, `react-dom` + MCP 서버용 `mcp-handler`, `@modelcontextprotocol/server`, 검증용 `zod` | [package.json:15-22](../package.json#L15-L22) |

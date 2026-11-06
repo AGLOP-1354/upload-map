@@ -6,14 +6,14 @@ sources:
   - tsconfig.json
   - eslint.config.mjs
   - package.json
-verified: b2c8fbc473eb426c
+verified: d6bd528f3d1352d8
 ---
 
 # 아키텍처
 
 ## 스택
 
-- Next.js `16.4.5`, React `19.3.0` (정확한 버전 고정) — [package.json:15-19](../package.json#L15-L19). 설치 버전은 [generated/package.md](generated/package.md).
+- Next.js `16.4.5`, React `19.3.0` (정확한 버전 고정) — [package.json:18-20](../package.json#L18-L20). 설치 버전은 [generated/package.md](generated/package.md).
 - App Router 사용 (`app/` 디렉터리). Pages Router(`pages/`) 없음 — [generated/files.md](generated/files.md).
 - 이 Next.js 버전은 학습 데이터와 다를 수 있으므로 API 판단은 `node_modules/next/dist/docs/` 를 근거로 한다 (AGENTS.md 의 Next.js 블록).
 

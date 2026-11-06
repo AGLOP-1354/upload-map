@@ -6,7 +6,7 @@ sources:
   - package.json
   - .claude/settings.json
   - .githooks/pre-commit
-verified: 8d2c17ad765d7415
+verified: ce10b356d42786d1
 ---
 
 # 위키 도구 — `scripts/wiki.mjs`

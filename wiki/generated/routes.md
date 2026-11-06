@@ -6,3 +6,4 @@
 |---|---|---|---|
 | `/` | layout | [app/layout.tsx](../../app/layout.tsx) | - |
 | `/` | page | [app/page.tsx](../../app/page.tsx) | - |
+| `/api/mcp` | route | [app/api/mcp/route.ts](../../app/api/mcp/route.ts) | - |
