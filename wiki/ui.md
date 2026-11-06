@@ -20,7 +20,7 @@ sources:
   - components/icons.tsx
   - lib/dashboard.ts
   - app/c/[channel]/settings/page.tsx
-verified: fbde3c64a7e6df7c
+verified: 4947cdcb172f8e71
 ---
 
 # UI
@@ -101,17 +101,17 @@ verified: fbde3c64a7e6df7c
 
 ### 카드 — `app/_board/card.tsx`
 
-채널 색 점·이름·시리즈·화, 형식(롱폼은 굵게), 제목 2줄, 세부 단계마다 한 칸인 막대(완료·일부·대기 색 + 칸마다 `title`), 다음 할 일, 확인 대기 수, 날짜와 D-day. 일정 위험이면 빨간 테두리와 ⚠ + 화면 낭독용 "일정 위험". `draggable` 이고 `data-card` 로 포커스 복귀 대상이 된다. drawer 가 열리면 간단히(점 + 제목, "2화" 같은 짧은 제목엔 시리즈 이름을 붙임) — [app/_board/card.tsx:42-102](../app/_board/card.tsx#L42-L102).
+채널 로고(`ChannelAvatar` 18px, 대체 텍스트 = 채널 이름)와 시리즈·화(없으면 채널 이름), 형식(롱폼은 굵게), 제목 2줄, 세부 단계마다 한 칸인 막대(완료·일부·대기 색 + 칸마다 `title`), 다음 할 일, 확인 대기 수, 날짜와 D-day. 일정 위험이면 빨간 테두리와 ⚠ + 화면 낭독용 "일정 위험". `draggable` 이고 `data-card` 로 포커스 복귀 대상이 된다. drawer 가 열리면 간단히(로고 + 제목, "2화" 같은 짧은 제목엔 시리즈 이름을 붙임) — [app/_board/card.tsx:43-102](../app/_board/card.tsx#L43-L102).
 
 ### drawer — `app/_board/drawer.tsx`
 
-목록을 가리지 않는 오른쪽 패널(넓은 화면 480px). 1024px 미만에서는 화면 전체를 덮는다. 열리면 제목으로 포커스를 옮긴다 — [app/_board/drawer.tsx:58](../app/_board/drawer.tsx#L58), [app/_board/drawer.tsx:72-124](../app/_board/drawer.tsx#L72-L124). 위쪽 막대에 ↑/↓(이전·다음)와 위치, 편집, 닫기.
+목록을 가리지 않는 오른쪽 패널(넓은 화면 480px). 1024px 미만에서는 화면 전체를 덮는다. 열리면 제목으로 포커스를 옮긴다 — [app/_board/drawer.tsx:59](../app/_board/drawer.tsx#L59), [app/_board/drawer.tsx:73-125](../app/_board/drawer.tsx#L73-L125). 위쪽 막대에 ↑/↓(이전·다음)와 위치, 편집, 닫기.
 
 | 모드 | 내용 | 근거 |
 |---|---|---|
-| 보기 | 채널 › 시리즈 › 화 · 형식, 제목 → 6단계 진행선(누르면 그 열로 이동) → 일정 위험 안내 → 다음 행동 상자(다음 세부 단계 "완료로 표시" / 작업 완료면 "예약됨으로" / 예약됨이면 "게시됨으로" / 지표 기록 필요 안내) → 업로드일·D-day, 정확한 상태 선택, 유튜브 링크 → 세부 단계 버튼(대기→일부→완료, 캡컷 단계가 남았으면 "Mac에서만" 안내) → 확인 대기("확인함") → 체크리스트 → 확정 카피 → 약속 일치(시청자 약속·훅·제목·썸네일 문구, 읽기 전용) → 지표(게시됨일 때 최신 스냅샷) → 메모 | [app/_board/drawer.tsx:128-375](../app/_board/drawer.tsx#L128-L375) |
-| 편집 | `VideoEditor` 를 drawer 안에서 연다 | [app/_board/drawer.tsx:115-119](../app/_board/drawer.tsx#L115-L119) |
-| 새 영상 | 채널 선택(여러 채널일 때) + `VideoEditor`. 기본 형식은 채널 주기에서 쇼츠 우선 | [app/_board/drawer.tsx:96-114](../app/_board/drawer.tsx#L96-L114), [app/_board/drawer.tsx:60-69](../app/_board/drawer.tsx#L60-L69) |
+| 보기 | 채널 로고·이름 › 시리즈 › 화 · 형식, 제목 → 6단계 진행선(누르면 그 열로 이동) → 일정 위험 안내 → 다음 행동 상자(다음 세부 단계 "완료로 표시" / 작업 완료면 "예약됨으로" / 예약됨이면 "게시됨으로" / 지표 기록 필요 안내) → 업로드일·D-day, 정확한 상태 선택, 유튜브 링크 → 세부 단계 버튼(대기→일부→완료, 캡컷 단계가 남았으면 "Mac에서만" 안내) → 확인 대기("확인함") → 체크리스트 → 확정 카피 → 약속 일치(시청자 약속·훅·제목·썸네일 문구, 읽기 전용) → 지표(게시됨일 때 최신 스냅샷) → 메모 | [app/_board/drawer.tsx:129-376](../app/_board/drawer.tsx#L129-L376) |
+| 편집 | `VideoEditor` 를 drawer 안에서 연다 | [app/_board/drawer.tsx:116-120](../app/_board/drawer.tsx#L116-L120) |
+| 새 영상 | 채널 선택(여러 채널일 때) + `VideoEditor`. 기본 형식은 채널 주기에서 쇼츠 우선 | [app/_board/drawer.tsx:97-115](../app/_board/drawer.tsx#L97-L115), [app/_board/drawer.tsx:61-70](../app/_board/drawer.tsx#L61-L70) |
 
 ### 영상 편집기 — `app/_board/video-editor.tsx`
 

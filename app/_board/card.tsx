@@ -1,5 +1,6 @@
 "use client";
 
+import { ChannelAvatar } from "@/components/channel-avatar";
 import { BOARD_COLUMNS, COLUMN_STYLE, ddayLabel, type BoardItem, type ColumnKey } from "@/lib/board";
 import { FORMAT_LABEL } from "@/lib/dashboard";
 import type { StepState } from "@/lib/types";
@@ -71,16 +72,15 @@ export function CardView({ item, compact, selected, onOpen }: { item: BoardItem;
     >
       {!compact && (
         <span className="flex w-full items-center gap-1.5 text-xs text-fg-2">
-          <span className="size-2 flex-none rounded-full" style={{ background: item.channel.color }} aria-hidden />
-          {/* 시리즈가 있으면 시리즈·화가 더 구체적이다. 채널 이름은 점 색과 화면 낭독용 글자로 남긴다. */}
-          {sub ? <span className="sr-only">{item.channel.name}</span> : <span className="truncate">{item.channel.name}</span>}
-          {sub && <span className="truncate" title={item.channel.name}>{sub}</span>}
+          {/* 채널은 로고로 구분한다(대체 텍스트 = 채널 이름). 옆에는 더 구체적인 시리즈·화, 없으면 채널 이름. */}
+          <span title={item.channel.name} className="flex flex-none"><ChannelAvatar channel={item.channel} size={18} label /></span>
+          <span className="truncate">{sub || item.channel.name}</span>
           <span className="flex-auto" />
-          <span className={v.format === "long" ? "font-bold text-fg" : "text-muted"}>{FORMAT_LABEL[v.format]}</span>
+          <span className={`flex-none whitespace-nowrap ${v.format === "long" ? "font-bold text-fg" : "text-muted"}`}>{FORMAT_LABEL[v.format]}</span>
         </span>
       )}
       <span className="flex items-start gap-1.5">
-        {compact && <span className="mt-[7px] size-2 flex-none rounded-full" style={{ background: item.channel.color }} aria-hidden />}
+        {compact && <span title={item.channel.name} className="mt-px flex flex-none"><ChannelAvatar channel={item.channel} size={18} label /></span>}
         <span className="line-clamp-2 text-sm font-medium break-keep">{compact ? shortTitle(item) : v.workingTitle}</span>
       </span>
       <span className="flex w-full items-center gap-2">

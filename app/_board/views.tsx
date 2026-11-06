@@ -38,7 +38,7 @@ export function GatesView({
           const video = task.videoId ? data[channel.id]?.videos.find((v) => v.id === task.videoId) : undefined;
           return (
             <li key={`${channel.id}/${task.id}`} className="flex items-start gap-3 border-b border-line px-4 py-3 last:border-b-0">
-              <span className="mt-1.5 size-2 flex-none rounded-full" style={{ background: channel.color }} aria-hidden />
+              <span className="mt-0.5 flex flex-none"><ChannelAvatar channel={channel} size={20} /></span>
               <span className="flex min-w-0 flex-auto flex-col gap-0.5">
                 <span className="text-sm">{task.text}</span>
                 <span className="flex flex-wrap gap-x-2 text-xs text-muted">
