@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "series": [
+    {
+      "id": "winter-heating",
+      "title": "겨울 난방·동파",
+      "description": "11~2월 시즌 우선 소재",
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "home-basics",
+      "title": "집 설비 기본",
+      "description": "사계절 공통 설비 사용법",
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    }
+  ]
+}
