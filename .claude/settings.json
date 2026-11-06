@@ -4,6 +4,7 @@
     "allow": [
       "Bash(npm run lint*)",
       "Bash(npm run build*)",
+      "Bash(npm run wiki:*)",
       "Bash(npx tsc --noEmit*)",
       "Bash(npx eslint *)",
       "Bash(node .claude/skills/*)",
@@ -30,7 +31,28 @@
     ]
   },
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/wiki.mjs\" hook-start",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/wiki.mjs\" hook-post",
+            "timeout": 30
+          }
+        ]
+      },
       {
         "matcher": "Edit|Write",
         "hooks": [
@@ -38,6 +60,18 @@
             "type": "command",
             "command": "node \"$(git rev-parse --show-toplevel)/.claude/hooks/post-edit-check.mjs\"",
             "timeout": 90
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/wiki.mjs\" hook-stop",
+            "timeout": 30,
+            "statusMessage": "LLM Wiki 검증 중"
           }
         ]
       }
