@@ -27,11 +27,13 @@ if (/^data\/.*\.json$/.test(rel) && !rel.startsWith("data/backup/")) {
   let data;
   try { data = JSON.parse(await readFile(path.join(root, rel), "utf8")); }
   catch (e) { fail(`[data-check] ${rel} 가 유효한 JSON이 아닙니다: ${e.message}\n즉시 고치세요. 스키마: .claude/rules/data-layer.md`); }
-  const expect = { "data/videos.json": "videos", "data/plans.json": "weeks" }[rel];
+  // data/channels.json, data/<채널id>/<이름>.json
+  const base = rel === "data/channels.json" ? "channels.json" : (rel.match(/^data\/[a-z0-9-]+\/([a-z]+\.json)$/) ?? [])[1];
+  const expect = { "channels.json": "channels", "videos.json": "videos", "plans.json": "weeks", "series.json": "series", "tasks.json": "tasks", "credits.json": "credits" }[base];
   if (expect && (!Array.isArray(data?.[expect]) || typeof data.version !== "number")) {
     fail(`[data-check] ${rel} 는 { "version": number, "${expect}": [...] } 형태여야 합니다.`);
   }
-  if (rel === "data/videos.json") {
+  if (base === "videos.json") {
     const ids = data.videos.map((v) => v.id);
     const dup = ids.filter((id, i) => ids.indexOf(id) !== i);
     if (dup.length) fail(`[data-check] videos.json id 중복: ${[...new Set(dup)].join(", ")}`);

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "ep1-pinned-comment",
+      "text": "1화 고정댓글 최종 문구",
+      "detail": "방향 승인됨 · 게시 전 문구 확인 필요",
+      "videoId": "yellow-wallpaper-ep1",
+      "done": false,
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "cost-saving-plan",
+      "text": "비용 절감안 적용 여부",
+      "detail": "다음 시리즈부터 · 5개 안 제안됨",
+      "done": false,
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    }
+  ]
+}

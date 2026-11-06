@@ -10,7 +10,7 @@ allowed-tools: Read, Edit, Write, Bash(node *)
 대상: `$ARGUMENTS` (video id. 없으면 어떤 영상인지 묻는다)
 
 ## 준비
-1. `data/videos.json`에서 해당 영상의 `promise`, `package.selectedTitle`, `package.thumbnailText`를 읽는다. `data/channel.json`의 `voice`를 따른다.
+1. `data/<채널id>/videos.json`에서 해당 영상의 `promise`, `package.selectedTitle`, `package.thumbnailText`를 읽는다. `data/channels.json`의 해당 채널의 `voice`를 따른다.
 2. 약속(promise)이 없으면 먼저 한 문장으로 받는다. 약속 없는 훅은 쓰지 않는다.
 3. 공식 목록: [references/hook-formulas.md](references/hook-formulas.md)
 
@@ -41,5 +41,5 @@ node "${CLAUDE_SKILL_DIR}/scripts/score-hook.mjs" "훅1 첫 문장" "훅2 첫 �
 ## 출력
 - 상위 2개를 전체 30초 스크립트로, 각각 `공식 · 점수 · 등급 · 약한 속성` 표시.
 - 나머지 3개는 첫 문장만 한 줄씩.
-- 사용자가 고르면 `videos.json`의 `hook`에 `{formula, text, score}` 기록, `content/videos/<id>/script.md` 맨 위 `## Hook` 섹션에 저장, `updatedAt` 갱신.
+- 사용자가 고르면 `videos.json`의 `hook`에 `{formula, text, score}` 기록, `content/<채널id>/<id>/script.md` 맨 위 `## Hook` 섹션에 저장, `updatedAt` 갱신.
 - 마지막 줄: "이걸로 갈까요, 바꿀까요?"

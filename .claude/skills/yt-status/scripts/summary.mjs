@@ -1,22 +1,33 @@
 #!/usr/bin/env node
-// data/*.json 을 읽어 진행 현황을 텍스트로 출력. 파일이 없어도 실패하지 않는다.
+// data/channels.json + data/<채널id>/*.json 을 읽어 진행 현황을 텍스트로 출력. 파일이 없어도 실패하지 않는다.
+// 사용: node summary.mjs [프로젝트 루트] [채널 id]
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = process.argv[2] || process.cwd();
-const load = async (f) => {
-  try { return JSON.parse(await readFile(path.join(root, "data", f), "utf8")); }
+const wanted = process.argv[3]; // 채널 id (생략하면 첫 채널)
+const load = async (...parts) => {
+  const f = parts.join("/");
+  try { return JSON.parse(await readFile(path.join(root, "data", ...parts), "utf8")); }
   catch (e) { return e.code === "ENOENT" ? null : { __error: `${f}: ${e.message}` }; }
 };
 
-const [channel, videosFile, plansFile] = await Promise.all([
-  load("channel.json"), load("videos.json"), load("plans.json"),
-]);
+const channelsFile = await load("channels.json");
+if (channelsFile?.__error) console.log(`! 파싱 실패 ${channelsFile.__error}`);
+const channels = channelsFile?.channels ?? [];
+const channel = channels.find((c) => c.id === wanted) ?? channels[0];
+if (!channel) {
+  console.log("data/channels.json 에 채널이 없습니다 — 앱의 /channels/new 에서 먼저 등록하세요.");
+  process.exit(0);
+}
+if (channels.length > 1) console.log(`채널 목록: ${channels.map((c) => c.id).join(", ")} (다른 채널: 인자로 id 전달)`);
 
-for (const f of [channel, videosFile, plansFile]) if (f?.__error) console.log(`! 파싱 실패 ${f.__error}`);
+const [videosFile, plansFile] = await Promise.all([load(channel.id, "videos.json"), load(channel.id, "plans.json")]);
+
+for (const f of [videosFile, plansFile]) if (f?.__error) console.log(`! 파싱 실패 ${f.__error}`);
 
 if (!videosFile || videosFile.__error) {
-  console.log("data/videos.json 없음 — 아직 데이터가 없습니다.");
+  console.log(`data/${channel.id}/videos.json 없음 — 아직 데이터가 없습니다.`);
   process.exit(0);
 }
 
@@ -24,7 +35,7 @@ const ORDER = ["idea", "research", "scripting", "packaging", "filming", "editing
 const videos = videosFile.videos ?? [];
 const today = new Date().toISOString().slice(0, 10);
 
-console.log(`채널: ${channel?.name ?? "(channel.json 없음)"} | 영상 ${videos.length}개 | 오늘 ${today}`);
+console.log(`채널: ${channel.name} (@${channel.handle}) | 영상 ${videos.length}개 | 오늘 ${today}`);
 console.log("\n[단계별]");
 for (const s of ORDER) {
   const vs = videos.filter((v) => v.status === s);

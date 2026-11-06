@@ -8,7 +8,7 @@ sources:
   - .claude/skills/yt-package/scripts/lint-package.mjs
   - .claude/skills/yt-status/scripts/summary.mjs
   - .mcp.json
-verified: 0f3e8b117875fe70
+verified: 36dc53ab5ab4fc36
 ---
 
 # Claude Code 설정
@@ -27,8 +27,8 @@ verified: 0f3e8b117875fe70
 
 | 대상 | 검사 | 실패 시 | 근거 |
 |---|---|---|---|
-| `data/**/*.json` (`data/backup/` 제외) | JSON 파싱, `videos.json`/`plans.json`의 `{version, videos|weeks}` 형태, video `id` 중복, `status` 허용값 | exit 2 + stderr | [.claude/hooks/post-edit-check.mjs:26-43](../.claude/hooks/post-edit-check.mjs#L26-L43) |
-| `*.ts`, `*.tsx` | 해당 파일만 `npx --no-install eslint` | eslint exit 1이면 exit 2 | [.claude/hooks/post-edit-check.mjs:45-49](../.claude/hooks/post-edit-check.mjs#L45-L49) |
+| `data/**/*.json` (`data/backup/` 제외) | JSON 파싱. `data/channels.json` 과 `data/<채널id>/{videos,plans,series,tasks,credits}.json` 은 `{version: number, <키>: [...]}` 형태(키: channels·videos·weeks·series·tasks·credits). `videos.json` 은 `id` 중복과 `status` 허용값도 검사 | exit 2 + stderr | [.claude/hooks/post-edit-check.mjs:26-45](../.claude/hooks/post-edit-check.mjs#L26-L45) |
+| `*.ts`, `*.tsx` | 해당 파일만 `npx --no-install eslint` | eslint exit 1이면 exit 2 | [.claude/hooks/post-edit-check.mjs:47-51](../.claude/hooks/post-edit-check.mjs#L47-L51) |
 
 훅 입력 파싱 실패나 eslint 실행 불가는 작업을 막지 않고 exit 0.
 
@@ -40,7 +40,7 @@ verified: 0f3e8b117875fe70
 |---|---|---|---|
 | `score-hook.mjs` | `yt-hook` | 훅 문장을 specificity·address·stakes·curiosity·brevity(각 0~100)로 정규식 채점. 종합 = 평균×0.6 + 최약×0.4, STRONG ≥72 / WORKABLE ≥55. 한글이면 적정 길이 6~16어절, 인사로 시작하면 40점 상한 | [.claude/skills/yt-hook/scripts/score-hook.mjs:30-53](../.claude/skills/yt-hook/scripts/score-hook.mjs#L30-L53) |
 | `lint-package.mjs` | `yt-package` | 제목 표시 폭(한글 1자=1.7) 60 초과는 issue, 40 초과는 note. 대문자 단어·이모지·반복 부호 검사, 썸네일 문구와 단어 중복은 issue(숫자 중복은 note), 썸네일 3어절 초과 경고 | [.claude/skills/yt-package/scripts/lint-package.mjs:20-64](../.claude/skills/yt-package/scripts/lint-package.mjs#L20-L64) |
-| `summary.mjs` | `yt-status` | `data/channel.json`·`videos.json`·`plans.json`을 읽어 단계별 목록, 목표일 지난 진행 중 영상, 48h/7d 지표 미기록 영상, 이번 주 슬롯 완료율 출력. 파일이 없으면 안내만 하고 exit 0 | [.claude/skills/yt-status/scripts/summary.mjs:23-60](../.claude/skills/yt-status/scripts/summary.mjs#L23-L60) |
+| `summary.mjs` | `yt-status` | `node summary.mjs [루트] [채널id]`. `data/channels.json` 에서 채널을 고르고(생략하면 첫 채널, 여러 개면 목록 안내) `data/<채널id>/videos.json`·`plans.json` 을 읽어 단계별 목록, 목표일 지난 진행 중 영상, 48h/7d 지표 미기록 영상, 이번 주 슬롯 완료율 출력. 채널이나 파일이 없으면 안내만 하고 exit 0 | [.claude/skills/yt-status/scripts/summary.mjs:1-32](../.claude/skills/yt-status/scripts/summary.mjs#L1-L32), [.claude/skills/yt-status/scripts/summary.mjs:34-71](../.claude/skills/yt-status/scripts/summary.mjs#L34-L71) |
 
 ## MCP — `.mcp.json`
 

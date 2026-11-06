@@ -3,7 +3,7 @@
 # upload-map
 
 유튜브 채널 운영자 1인용 계획·진행도 관리 앱. Next.js 16 (App Router, `cacheComponents: true`) + React 19 + Tailwind v4.
-DB 없음 — 모든 데이터는 `data/*.json`, 긴 글(대본 등)은 `content/videos/<id>/*.md`.
+DB 없음 — 데이터는 채널별로 `data/channels.json` + `data/<채널id>/*.json`, 긴 글(대본 등)은 `content/<채널id>/<영상id>/*.md`. 로그인 계정은 `.env.local`(`.env.example` 참고).
 
 ## 언어
 

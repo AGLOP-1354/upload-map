@@ -6,7 +6,8 @@ sources:
   - tsconfig.json
   - eslint.config.mjs
   - package.json
-verified: b2c8fbc473eb426c
+  - .claude/launch.json
+verified: 44d80fe3b045d792
 ---
 
 # 아키텍처
@@ -21,10 +22,11 @@ verified: b2c8fbc473eb426c
 
 | 설정 | 값 | 의미 (번들 문서 기준) | 근거 |
 |---|---|---|---|
-| `experimental.agentFeedback` | `true` | `next dev` 가 AI 에이전트를 감지하면 AGENTS.md 에 피드백 보고 블록을 관리 | [next.config.ts:5-7](../next.config.ts#L5-L7) |
-| `cacheComponents` | `true` | Cache Components 활성화. 클라이언트 내비게이션 시 React `<Activity>` 로 상태 보존 | [next.config.ts:8](../next.config.ts#L8) |
-| `partialPrefetching` | `true` | 링크 prefetch 가 라우트의 정적 부분(App Shell)만 가져옴. `cacheComponents` 와 함께 사용 | [next.config.ts:9](../next.config.ts#L9) |
-| `turbopack.rules["*.css"]` | `@tailwindcss/turbopack` 로더 | CSS 를 Turbopack 로더로 Tailwind 처리. PostCSS 설정 파일은 없음 | [next.config.ts:10-17](../next.config.ts#L10-L17) |
+| `experimental.agentFeedback` | `true` | `next dev` 가 AI 에이전트를 감지하면 AGENTS.md 에 피드백 보고 블록을 관리 | [next.config.ts:5-6](../next.config.ts#L5-L6) |
+| `experimental.serverActions.bodySizeLimit` | `"3mb"` | Server Action 요청 본문 한도(기본 1MB). 채널 로고 업로드(최대 2MB)용 — [데이터](data.md) | [next.config.ts:7-8](../next.config.ts#L7-L8) |
+| `cacheComponents` | `true` | Cache Components 활성화. 클라이언트 내비게이션 시 React `<Activity>` 로 상태 보존. 요청 시점 데이터는 `<Suspense>` 안에서 읽는다 | [next.config.ts:10](../next.config.ts#L10) |
+| `partialPrefetching` | `true` | 링크 prefetch 가 라우트의 정적 부분(App Shell)만 가져옴. `cacheComponents` 와 함께 사용 | [next.config.ts:11](../next.config.ts#L11) |
+| `turbopack.rules["*.css"]` | `@tailwindcss/turbopack` 로더 | CSS 를 Turbopack 로더로 Tailwind 처리. PostCSS 설정 파일은 없음 | [next.config.ts:12-19](../next.config.ts#L12-L19) |
 
 ## TypeScript
 
@@ -38,3 +40,11 @@ verified: b2c8fbc473eb426c
 - flat config, `eslint-config-next` 의 `core-web-vitals` + `typescript` 프리셋 — [eslint.config.mjs:1-7](../eslint.config.mjs#L1-L7).
 - 무시: `.next/**`, `out/**`, `build/**`, `next-env.d.ts` — [eslint.config.mjs:9-15](../eslint.config.mjs#L9-L15).
 - 실행: `npm run lint` (`eslint`) — [generated/package.md](generated/package.md).
+
+## 개발 서버 실행 설정 — `.claude/launch.json`
+
+Claude 의 미리보기 도구가 쓰는 실행 설정. 이름 `upload-map`, `npm run dev -- -p 3217`, 포트 3217 — [.claude/launch.json:1-11](../.claude/launch.json#L1-L11).
+
+## Proxy
+
+루트의 `proxy.ts` 가 Next.js 16 Proxy(Middleware 의 새 이름)로 모든 요청의 로그인 여부를 확인한다. 동작은 [인증](auth.md).
