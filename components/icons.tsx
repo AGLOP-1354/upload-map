@@ -35,12 +35,6 @@ export const CheckIcon = ({ className }: P) => (
   </svg>
 );
 
-export const ChevronDownIcon = ({ className }: P) => (
-  <svg viewBox="0 0 24 24" strokeWidth={2} className={className} {...base}>
-    <path d="M6 9l6 6 6-6" />
-  </svg>
-);
-
 export const ChevronLeftIcon = ({ className }: P) => (
   <svg viewBox="0 0 24 24" strokeWidth={2} className={className} {...base}>
     <path d="M15 6l-6 6 6 6" />
@@ -75,17 +69,5 @@ export const MonitorIcon = ({ className }: P) => (
   <svg viewBox="0 0 24 24" strokeWidth={2} className={className} {...base}>
     <rect x="3" y="4" width="18" height="12" rx="1.5" />
     <path d="M8 20h8M12 16v4" />
-  </svg>
-);
-
-export const PortraitIcon = ({ className }: P) => (
-  <svg viewBox="0 0 10 14" strokeWidth={1.6} className={className} {...base}>
-    <rect x="1" y="1" width="8" height="12" rx="1.5" />
-  </svg>
-);
-
-export const LandscapeIcon = ({ className }: P) => (
-  <svg viewBox="0 0 16 10" strokeWidth={1.6} className={className} {...base}>
-    <rect x="1" y="1" width="14" height="8" rx="1.5" />
   </svg>
 );

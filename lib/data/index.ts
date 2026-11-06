@@ -37,6 +37,24 @@ export async function getChannelData(id: string): Promise<ChannelData> {
   };
 }
 
+// 통합 보드용: 채널 목록과 모든 채널의 데이터를 한 번의 읽기로 가져온다.
+export async function getAllChannelData(): Promise<{ channels: Channel[]; data: Record<string, ChannelData> }> {
+  const channels = await listChannels();
+  const paths = channels.flatMap((c) => [PATHS.series(c.id), PATHS.videos(c.id), PATHS.tasks(c.id), PATHS.credits(c.id)]);
+  const { files } = await readFiles(paths);
+  const data: Record<string, ChannelData> = {};
+  for (const c of channels) {
+    const p = { s: PATHS.series(c.id), v: PATHS.videos(c.id), t: PATHS.tasks(c.id), cr: PATHS.credits(c.id) };
+    data[c.id] = {
+      series: parse("series", files[p.s], p.s).series,
+      videos: parse("videos", files[p.v], p.v).videos,
+      tasks: parse("tasks", files[p.t], p.t).tasks,
+      credits: parse("credits", files[p.cr], p.cr).credits,
+    };
+  }
+  return { channels, data };
+}
+
 // ---- 쓰기 (Server Action 에서만 호출) ----
 
 export async function addChannel(channel: Channel): Promise<void> {

@@ -7,7 +7,7 @@ sources:
   - lib/data/schema.ts
   - proxy.ts
   - .env.example
-verified: 08689da9afeaaaf6
+verified: ec986b412e2d1a2e
 ---
 
 # 원격 MCP

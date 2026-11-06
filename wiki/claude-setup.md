@@ -8,7 +8,7 @@ sources:
   - .claude/skills/yt-package/scripts/lint-package.mjs
   - .claude/skills/yt-status/scripts/summary.mjs
   - .mcp.json
-verified: 36dc53ab5ab4fc36
+verified: d35312ca52c0fa73
 ---
 
 # Claude Code 설정

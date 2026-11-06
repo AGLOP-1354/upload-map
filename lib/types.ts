@@ -34,7 +34,7 @@ export interface Series {
 
 export const VIDEO_STATUSES = [
   "idea", "research", "scripting", "packaging", "filming",
-  "editing", "scheduled", "published", "reviewed", "dropped",
+  "editing", "ready", "scheduled", "published", "reviewed", "dropped",
 ] as const;
 export type VideoStatus = (typeof VIDEO_STATUSES)[number];
 
