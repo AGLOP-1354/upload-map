@@ -17,7 +17,7 @@ sources:
   - lib/board.ts
   - app/c/[channel]/settings/actions.ts
   - app/channels/new/actions.ts
-verified: 0d03fd84c6fe5ab1
+verified: 16313730d8ba8e0d
 ---
 
 # 개요

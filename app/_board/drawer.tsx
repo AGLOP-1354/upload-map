@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
+import { ChannelAvatar } from "@/components/channel-avatar";
 import { CheckIcon, MonitorIcon, PencilIcon, XIcon } from "@/components/icons";
 import { BOARD_COLUMNS, COLUMN_STYLE, STATUS_LABEL, ddayLabel, type BoardItem } from "@/lib/board";
 import { FORMAT_LABEL, dayLabel, kstDate } from "@/lib/dashboard";
@@ -139,7 +140,7 @@ function Detail({ item, today, act, headRef }: { item: BoardItem; today: string;
     <>
       <div className="flex flex-col gap-1">
         <span className="flex flex-wrap items-center gap-1.5 text-xs text-muted">
-          <span className="size-2 rounded-full" style={{ background: ch.color }} aria-hidden />
+          <ChannelAvatar channel={ch} size={18} />
           {ch.name}
           {item.seriesTitle && <> › {item.seriesTitle}{v.episode !== undefined && ` ${v.episode}화`}</>}
           <span>· {FORMAT_LABEL[v.format]}</span>
