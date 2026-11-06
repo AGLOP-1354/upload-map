@@ -4,7 +4,7 @@ import path from "node:path";
 import type { Store } from "./store";
 
 // 로컬 개발용. 프로젝트 루트의 data/·content/ 를 직접 읽고 쓴다.
-// 배포에서는 github 저장소를 쓰므로 파일 추적에서 제외한다(turbopackIgnore).
+// 경로 조립은 파일 추적에서 제외하고(turbopackIgnore), 배포 번들 포함은 next.config.ts 의 outputFileTracingIncludes 가 맡는다.
 
 const ALLOWED = ["data", "content"];
 
