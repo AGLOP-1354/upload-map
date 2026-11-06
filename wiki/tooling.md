@@ -6,7 +6,7 @@ sources:
   - package.json
   - .claude/settings.json
   - .githooks/pre-commit
-verified: ac510afe05160789
+verified: 8d2c17ad765d7415
 ---
 
 # 위키 도구 — `scripts/wiki.mjs`
@@ -41,9 +41,9 @@ verified: ac510afe05160789
 
 | 트리거 | 실행 | 근거 |
 |---|---|---|
-| Claude Code 세션 시작 | `hook-start` | [.claude/settings.json:3-13](../.claude/settings.json#L3-L13) |
-| Claude 의 `Edit`/`Write`/`MultiEdit` 직후 | `hook-post` | [.claude/settings.json:14-25](../.claude/settings.json#L14-L25) |
-| Claude 응답 종료 시 | `hook-stop` (불일치 시 종료 차단) | [.claude/settings.json:26-37](../.claude/settings.json#L26-L37) |
+| Claude Code 세션 시작 | `hook-start` | [.claude/settings.json:34-44](../.claude/settings.json#L34-L44) |
+| Claude 의 `Edit`/`Write`/`MultiEdit` 직후 | `hook-post` | [.claude/settings.json:45-55](../.claude/settings.json#L45-L55) |
+| Claude 응답 종료 시 | `hook-stop` (불일치 시 종료 차단) | [.claude/settings.json:67-78](../.claude/settings.json#L67-L78) |
 | `git commit` | `gen` 후 `wiki/generated`, `wiki/index.md` 를 스테이징하고 `check` 실패 시 커밋 중단 | [.githooks/pre-commit:3-9](../.githooks/pre-commit#L3-L9) |
 
 git 훅은 `core.hooksPath=.githooks` 일 때만 동작한다. `npm install` 시 `prepare` 스크립트가 이 값을 설정한다 — [package.json:13](../package.json#L13).

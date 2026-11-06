@@ -6,8 +6,13 @@
 
 | 파일 | 라인 | 지시어 | export |
 |---|---:|---|---|
-| [.claude/settings.json](../../.claude/settings.json) | 40 | - | - |
+| [.claude/hooks/post-edit-check.mjs](../../.claude/hooks/post-edit-check.mjs) | 52 | - | - |
+| [.claude/settings.json](../../.claude/settings.json) | 81 | - | - |
+| [.claude/skills/yt-hook/scripts/score-hook.mjs](../../.claude/skills/yt-hook/scripts/score-hook.mjs) | 67 | - | - |
+| [.claude/skills/yt-package/scripts/lint-package.mjs](../../.claude/skills/yt-package/scripts/lint-package.mjs) | 66 | - | - |
+| [.claude/skills/yt-status/scripts/summary.mjs](../../.claude/skills/yt-status/scripts/summary.mjs) | 60 | - | - |
 | [.githooks/pre-commit](../../.githooks/pre-commit) | 10 | - | - |
+| [.mcp.json](../../.mcp.json) | 9 | - | - |
 | [app/globals.css](../../app/globals.css) | 27 | - | - |
 | [app/layout.tsx](../../app/layout.tsx) | 29 | - | [`metadata`](../../app/layout.tsx#L15) (const)<br>[`default RootLayout`](../../app/layout.tsx#L20) (function) |
 | [app/page.tsx](../../app/page.tsx) | 69 | - | [`default Home`](../../app/page.tsx#L3) (function) |
@@ -19,4 +24,4 @@
 
 ## 근거 대상 제외 파일
 
-규칙(`NON_SOURCE` in [scripts/wiki.mjs](../../scripts/wiki.mjs))에 의해 제외: `.gitignore`, `AGENTS.md`, `README.md`, `app/favicon.ico`, `package-lock.json`, `public/file.svg`, `public/globe.svg`, `public/next.svg`, `public/vercel.svg`, `public/window.svg`
+규칙(`NON_SOURCE` in [scripts/wiki.mjs](../../scripts/wiki.mjs))에 의해 제외: `.claude/agents/code-reviewer.md`, `.claude/agents/content-reviewer.md`, `.claude/agents/yt-researcher.md`, `.claude/rules/data-layer.md`, `.claude/rules/nextjs.md`, `.claude/rules/working-principles.md`, `.claude/rules/youtube-domain.md`, `.claude/skills/debug/SKILL.md`, `.claude/skills/plan-feature/SKILL.md`, `.claude/skills/verify/SKILL.md`, `.claude/skills/yt-hook/SKILL.md`, `.claude/skills/yt-hook/references/hook-formulas.md`, `.claude/skills/yt-idea/SKILL.md`, `.claude/skills/yt-package/SKILL.md`, `.claude/skills/yt-plan-week/SKILL.md`, `.claude/skills/yt-review/SKILL.md`, `.claude/skills/yt-script/SKILL.md`, `.claude/skills/yt-status/SKILL.md`, `.gitignore`, `AGENTS.md`, `CLAUDE.md`, `README.md`, `app/favicon.ico`, `package-lock.json`, `public/file.svg`, `public/globe.svg`, `public/next.svg`, `public/vercel.svg`, `public/window.svg`
