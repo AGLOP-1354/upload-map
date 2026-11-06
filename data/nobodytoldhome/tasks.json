@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "t-onboard-channel",
+      "text": "채널총괄: upload-map 일정·진행도 관리 인수",
+      "detail": "https://github.com/AGLOP-1354/upload-map data/nobodytoldhome",
+      "done": false,
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "t-first-verify",
+      "text": "첫 영상(보일러 외출모드) 사실검증 착수",
+      "videoId": "boiler-away-mode",
+      "done": false,
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,797 @@
+{
+  "version": 1,
+  "videos": [
+    {
+      "id": "boiler-away-mode",
+      "workingTitle": "보일러 외출모드 손해 보는 경우",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "winter-heating",
+      "episode": 1,
+      "pillarId": "heating",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-09",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "boiler-pressure",
+      "workingTitle": "보일러 압력 숫자 이상하면",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "winter-heating",
+      "episode": 2,
+      "pillarId": "heating",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-10",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "distributor-valves",
+      "workingTitle": "분배기 밸브 몇 개인지 확인",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "winter-heating",
+      "episode": 3,
+      "pillarId": "heating",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-11",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "freeze-meter",
+      "workingTitle": "수도 계량기 동파 전조",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "winter-heating",
+      "episode": 4,
+      "pillarId": "water",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-12",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "toilet-tank",
+      "workingTitle": "변기 수조 물 새는 소리",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 5,
+      "pillarId": "water",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-13",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "shower-filter",
+      "workingTitle": "샤워기 필터 한 달에 한 번",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 6,
+      "pillarId": "water",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-16",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "drain-trap",
+      "workingTitle": "배수구 트랩 냄새 원인",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 7,
+      "pillarId": "drain",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-17",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "popup-drain",
+      "workingTitle": "세면대 팝업 마개 청소",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 8,
+      "pillarId": "drain",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-18",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "gfci-test",
+      "workingTitle": "누전차단기 시험 버튼",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 9,
+      "pillarId": "electric",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-19",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "breaker-box",
+      "workingTitle": "두꺼비집 내려가면 순서",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 10,
+      "pillarId": "electric",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-20",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "multitap-watt",
+      "workingTitle": "멀티탭 정격 2000W",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 11,
+      "pillarId": "electric",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-23",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "bill-read",
+      "workingTitle": "전기 고지서 이렇게 읽기",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 12,
+      "pillarId": "electric",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-24",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "condense-window",
+      "workingTitle": "창 결로 닦기만으로는",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "winter-heating",
+      "episode": 13,
+      "pillarId": "air",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-25",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "fan-filter",
+      "workingTitle": "환풍기 필터 먼지",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 14,
+      "pillarId": "air",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-26",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "silicone-mold",
+      "workingTitle": "실리콘 곰팡이 초기 대응",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 15,
+      "pillarId": "air",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-27",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "hood-filter",
+      "workingTitle": "후드 필터 기름때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 16,
+      "pillarId": "kitchen",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-30",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "doorlock-battery",
+      "workingTitle": "도어락 배터리 교체 타이밍",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 17,
+      "pillarId": "kitchen",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-12-01",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    },
+    {
+      "id": "gas-flame",
+      "workingTitle": "가스레인지 불꽃 색깔",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "home-basics",
+      "episode": 18,
+      "pillarId": "kitchen",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "업로드": "wait"
+      },
+      "checklist": [
+        {
+          "text": "사실검증 PASS",
+          "done": false
+        },
+        {
+          "text": "대본·제목 25자 이내",
+          "done": false
+        },
+        {
+          "text": "AI 에셋·ElevenLabs·편집",
+          "done": false
+        },
+        {
+          "text": "설명란 출처·고정댓글",
+          "done": false
+        },
+        {
+          "text": "해당 플레이리스트 추가",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-12-02",
+      "metrics": [],
+      "createdAt": "2026-11-06T11:45:00.000Z",
+      "updatedAt": "2026-11-06T11:45:00.000Z"
+    }
+  ]
+}
