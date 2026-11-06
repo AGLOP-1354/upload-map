@@ -210,7 +210,6 @@ export function Board({ channels, data, today, now }: { channels: Channel[]; dat
   };
 
   const viewTitle = view === "manage" ? "채널 · 크레딧" : VIEWS.find((v) => v.key === view)!.label;
-  const chLabel = chSel.length ? channels.filter((c) => chSel.includes(c.id)).map((c) => c.name).join(", ") : "모든 채널";
 
   return (
     <div className="flex min-h-dvh flex-col lg:h-dvh">
@@ -254,13 +253,31 @@ export function Board({ channels, data, today, now }: { channels: Channel[]; dat
           counts={counts}
           chSel={chSel}
           onView={(v) => setParams({ view: v === "all" ? undefined : v })}
-          onChannel={(id) => setParams({ ch: chSel.length === 1 && chSel[0] === id ? undefined : id, ser: undefined })}
+          onChannel={(id) => setParams({ ch: id, ser: undefined })}
         />
 
         <main className="flex min-w-0 flex-1 flex-col gap-3 overflow-auto px-4 py-4 sm:px-5">
           <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <h1 className="text-xl font-bold">{viewTitle}</h1>
-            <span className="text-[13px] text-muted">{chLabel}</span>
+            {chSel.length ? (
+              channels
+                .filter((c) => chSel.includes(c.id))
+                .map((c) => (
+                  <button
+                    key={c.id}
+                    type="button"
+                    onClick={() => setParams({ ch: chSel.filter((id) => id !== c.id).join(",") || undefined, ser: undefined })}
+                    aria-label={`${c.name} 필터 해제 · 모든 채널 보기`}
+                    className="inline-flex h-7 items-center gap-1.5 self-center rounded-full border border-accent bg-accent-wash pr-2.5 pl-1 text-[13px] text-accent-2 hover:bg-raised"
+                  >
+                    <ChannelAvatar channel={c} size={20} />
+                    {c.name}
+                    <span aria-hidden>✕</span>
+                  </button>
+                ))
+            ) : (
+              <span className="text-[13px] text-muted">모든 채널 통합</span>
+            )}
           </div>
 
           {view === "gates" ? (
@@ -389,9 +406,10 @@ function Sidebar({
   counts: Record<ViewKey, number>;
   chSel: string[];
   onView: (v: ViewKey) => void;
-  onChannel: (id: string) => void;
+  onChannel: (id: string | undefined) => void;
 }) {
   const item = "flex min-h-9 w-full items-center gap-2 rounded-md px-2.5 text-left text-[13px]";
+  const total = channels.reduce((n, c) => n + (data[c.id]?.videos ?? []).filter((v) => v.status !== "dropped").length, 0);
   return (
     <nav aria-label="보기와 채널" className="flex flex-none flex-col gap-0.5 border-line bg-bar p-3 max-lg:border-b lg:w-[232px] lg:overflow-y-auto lg:border-r">
       <div className="px-2.5 pt-1 pb-1 text-[11px] tracking-wider text-muted">보기</div>
@@ -411,6 +429,21 @@ function Sidebar({
       ))}
 
       <div className="px-2.5 pt-4 pb-1 text-[11px] tracking-wider text-muted">채널</div>
+      <button
+        type="button"
+        aria-pressed={chSel.length === 0}
+        onClick={() => onChannel(undefined)}
+        className={`${item} ${chSel.length === 0 ? "bg-raised text-fg" : "text-fg-2 hover:bg-panel hover:text-fg"}`}
+      >
+        <span aria-hidden className="flex size-5 flex-none items-center justify-center rounded-full border border-line-strong text-muted">
+          <svg viewBox="0 0 24 24" className="size-3" fill="none" stroke="currentColor" strokeWidth={2} strokeLinejoin="round">
+            <path d="m12 3 9 5-9 5-9-5 9-5z" />
+            <path d="m3 13 9 5 9-5" />
+          </svg>
+        </span>
+        <span className="flex-auto">모든 채널</span>
+        <span className="font-mono text-xs text-muted">{total}</span>
+      </button>
       {channels.map((c) => {
         const on = chSel.includes(c.id);
         const n = (data[c.id]?.videos ?? []).filter((v) => v.status !== "dropped").length;
