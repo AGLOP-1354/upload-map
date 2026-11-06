@@ -5,11 +5,13 @@ paths:
   - "lib/**"
   - "app/**/actions.ts"
   - "app/**/*.actions.ts"
+  - "app/api/mcp/**"
 ---
 
-# 데이터 레이어 (로컬 JSON)
+# 데이터 레이어 (git이 원본인 JSON)
 
-1인용 로컬 앱. DB·ORM·외부 저장소를 도입하지 않는다.
+1인용 앱. DB·ORM·외부 저장소를 도입하지 않는다. 원본은 저장소의 `data/`·`content/` 파일이고,
+로컬에서는 파일시스템, 배포(Vercel)에서는 GitHub 브랜치(`GITHUB_BRANCH`)를 통해 같은 파일을 읽고 쓴다.
 
 ## 파일 배치 (채널 단위)
 
@@ -26,6 +28,11 @@ data/
 content/<channelId>/<videoId>/
   brief.md · script.md · package.md · review.md
 lib/data/             JSON 읽기/쓰기 유일한 진입점 (server-only)
+  index.ts            UI(페이지·Server Action)용 함수
+  videos.ts           MCP 도구용 도메인 함수(영상·주간 계획·긴 글)
+  files.ts            경로·파싱·직렬화, "읽기 → 변경 → 커밋" 공통 흐름(mutate)
+  store*.ts           저장 백엔드 (fs | github). 위 함수들은 Store 인터페이스만 의존
+  schema.ts           zod 런타임 검증. lib/types.ts 와 타입 일치를 컴파일 타임에 검사
 lib/types.ts          아래 타입의 단일 정의
 ```
 
@@ -105,9 +112,12 @@ interface Credit { service: string; amount?: number; unit?: string; note?: strin
 ## 읽기/쓰기 규칙
 
 - `lib/data/*` 파일 맨 위에 `import "server-only"`. 클라이언트 컴포넌트에서 직접 import 금지.
-- **읽기**: `node:fs/promises`의 `readFile`만 쓴다. `readFileSync` 금지 — `cacheComponents`에서는 동기 읽기가 프리렌더 때 정적 셸에 구워져 데이터가 갱신되지 않는다. 읽기 함수 첫 줄에 `await connection()` (`next/server`), 호출하는 컴포넌트는 `<Suspense>` 안에 둔다.
-- **쓰기**: Server Action(`"use server"`)에서만. 원자적으로: 같은 디렉터리에 `*.tmp` 작성 → `rename`. 쓰기 전 런타임 검증 함수로 형태 확인. 쓴 뒤 `refresh()` (`next/cache`).
-- 쓰기는 모듈 단위 Promise 체인으로 직렬화(같은 파일 동시 쓰기 방지). 파일 락 라이브러리는 쓰지 않는다.
+- **백엔드 선택**: env `DATA_STORE=github` 이면 GitHub(`GITHUB_TOKEN`, `GITHUB_REPO`, `GITHUB_BRANCH`), 아니면 fs. 앱·MCP 코드는 백엔드를 직접 부르지 않고 `lib/data` 함수만 쓴다.
+- **읽기**: fs는 `node:fs/promises`의 `readFile`만 쓴다. `readFileSync` 금지 — `cacheComponents`에서는 동기 읽기가 프리렌더 때 정적 셸에 구워져 데이터가 갱신되지 않는다. 페이지용 읽기 함수 첫 줄에 `await connection()` (`next/server`), 호출하는 컴포넌트는 `<Suspense>` 안에 둔다. github는 요청 시점에 대상 브랜치를 읽는다(캐시 없음) — 데이터 커밋은 재배포 없이 반영된다.
+- **쓰기 경로**: Server Action(`"use server"`) 또는 MCP 도구(`app/api/mcp/route.ts`)에서만, 둘 다 `lib/data` 함수를 거친다. 쓰기 전 zod 스키마로 형태 확인. Server Action은 쓴 뒤 `refresh()` (`next/cache`).
+- **fs 쓰기**: 원자적으로 같은 디렉터리에 `*.tmp` 작성 → `rename`. 모듈 단위 Promise 체인으로 직렬화. 파일 락 라이브러리는 쓰지 않는다.
+- **github 쓰기**: 변경 1회 = 커밋 1개(Git Data API: blob → tree → commit → ref 갱신 `force: false`). ref 갱신이 fast-forward 실패하면 최신 커밋 기준으로 처음부터 한 번만 재시도, 또 실패하면 에러. 커밋 메시지는 한국어로 무엇을 바꿨는지 쓴다.
+- 데이터(`data/`, `content/`)만 바뀐 커밋은 Vercel Ignored Build Step(`vercel.json`)으로 빌드를 건너뛴다.
 - 파일이 없으면 빈 기본값으로 시작(`{ version: 1, videos: [] }` 등). 파싱 실패는 삼키지 말고 에러로 올린다 — 데이터 유실 방지.
 - `version` 을 올리는 스키마 변경 시 마이그레이션 함수를 `lib/data/migrate.ts`에 추가하고, 기존 파일은 `data/backup/<timestamp>/`에 복사한 뒤 변환.
 - 날짜: 저장은 ISO 문자열, 표시는 `Asia/Seoul`.

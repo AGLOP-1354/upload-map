@@ -32,9 +32,11 @@ export interface Series {
   updatedAt: string;
 }
 
-export type VideoStatus =
-  | "idea" | "research" | "scripting" | "packaging" | "filming"
-  | "editing" | "scheduled" | "published" | "reviewed" | "dropped";
+export const VIDEO_STATUSES = [
+  "idea", "research", "scripting", "packaging", "filming",
+  "editing", "scheduled", "published", "reviewed", "dropped",
+] as const;
+export type VideoStatus = (typeof VIDEO_STATUSES)[number];
 
 export interface VideoMetrics {
   capturedAt: string;
@@ -79,6 +81,19 @@ export interface Video {
   updatedAt: string;
 }
 
+export type SlotRole = "anchor" | "cheap" | "short";
+
+export interface WeekPlan {
+  weekOf: string;
+  hoursAvailable?: number;
+  slots: { videoId: string; role: SlotRole; due?: string; done: boolean }[];
+  retro?: string;
+}
+
+// content/<channelId>/<videoId>/<kind>.md
+export const CONTENT_KINDS = ["brief", "script", "package", "review"] as const;
+export type ContentKind = (typeof CONTENT_KINDS)[number];
+
 export interface Task {
   id: string;
   text: string;
@@ -96,6 +111,13 @@ export interface Credit {
   note?: string;
   recordedAt: string;
 }
+
+export interface ChannelsFile { version: 1; channels: Channel[] }
+export interface SeriesFile { version: 1; series: Series[] }
+export interface VideosFile { version: 1; videos: Video[] }
+export interface PlansFile { version: 1; weeks: WeekPlan[] }
+export interface TasksFile { version: 1; tasks: Task[] }
+export interface CreditsFile { version: 1; credits: Credit[] }
 
 // 진행표 칸을 누를 때 도는 순서. "skip" 은 데이터에서만 지정한다.
 export const STEP_STATES: StepState[] = ["wait", "part", "done"];

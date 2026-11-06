@@ -1,25 +1,20 @@
 import "server-only";
 import { connection } from "next/server";
 import type { Channel, Credit, Series, Task, Video } from "@/lib/types";
-import { assertChannelId, dataPath, mutateJson, readJson, serialize, writeJsonNow, writeNow } from "./store";
+import { FILES, PATHS, mutate, parse, readBytes, readFiles, serialize } from "./files";
 
-type ChannelsFile = { version: 1; channels: Channel[] };
-type SeriesFile = { version: 1; series: Series[] };
-type VideosFile = { version: 1; videos: Video[] };
-type TasksFile = { version: 1; tasks: Task[] };
-type CreditsFile = { version: 1; credits: Credit[] };
+// UI(페이지·Server Action)용 읽기/쓰기. 저장 백엔드(fs | github)는 files.ts → store.ts 가 고른다.
 
-const channelsFile = () => dataPath("channels.json");
-const chFile = (id: string, name: string) => dataPath(assertChannelId(id), name);
+const CHANNEL_ID = /^[a-z0-9][a-z0-9-]{0,63}$/;
 
 export async function listChannels(): Promise<Channel[]> {
   await connection();
-  const f = await readJson<ChannelsFile>(channelsFile(), { version: 1, channels: [] });
-  return f.channels;
+  const { files } = await readFiles([PATHS.channels]);
+  return parse("channels", files[PATHS.channels], PATHS.channels).channels;
 }
 
 export async function getChannel(id: string): Promise<Channel | undefined> {
-  if (!/^[a-z0-9][a-z0-9-]{0,63}$/.test(id)) return undefined;
+  if (!CHANNEL_ID.test(id)) return undefined;
   return (await listChannels()).find((c) => c.id === id);
 }
 
@@ -32,71 +27,84 @@ export interface ChannelData {
 
 export async function getChannelData(id: string): Promise<ChannelData> {
   await connection();
-  const [s, v, t, c] = await Promise.all([
-    readJson<SeriesFile>(chFile(id, "series.json"), { version: 1, series: [] }),
-    readJson<VideosFile>(chFile(id, "videos.json"), { version: 1, videos: [] }),
-    readJson<TasksFile>(chFile(id, "tasks.json"), { version: 1, tasks: [] }),
-    readJson<CreditsFile>(chFile(id, "credits.json"), { version: 1, credits: [] }),
-  ]);
-  return { series: s.series, videos: v.videos, tasks: t.tasks, credits: c.credits };
+  const p = { s: PATHS.series(id), v: PATHS.videos(id), t: PATHS.tasks(id), c: PATHS.credits(id) };
+  const { files } = await readFiles(Object.values(p));
+  return {
+    series: parse("series", files[p.s], p.s).series,
+    videos: parse("videos", files[p.v], p.v).videos,
+    tasks: parse("tasks", files[p.t], p.t).tasks,
+    credits: parse("credits", files[p.c], p.c).credits,
+  };
 }
 
 // ---- 쓰기 (Server Action 에서만 호출) ----
 
-export function addChannel(channel: Channel): Promise<void> {
-  return mutateJson<ChannelsFile, void>(channelsFile(), { version: 1, channels: [] }, (f) => {
+export async function addChannel(channel: Channel): Promise<void> {
+  await mutate([PATHS.channels], (files) => {
+    const f = parse("channels", files[PATHS.channels], PATHS.channels);
     if (f.channels.some((c) => c.id === channel.id)) throw new Error("DUPLICATE");
     f.channels.push(channel);
+    return {
+      changes: { [PATHS.channels]: serialize("channels", f, PATHS.channels) },
+      message: `채널: ${channel.id} 등록`,
+      result: {},
+    };
   });
 }
 
-export function updateVideo(channelId: string, videoId: string, fn: (v: Video) => void): Promise<boolean> {
-  return mutateJson<VideosFile, boolean>(chFile(channelId, "videos.json"), { version: 1, videos: [] }, (f) => {
+export async function updateVideo(channelId: string, videoId: string, fn: (v: Video) => void): Promise<boolean> {
+  const path = PATHS.videos(channelId);
+  const r = await mutate([path], (files) => {
+    const f = parse("videos", files[path], path);
     const v = f.videos.find((x) => x.id === videoId);
-    if (!v) return false;
+    if (!v) return { changes: {}, message: "", result: { ok: false } };
     fn(v);
     v.updatedAt = new Date().toISOString();
-    return true;
+    return {
+      changes: { [path]: serialize("videos", f, path) },
+      message: `진행표: ${channelId}/${videoId} 수정`,
+      result: { ok: true },
+    };
   });
+  return r.ok;
 }
 
-export function updateTask(channelId: string, taskId: string, fn: (t: Task) => void): Promise<boolean> {
-  return mutateJson<TasksFile, boolean>(chFile(channelId, "tasks.json"), { version: 1, tasks: [] }, (f) => {
+export async function updateTask(channelId: string, taskId: string, fn: (t: Task) => void): Promise<boolean> {
+  const path = PATHS.tasks(channelId);
+  const r = await mutate([path], (files) => {
+    const f = parse("tasks", files[path], path);
     const t = f.tasks.find((x) => x.id === taskId);
-    if (!t) return false;
+    if (!t) return { changes: {}, message: "", result: { ok: false } };
     fn(t);
     t.updatedAt = new Date().toISOString();
-    return true;
+    return {
+      changes: { [path]: serialize("tasks", f, path) },
+      message: `확인 대기: ${channelId}/${taskId} ${t.done ? "완료" : "되돌림"}`,
+      result: { ok: true },
+    };
   });
+  return r.ok;
 }
 
 // 새 채널: 빈 데이터 파일과(있으면) 로고를 만든다. channels.json 등록 전에 호출한다.
-export function initChannelFiles(id: string, logo?: { name: string; bytes: Uint8Array }): Promise<void> {
-  return serialize(async () => {
-    const empty: Record<string, unknown> = {
-      "series.json": { version: 1, series: [] },
-      "videos.json": { version: 1, videos: [] },
-      "plans.json": { version: 1, weeks: [] },
-      "tasks.json": { version: 1, tasks: [] },
-      "credits.json": { version: 1, credits: [] },
-    };
-    for (const [name, value] of Object.entries(empty)) {
-      const file = chFile(id, name);
-      if ((await readJson<unknown>(file, null)) === null) await writeJsonNow(file, value);
-    }
-    if (logo) await writeNow(chFile(id, logo.name), logo.bytes);
+export async function initChannelFiles(id: string, logo?: { name: string; bytes: Uint8Array }): Promise<void> {
+  const kinds = ["series", "videos", "plans", "tasks", "credits"] as const;
+  const paths = kinds.map((k) => PATHS[k](id));
+  await mutate(paths, (files) => {
+    const changes: Record<string, string | Uint8Array> = {};
+    kinds.forEach((k, i) => {
+      if (files[paths[i]] === null) changes[paths[i]] = JSON.stringify(FILES[k].empty, null, 2) + "\n";
+    });
+    if (logo) changes[PATHS.channelFile(id, logo.name)] = logo.bytes;
+    return { changes, message: `채널: ${id} 데이터 폴더 생성`, result: {} };
   });
 }
 
-export async function readChannelLogo(id: string): Promise<{ bytes: Buffer; type: string } | null> {
+export async function readChannelLogo(id: string): Promise<{ bytes: Uint8Array; type: string } | null> {
   const ch = await getChannel(id);
   if (!ch?.logo || !/^logo\.(png|jpg|webp)$/.test(ch.logo)) return null;
-  const { readFile } = await import("node:fs/promises");
-  try {
-    const bytes = await readFile(chFile(id, ch.logo));
-    const ext = ch.logo.split(".")[1];
-    return { bytes, type: ext === "jpg" ? "image/jpeg" : `image/${ext}` };
-  } catch {
-    return null;
-  }
+  const bytes = await readBytes(PATHS.channelFile(id, ch.logo));
+  if (!bytes) return null;
+  const ext = ch.logo.split(".")[1];
+  return { bytes, type: ext === "jpg" ? "image/jpeg" : `image/${ext}` };
 }

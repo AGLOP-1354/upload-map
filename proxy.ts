@@ -17,6 +17,8 @@ export async function proxy(request: NextRequest) {
   return NextResponse.next();
 }
 
+// /api/mcp 는 자체 Bearer 토큰(MCP_TOKEN)으로 인증하므로 제외한다.
+// .well-known 은 MCP 클라이언트의 OAuth 탐색 요청이 /login 리다이렉트 대신 404 를 받게 제외한다.
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!api/mcp|\\.well-known|_next/static|_next/image|favicon.ico).*)"],
 };

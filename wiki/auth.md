@@ -9,7 +9,7 @@ sources:
   - app/login/page.tsx
   - app/login/login-form.tsx
   - app/login/actions.ts
-verified: 4f3d08ae5118d0ce
+verified: aa92f23423907917
 ---
 
 # 인증
@@ -43,7 +43,7 @@ Next.js 16 의 Proxy 파일 컨벤션(Middleware 의 새 이름, 기본 Node.js 
 - 쿠키를 `verifySessionToken` 으로 검증 — [proxy.ts:5-7](../proxy.ts#L5-L7).
 - `/login`: 로그인 상태면 `/` 로, 아니면 통과 — [proxy.ts:9-11](../proxy.ts#L9-L11).
 - 그 외 경로에서 미로그인: `/login` 으로 리다이렉트. `/` 가 아니면 원래 경로+쿼리를 `next` 파라미터로 붙인다 — [proxy.ts:12-16](../proxy.ts#L12-L16).
-- matcher 는 `_next/static`, `_next/image`, `favicon.ico` 만 제외 — [proxy.ts:20-22](../proxy.ts#L20-L22). 그래서 `/c/[channel]/logo` 같은 Route Handler 도 로그인 뒤에 있다.
+- matcher 는 `api/mcp`, `.well-known`, `_next/static`, `_next/image`, `favicon.ico` 를 제외 — [proxy.ts:20-24](../proxy.ts#L20-L24). `/api/mcp` 는 자체 Bearer 토큰으로 인증한다([원격 MCP](mcp.md)). 그 밖의 `/c/[channel]/logo` 같은 Route Handler 는 로그인 뒤에 있다.
 
 ## 로그인 화면 — `/login`
 

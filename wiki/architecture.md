@@ -7,14 +7,14 @@ sources:
   - eslint.config.mjs
   - package.json
   - .claude/launch.json
-verified: 44d80fe3b045d792
+verified: 03c0f60abd7b92a2
 ---
 
 # 아키텍처
 
 ## 스택
 
-- Next.js `16.4.5`, React `19.3.0` (정확한 버전 고정) — [package.json:15-19](../package.json#L15-L19). 설치 버전은 [generated/package.md](generated/package.md).
+- Next.js `16.4.5`, React `19.3.0` (정확한 버전 고정) — [package.json:18-20](../package.json#L18-L20). 설치 버전은 [generated/package.md](generated/package.md).
 - App Router 사용 (`app/` 디렉터리). Pages Router(`pages/`) 없음 — [generated/files.md](generated/files.md).
 - 이 Next.js 버전은 학습 데이터와 다를 수 있으므로 API 판단은 `node_modules/next/dist/docs/` 를 근거로 한다 (AGENTS.md 의 Next.js 블록).
 
@@ -47,4 +47,4 @@ Claude 의 미리보기 도구가 쓰는 실행 설정. 이름 `upload-map`, `np
 
 ## Proxy
 
-루트의 `proxy.ts` 가 Next.js 16 Proxy(Middleware 의 새 이름)로 모든 요청의 로그인 여부를 확인한다. 동작은 [인증](auth.md).
+루트의 `proxy.ts` 가 Next.js 16 Proxy(Middleware 의 새 이름)로 요청의 로그인 여부를 확인한다(`/api/mcp` 는 제외하고 자체 토큰으로 인증). 동작은 [인증](auth.md), [원격 MCP](mcp.md).
