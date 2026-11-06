@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "videos": [
+    {
+      "id": "yellow-wallpaper-ep1",
+      "workingTitle": "1화",
+      "format": "short",
+      "status": "published",
+      "seriesId": "yellow-wallpaper",
+      "episode": 1,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "skip",
+        "캡컷 조립": "done",
+        "업로드": "done"
+      },
+      "copy": {
+        "overlay": "출산 후 우울증이라던 남편,\n저를 쇠창살 방에 가뒀어요"
+      },
+      "checklist": [
+        {
+          "text": "업로드 완료",
+          "done": true
+        },
+        {
+          "text": "재생목록 「누런 벽지 (전편 순서대로)」 추가",
+          "done": true
+        },
+        {
+          "text": "커스텀 썸네일 적용",
+          "done": true
+        },
+        {
+          "text": "고정댓글 최종 문구 확인 (게시는 직접)",
+          "done": false
+        },
+        {
+          "text": "채널 계정으로 첫 답 달기",
+          "done": false
+        }
+      ],
+      "publishedAt": "2026-11-05T15:45:00.000Z",
+      "youtubeId": "vFHIfex3Iao",
+      "metrics": [],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "yellow-wallpaper-ep2",
+      "workingTitle": "2화",
+      "format": "short",
+      "status": "editing",
+      "seriesId": "yellow-wallpaper",
+      "episode": 2,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done",
+        "캡컷 조립": "part"
+      },
+      "copy": {
+        "overlay": "산후우울증 치료라며 2주째 감금\n벽지 뒤로 여자가 기어 다녀요",
+        "coldOpen": "여자예요. 몸을 낮게…",
+        "recap": "의사인 남편이 산후우울증 치료라며 저를 외딴 저택 꼭대기 방에 가뒀어요. 창마다 쇠창살, 바닥에 박힌 침대, 그리고 군데군데 뜯겨 나간 누런 벽지."
+      },
+      "checklist": [
+        {
+          "text": "콜드오픈(0~3.87s) 바로 뒤에 지난 이야기(11.23s) 삽입",
+          "path": "01_영상파츠/00b_지난이야기.mp4",
+          "done": false
+        },
+        {
+          "text": "나레이션 교체",
+          "path": "02_나레이션/00_나레이션_전체_요약포함.wav",
+          "done": false
+        },
+        {
+          "text": "BGM 교체",
+          "path": "04_BGM/02_BGM_덕킹_요약포함_엔딩5초.wav",
+          "done": false
+        },
+        {
+          "text": "자막 교체",
+          "path": "자막_쇼츠_문장_줄바꿈_요약포함.srt",
+          "done": false
+        },
+        {
+          "text": "콜드오픈 이후 효과음 전부 +11.23초 이동, drone 추가",
+          "path": "03_효과음/00b_003.87s_지난이야기_drone.wav",
+          "done": false
+        },
+        {
+          "text": "제목·설명(공포 썰, 괴담, 누런 벽지)·재생목록·썸네일",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-07",
+      "metrics": [],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "yellow-wallpaper-ep3",
+      "workingTitle": "3화",
+      "format": "short",
+      "status": "editing",
+      "seriesId": "yellow-wallpaper",
+      "episode": 3,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done",
+        "캡컷 조립": "wait"
+      },
+      "copy": {
+        "overlay": "산후우울증이라던 남편이\n나가자는 말에 저를 노려봤어요",
+        "coldOpen": "창살을 붙잡고 흔들고 있었어요.",
+        "recap": "의사인 남편이 산후우울증 치료라며 저를 쇠창살 달린 다락방에 가뒀어요. 그리고 누런 벽지 무늬 뒤에서, 몸을 낮게 숙이고 기어 다니는 여자가 보이기 시작했어요."
+      },
+      "checklist": [
+        {
+          "text": "배치표_요약포함.txt대로 새로 조립",
+          "path": "09_쇼츠_캡컷_3화/배치표_요약포함.txt",
+          "done": false
+        },
+        {
+          "text": "제목·설명·재생목록·썸네일",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-08",
+      "metrics": [],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T07:17:44.920Z"
+    },
+    {
+      "id": "yellow-wallpaper-ep4",
+      "workingTitle": "4화",
+      "format": "short",
+      "status": "editing",
+      "seriesId": "yellow-wallpaper",
+      "episode": 4,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done"
+      },
+      "copy": {
+        "overlay": "남편과 시누이가 숨기는 것,\n벽지 속에 거꾸로 매달린 머리들",
+        "coldOpen": "그 거꾸로 박힌 동그란 거 두 개, 그게 그 머리들이에요.",
+        "recap": "의사인 남편이 산후우울증 치료라며 저를 다락방에 가뒀어요. 누런 벽지 무늬엔 눈 같은 동그라미 두 개가 거꾸로 박혀 있고, 그 뒤로 여자가 기어 다녀요. 남편도, 시누이 지은 씨도 제 말은 안 믿어요."
+      },
+      "checklist": [
+        {
+          "text": "배치표_요약포함.txt대로 새로 조립",
+          "path": "09_쇼츠_캡컷_4화/배치표_요약포함.txt",
+          "done": false
+        },
+        {
+          "text": "제목·설명·재생목록·썸네일",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-09",
+      "metrics": [],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "yellow-wallpaper-ep5",
+      "workingTitle": "5화",
+      "format": "short",
+      "status": "editing",
+      "seriesId": "yellow-wallpaper",
+      "episode": 5,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done"
+      },
+      "copy": {
+        "overlay": "벽지를 다 뜯어낸 아내,\n문을 연 남편이 쓰러졌어요",
+        "coldOpen": "근데 저 남자는 왜 기절했을까요.",
+        "recap": "의사인 남편이 석 달 빌린 바닷가 저택 다락방에 저를 가뒀어요. 누런 벽지 뒤엔 기어 다니는 여자가 갇혀 있어요. 벽 아래엔 누군가 기면서 문지른 자국이 빙 둘러 있고, 이제는 저도 남편과 시누이 몰래 문을 잠그고 그 자국을 따라 기어요.",
+        "endCard": "「누런 벽지」 끝"
+      },
+      "checklist": [
+        {
+          "text": "배치표_요약포함.txt대로 새로 조립",
+          "path": "09_쇼츠_캡컷_5화/배치표_요약포함.txt",
+          "done": false
+        },
+        {
+          "text": "제목·설명·재생목록·썸네일",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-10",
+      "notes": "나레이션: 수진 take2, 준호 take6. S68은 스틸로 대체.",
+      "metrics": [],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "yellow-wallpaper-long",
+      "workingTitle": "롱폼 합본",
+      "format": "long",
+      "status": "editing",
+      "seriesId": "yellow-wallpaper",
+      "steps": {
+        "소스": "part"
+      },
+      "checklist": [
+        {
+          "text": "1~5막 초안 이어 붙이기",
+          "path": "04_영상/1~5막_초안.mp4",
+          "done": false
+        },
+        {
+          "text": "효과음·BGM·자막 얹기",
+          "done": false
+        },
+        {
+          "text": "롱폼 썸네일",
+          "done": false
+        },
+        {
+          "text": "제목·설명·재생목록",
+          "done": false
+        }
+      ],
+      "targetPublishDate": "2026-11-11",
+      "metrics": [],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    }
+  ]
+}

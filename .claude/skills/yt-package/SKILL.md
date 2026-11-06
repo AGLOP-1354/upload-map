@@ -12,8 +12,8 @@ allowed-tools: Read, Edit, Write, Bash(node *), Agent
 제목과 썸네일은 따로 만들지 않는다. **하나의 약속을 두 채널로** 전달하는 한 단위다.
 
 ## 1. 입력 확인
-- `data/videos.json`: `promise`, `format`, `hook`(있으면), 기존 `package.titles`
-- `data/channel.json`: `voice`, 필러
+- `data/<채널id>/videos.json`: `promise`, `format`, `hook`(있으면), 기존 `package.titles`
+- `data/channels.json`의 해당 채널: `voice`, 필러
 - 유입 성격을 묻는다(모르면 추정하고 밝힌다): **검색형**(정확한 검색어를 제목에) / **탐색형**(호기심·감정 우선)
 
 ## 2. 제목 10개
@@ -44,7 +44,7 @@ node "${CLAUDE_SKILL_DIR}/scripts/lint-package.mjs" --thumb "썸네일 문구" "
 
 ## 6. 저장 (사용자가 고른 뒤)
 - `videos.json` → `package.titles`(최종 후보), `selectedTitle`, `thumbnailText`, `thumbnailConcept`, `updatedAt`
-- `content/videos/<id>/package.md` → 10개 전체 후보, 린트 결과 요약, 썸네일 브리프
+- `content/<채널id>/<id>/package.md` → 10개 전체 후보, 린트 결과 요약, 썸네일 브리프
 - `status`가 `idea`/`research`면 다음 단계 이동 여부를 묻는다.
 
 마지막 줄: "이 조합으로 갈까요, 바꿀까요?"

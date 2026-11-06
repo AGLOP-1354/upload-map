@@ -10,9 +10,9 @@ color: orange
 
 ## 입력
 호출자가 video id를 준다. 다음을 읽는다:
-- `data/videos.json` 의 해당 영상 (`promise`, `hook`, `package`)
-- `content/videos/<id>/package.md`, `script.md` (있는 것만)
-- `data/channel.json` 의 `voice`, 필러
+- `data/<채널id>/videos.json` 의 해당 영상 (`promise`, `hook`, `package`)
+- `content/<채널id>/<id>/package.md`, `script.md` (있는 것만)
+- `data/channels.json`의 해당 채널 `voice`, 필러
 - 기준: `.claude/rules/youtube-domain.md`
 
 ## 검토 항목
