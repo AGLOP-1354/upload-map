@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "credits": [
+    { "service": "클링", "amount": 60, "note": "≈ 1080p 7초", "recordedAt": "2026-11-06T05:50:00.000Z" },
+    { "service": "일레븐랩스", "amount": 27000, "recordedAt": "2026-11-06T05:50:00.000Z" },
+    { "service": "미드저니", "recordedAt": "2026-11-06T05:50:00.000Z" }
+  ]
+}

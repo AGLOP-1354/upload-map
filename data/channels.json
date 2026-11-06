@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "channels": [
+    {
+      "id": "lockedlibrary",
+      "name": "잠긴 서재",
+      "handle": "lockedlibrary",
+      "color": "#D9BE5C",
+      "logo": "logo.jpg",
+      "niche": "공포 썰",
+      "cadence": { "shortsPerWeek": 5, "longPerWeek": 1 },
+      "uploadTime": "00:45",
+      "steps": {
+        "short": ["소스", "효과음", "쇼츠 파츠", "지난 이야기", "캡컷 조립", "업로드"],
+        "long": ["소스", "효과음", "캡컷 조립", "업로드"]
+      },
+      "gates": [
+        "승인 범위를 넘는 유료 생성(클링·일레븐랩스·미드저니)",
+        "대본 컨펌 후 다음 단계",
+        "나레이션 테이크 컨펌",
+        "고정댓글·커뮤니티 글 게시 전 문구 확인"
+      ],
+      "createdAt": "2026-11-06T06:00:00.000Z",
+      "updatedAt": "2026-11-06T06:00:00.000Z"
+    }
+  ]
+}

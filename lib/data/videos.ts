@@ -2,27 +2,16 @@ import "server-only";
 import {
   CONTENT_KINDS,
   VIDEO_STATUSES,
+  type Channel,
   type ContentKind,
   type SlotRole,
   type Video,
   type VideoMetrics,
   type VideoStatus,
 } from "@/lib/types";
-import {
-  DataError,
-  PATHS,
-  mondayOf,
-  mutate,
-  parseChannel,
-  parsePlans,
-  parseVideos,
-  readFiles,
-  serializePlans,
-  serializeVideos,
-  todaySeoul,
-} from "./files";
+import { DataError, PATHS, mondayOf, mutate, parse, readFiles, serialize, todaySeoul } from "./files";
 
-// 영상·주간 계획 도메인 함수. UI(Server Action)와 MCP 도구가 함께 쓴다.
+// MCP 도구용 영상·주간 계획 도메인 함수. 모든 함수는 채널 id 를 첫 인자로 받는다.
 
 const now = () => new Date().toISOString();
 
@@ -32,23 +21,42 @@ function findVideo(videos: Video[], id: string): Video {
   return v;
 }
 
+function findChannel(raw: string | null, id: string): Channel {
+  const c = parse("channels", raw, PATHS.channels).channels.find((x) => x.id === id);
+  if (!c) throw new DataError(`채널 '${id}' 이(가) 없습니다. list_channels 로 id 를 확인하세요.`);
+  return c;
+}
+
 // ── 읽기 ──────────────────────────────────────────────
 
-export async function getState() {
-  const { files, rev } = await readFiles([PATHS.channel, PATHS.videos, PATHS.plans]);
+export async function listChannelSummaries() {
+  const { files } = await readFiles([PATHS.channels]);
+  return parse("channels", files[PATHS.channels], PATHS.channels).channels.map((c) => ({
+    id: c.id,
+    name: c.name,
+    handle: c.handle,
+    niche: c.niche,
+  }));
+}
+
+export async function getState(channelId: string) {
+  const p = { c: PATHS.channels, s: PATHS.series(channelId), v: PATHS.videos(channelId), w: PATHS.plans(channelId) };
+  const { files, rev } = await readFiles(Object.values(p));
   return {
     rev,
-    channel: parseChannel(files[PATHS.channel]),
-    videos: parseVideos(files[PATHS.videos]).videos,
-    weeks: parsePlans(files[PATHS.plans]).weeks,
+    channel: findChannel(files[p.c], channelId),
+    series: parse("series", files[p.s], p.s).series,
+    videos: parse("videos", files[p.v], p.v).videos,
+    weeks: parse("plans", files[p.w], p.w).weeks,
   };
 }
 
-export async function getVideo(id: string, include: ContentKind[] = []) {
-  const contentPaths = include.map((k) => PATHS.content(id, k));
-  const { files } = await readFiles([PATHS.videos, ...contentPaths]);
-  const video = findVideo(parseVideos(files[PATHS.videos]).videos, id);
-  const content = Object.fromEntries(include.map((k) => [k, files[PATHS.content(id, k)]]));
+export async function getVideo(channelId: string, id: string, include: ContentKind[] = []) {
+  const vp = PATHS.videos(channelId);
+  const contentPaths = include.map((k) => PATHS.content(channelId, id, k));
+  const { files } = await readFiles([vp, ...contentPaths]);
+  const video = findVideo(parse("videos", files[vp], vp).videos, id);
+  const content = Object.fromEntries(include.map((k) => [k, files[PATHS.content(channelId, id, k)]]));
   return { video, content };
 }
 
@@ -57,8 +65,8 @@ export function weekOfToday() {
 }
 
 /** yt-status 와 같은 기준의 진행 현황 요약 */
-export async function getOverview() {
-  const { channel, videos, weeks } = await getState();
+export async function getOverview(channelId: string) {
+  const { channel, series, videos, weeks } = await getState(channelId);
   const today = todaySeoul();
   const byStatus = Object.fromEntries(
     VIDEO_STATUSES.map((s) => [s, videos.filter((v) => v.status === s).map((v) => v.id)]),
@@ -78,7 +86,14 @@ export async function getOverview() {
   const thisWeek = weeks.find((w) => w.weekOf === mondayOf(today)) ?? null;
   return {
     today,
-    channel: channel && { name: channel.name, pillars: channel.pillars, cadence: channel.cadence },
+    channel: {
+      id: channel.id,
+      name: channel.name,
+      pillars: channel.pillars ?? [],
+      cadence: channel.cadence,
+      steps: channel.steps,
+    },
+    series: series.map(({ id, title }) => ({ id, title })),
     videoCount: videos.length,
     byStatus,
     overdue,
@@ -93,30 +108,40 @@ export interface CreateVideoInput {
   id: string;
   workingTitle: string;
   format: Video["format"];
-  pillarId: string;
+  pillarId?: string;
+  seriesId?: string;
+  episode?: number;
   promise?: string;
   parentId?: string;
 }
 
-export function createVideo(input: CreateVideoInput) {
-  return mutate([PATHS.channel, PATHS.videos], (files) => {
-    const channel = parseChannel(files[PATHS.channel]);
-    if (!channel) throw new DataError("data/channel.json 이 없습니다. 채널 프로필(필러)부터 만들어 주세요.");
-    if (!channel.pillars.some((p) => p.id === input.pillarId)) {
+export function createVideo(channelId: string, input: CreateVideoInput) {
+  const p = { c: PATHS.channels, s: PATHS.series(channelId), v: PATHS.videos(channelId) };
+  return mutate(Object.values(p), (files) => {
+    const channel = findChannel(files[p.c], channelId);
+    const pillars = channel.pillars ?? [];
+    if (input.pillarId && !pillars.some((x) => x.id === input.pillarId)) {
       throw new DataError(
-        `필러 '${input.pillarId}' 이(가) 없습니다. 가능한 값: ${channel.pillars.map((p) => p.id).join(", ")}`,
+        pillars.length
+          ? `필러 '${input.pillarId}' 이(가) 없습니다. 가능한 값: ${pillars.map((x) => x.id).join(", ")}`
+          : `이 채널에는 필러가 정의되어 있지 않습니다. pillarId 를 빼고 다시 호출하세요.`,
       );
     }
-    const file = parseVideos(files[PATHS.videos]);
+    if (input.seriesId && !parse("series", files[p.s], p.s).series.some((s) => s.id === input.seriesId)) {
+      throw new DataError(`시리즈 '${input.seriesId}' 이(가) 없습니다`);
+    }
+    const file = parse("videos", files[p.v], p.v);
     if (file.videos.some((v) => v.id === input.id)) throw new DataError(`id '${input.id}' 이(가) 이미 있습니다`);
     if (input.parentId) findVideo(file.videos, input.parentId);
+    const warnings: string[] = [];
+    if (pillars.length && !input.pillarId) warnings.push("필러(pillarId)가 지정되지 않았습니다");
     const t = now();
-    const video: Video = { ...input, status: "idea", metrics: [], createdAt: t, updatedAt: t };
+    const video: Video = { ...input, status: "idea", steps: {}, metrics: [], createdAt: t, updatedAt: t };
     file.videos.push(video);
     return {
-      changes: { [PATHS.videos]: serializeVideos(file) },
-      message: `아이디어: ${input.id} 추가`,
-      result: { video },
+      changes: { [p.v]: serialize("videos", file, p.v) },
+      message: `아이디어: ${channelId}/${input.id} 추가`,
+      result: { video, warnings },
     };
   });
 }
@@ -125,14 +150,15 @@ export type VideoPatch = Partial<
   Pick<Video, "workingTitle" | "promise" | "hook" | "package" | "targetPublishDate" | "youtubeId" | "notes">
 >;
 
-export function updateVideo(id: string, patch: VideoPatch) {
-  return mutate([PATHS.videos], (files) => {
-    const file = parseVideos(files[PATHS.videos]);
+export function patchVideo(channelId: string, id: string, patch: VideoPatch) {
+  const vp = PATHS.videos(channelId);
+  return mutate([vp], (files) => {
+    const file = parse("videos", files[vp], vp);
     const v = findVideo(file.videos, id);
     Object.assign(v, patch, { updatedAt: now() });
     return {
-      changes: { [PATHS.videos]: serializeVideos(file) },
-      message: `수정: ${id} (${Object.keys(patch).join(", ")})`,
+      changes: { [vp]: serialize("videos", file, vp) },
+      message: `수정: ${channelId}/${id} (${Object.keys(patch).join(", ")})`,
       result: { video: v },
     };
   });
@@ -167,14 +193,15 @@ function exitWarning(s: VideoStatus, v: Video, has: (k: ContentKind) => boolean)
   }
 }
 
-export function setStatus(id: string, status: VideoStatus, reason?: string) {
+export function setStatus(channelId: string, id: string, status: VideoStatus, reason?: string) {
   if (status === "dropped" && !reason?.trim()) throw new DataError("dropped 로 바꾸려면 reason(사유)이 필요합니다");
-  const contentPaths = (["brief", "script"] as const).map((k) => PATHS.content(id, k));
-  return mutate([PATHS.videos, ...contentPaths], (files) => {
-    const file = parseVideos(files[PATHS.videos]);
+  const vp = PATHS.videos(channelId);
+  const contentPaths = (["brief", "script"] as const).map((k) => PATHS.content(channelId, id, k));
+  return mutate([vp, ...contentPaths], (files) => {
+    const file = parse("videos", files[vp], vp);
     const v = findVideo(file.videos, id);
     const from = v.status;
-    const has = (k: ContentKind) => Boolean(files[PATHS.content(id, k)]?.trim());
+    const has = (k: ContentKind) => Boolean(files[PATHS.content(channelId, id, k)]?.trim());
 
     const warnings: string[] = [];
     const fi = FLOW.indexOf(from);
@@ -194,8 +221,8 @@ export function setStatus(id: string, status: VideoStatus, reason?: string) {
     if (note) v.notes = v.notes ? `${v.notes}\n${note}` : note;
 
     return {
-      changes: { [PATHS.videos]: serializeVideos(file) },
-      message: `진행: ${id} 상태 ${from} → ${status}`,
+      changes: { [vp]: serialize("videos", file, vp) },
+      message: `진행: ${channelId}/${id} 상태 ${from} → ${status}`,
       result: { video: v, from, warnings },
     };
   });
@@ -204,9 +231,10 @@ export function setStatus(id: string, status: VideoStatus, reason?: string) {
 export type MetricsInput = Omit<VideoMetrics, "capturedAt" | "daysSincePublish"> &
   Partial<Pick<VideoMetrics, "capturedAt" | "daysSincePublish">>;
 
-export function addMetrics(id: string, input: MetricsInput) {
-  return mutate([PATHS.videos], (files) => {
-    const file = parseVideos(files[PATHS.videos]);
+export function addMetrics(channelId: string, id: string, input: MetricsInput) {
+  const vp = PATHS.videos(channelId);
+  return mutate([vp], (files) => {
+    const file = parse("videos", files[vp], vp);
     const v = findVideo(file.videos, id);
     const capturedAt = input.capturedAt ?? now();
     let days = input.daysSincePublish;
@@ -218,24 +246,25 @@ export function addMetrics(id: string, input: MetricsInput) {
     v.metrics.push(snapshot);
     v.updatedAt = now();
     return {
-      changes: { [PATHS.videos]: serializeVideos(file) },
-      message: `지표: ${id} ${days}일차 스냅샷 추가`,
+      changes: { [vp]: serialize("videos", file, vp) },
+      message: `지표: ${channelId}/${id} ${days}일차 스냅샷 추가`,
       result: { video: v, snapshot },
     };
   });
 }
 
-export function saveContent(id: string, kind: ContentKind, markdown: string) {
+export function saveContent(channelId: string, id: string, kind: ContentKind, markdown: string) {
   if (!CONTENT_KINDS.includes(kind)) throw new DataError(`kind 는 ${CONTENT_KINDS.join(", ")} 중 하나여야 합니다`);
-  const path = PATHS.content(id, kind);
-  return mutate([PATHS.videos], (files) => {
-    const file = parseVideos(files[PATHS.videos]);
+  const vp = PATHS.videos(channelId);
+  const path = PATHS.content(channelId, id, kind);
+  return mutate([vp], (files) => {
+    const file = parse("videos", files[vp], vp);
     const v = findVideo(file.videos, id);
     v.updatedAt = now();
     const body = markdown.endsWith("\n") ? markdown : `${markdown}\n`;
     return {
-      changes: { [path]: body, [PATHS.videos]: serializeVideos(file) },
-      message: `${kind}: ${id} ${kind}.md 저장`,
+      changes: { [path]: body, [vp]: serialize("videos", file, vp) },
+      message: `${kind}: ${channelId}/${id} ${kind}.md 저장`,
       result: { path, bytes: Buffer.byteLength(body) },
     };
   });
@@ -249,13 +278,15 @@ export interface WeekSlotInput {
   done?: boolean;
 }
 
-export function setWeekSlot(input: WeekSlotInput) {
+export function setWeekSlot(channelId: string, input: WeekSlotInput) {
   if (mondayOf(input.weekOf) !== input.weekOf) {
     throw new DataError(`weekOf 는 월요일이어야 합니다 (${input.weekOf} 의 월요일: ${mondayOf(input.weekOf)})`);
   }
-  return mutate([PATHS.videos, PATHS.plans], (files) => {
-    findVideo(parseVideos(files[PATHS.videos]).videos, input.videoId);
-    const plans = parsePlans(files[PATHS.plans]);
+  const vp = PATHS.videos(channelId);
+  const pp = PATHS.plans(channelId);
+  return mutate([vp, pp], (files) => {
+    findVideo(parse("videos", files[vp], vp).videos, input.videoId);
+    const plans = parse("plans", files[pp], pp);
     let week = plans.weeks.find((w) => w.weekOf === input.weekOf);
     if (!week) {
       week = { weekOf: input.weekOf, slots: [] };
@@ -271,8 +302,8 @@ export function setWeekSlot(input: WeekSlotInput) {
     if (input.due !== undefined) slot.due = input.due;
     if (input.done !== undefined) slot.done = input.done;
     return {
-      changes: { [PATHS.plans]: serializePlans(plans) },
-      message: `주간: ${input.weekOf} ${input.videoId}(${input.role})${slot.done ? " 완료" : ""}`,
+      changes: { [pp]: serialize("plans", plans, pp) },
+      message: `주간: ${channelId} ${input.weekOf} ${input.videoId}(${input.role})${slot.done ? " 완료" : ""}`,
       result: { week },
     };
   });

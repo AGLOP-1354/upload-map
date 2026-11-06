@@ -18,6 +18,6 @@ allowed-tools: Read, Bash(node *)
    2. 마감 지난 영상 → 막힌 단계가 뭔지 짚고 다음 행동 하나
    3. 이번 주 미완료 슬롯 중 `anchor` 우선
    4. 진행 중 영상이 없으면 → `idea` 백로그에서 후보를 골라 `/yt-package` (패키징 먼저 테스트)
-3. 데이터가 없으면 `data/channel.json` 부터 만들자고 제안한다 (스키마: `.claude/rules/data-layer.md`).
+3. 데이터가 없으면 채널 등록(앱의 /channels/new)부터 하자고 제안한다 (스키마: `.claude/rules/data-layer.md`).
 
 출력 형식: 3줄 요약 → 할 일 목록(각각 실행할 스킬 명시). 길게 쓰지 않는다.

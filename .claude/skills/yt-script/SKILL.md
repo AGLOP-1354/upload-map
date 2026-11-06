@@ -11,8 +11,8 @@ argument-hint: "[video-id]"
 ## 전제 조건 (없으면 먼저 처리)
 - `promise` 한 문장 → 없으면 받는다.
 - `hook` → 없으면 `/yt-hook <id>` 먼저 권한다. 사용자가 원하면 대본과 함께 쓴다.
-- `content/videos/<id>/brief.md`(리서치)가 있으면 읽는다. 사실 주장은 brief에 근거가 있는 것만, 없으면 `[확인 필요]` 표시.
-- `data/channel.json`의 `voice`(톤, do/dont)를 따른다. 말투는 *말로 읽었을 때* 자연스럽게.
+- `content/<채널id>/<id>/brief.md`(리서치)가 있으면 읽는다. 사실 주장은 brief에 근거가 있는 것만, 없으면 `[확인 필요]` 표시.
+- `data/channels.json`의 해당 채널의 `voice`(톤, do/dont)를 따른다. 말투는 *말로 읽었을 때* 자연스럽게.
 
 ## 롱폼 구조
 ```
@@ -33,7 +33,7 @@ argument-hint: "[video-id]"
 - `parentId` 롱폼이 있으면 그 영상의 가장 강한 비트 하나만 쓴다.
 
 ## 저장
-- `content/videos/<id>/script.md` (기존 `## Hook` 섹션이 있으면 유지하고 아래에 이어 씀)
+- `content/<채널id>/<id>/script.md` (기존 `## Hook` 섹션이 있으면 유지하고 아래에 이어 씀)
 - 맨 아래에 `촬영 체크리스트`: 필요한 장면·소품·화면 녹화 목록 (`[ON SCREEN]` 에서 추출)
 - `videos.json`의 `status`가 `scripting` 이전이면 `scripting`으로, `updatedAt` 갱신.
 

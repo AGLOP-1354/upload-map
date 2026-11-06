@@ -9,11 +9,13 @@
 | 페이지 | 요약 |
 |---|---|
 | [아키텍처](architecture.md) | Next.js 16 App Router 설정, 빌드·스타일 파이프라인, TypeScript/ESLint 구성 |
+| [인증](auth.md) | 환경변수 단일 계정 로그인, HMAC 서명 세션 쿠키, proxy 리다이렉트, Server Action 재확인 |
 | [Claude Code 설정](claude-setup.md) | .claude 권한·편집 후 검사 훅, 유튜브 스킬 보조 스크립트(훅 채점·제목 린트·현황 요약), next-devtools MCP |
-| [데이터·MCP](data.md) | 데이터 타입·검증, 저장 백엔드(fs/GitHub 커밋), 도메인 함수, 원격 MCP 도구와 인증, 배포 설정 |
+| [데이터](data.md) | data/·content/ 파일 배치, lib/types.ts 타입과 zod 검증, Store(fs|github) 저장 계층, UI 쓰기 경로 |
+| [원격 MCP](mcp.md) | claude.ai 커스텀 커넥터용 /api/mcp — 도구 11개, 채널 단위 도메인 함수, Bearer 토큰 인증, 배포 환경 변수 |
 | [개요](overview.md) | 제품 목적·운영 제약(소유자 진술)과 코드 기준 현재 구현 상태 |
 | [위키 도구](tooling.md) | LLM Wiki 생성·검증 스크립트, Claude Code 훅과 git pre-commit 자동 실행 경로 |
-| [UI](ui.md) | 루트 레이아웃, 페이지, 전역 스타일·테마 토큰의 현재 구조 |
+| [UI](ui.md) | 라우트별 화면(리다이렉트·로그인·채널 대시보드·채널 등록), 공용 컴포넌트, 다크 테마 토큰과 폰트 |
 
 ## 생성 페이지 (스크립트 유지)
 
