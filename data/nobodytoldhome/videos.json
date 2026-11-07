@@ -49,756 +49,2318 @@
       "createdAt": "2026-11-06T11:45:00.000Z",
       "updatedAt": "2026-11-06T15:06:43.000Z",
       "notes": "게시완료 · https://youtube.com/shorts/h9bHcaWai_c · 아동용 NO · PL A+시즌겨울 · 고정댓글",
+      "title": "보일러 '외출', 3가지로 다르게 작동",
       "youtubeId": "h9bHcaWai_c",
+      "youtubeUrl": "https://youtube.com/shorts/h9bHcaWai_c",
       "publishedAt": "2026-11-07T00:06:40.196596+09:00"
     },
     {
-      "id": "boiler-pressure",
-      "workingTitle": "보일러 압력 숫자 이상하면",
+      "id": "daily-2026-11-08",
+      "workingTitle": "[소재미확정] 2026-11-08 일일 게시분",
       "format": "short",
       "status": "idea",
-      "seriesId": "winter-heating",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-08T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
       "episode": 2,
-      "pillarId": "heating",
+      "targetPublishDate": "2026-11-08"
+    },
+    {
+      "id": "daily-2026-11-09",
+      "workingTitle": "[소재미확정] 2026-11-09 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "electric",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-09T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-10",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "distributor-valves",
-      "workingTitle": "분배기 밸브 몇 개인지 확인",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "winter-heating",
       "episode": 3,
-      "pillarId": "heating",
+      "targetPublishDate": "2026-11-09"
+    },
+    {
+      "id": "daily-2026-11-10",
+      "workingTitle": "[소재미확정] 2026-11-10 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "air",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-10T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-11",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "freeze-meter",
-      "workingTitle": "수도 계량기 동파 전조",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "winter-heating",
       "episode": 4,
-      "pillarId": "water",
+      "targetPublishDate": "2026-11-10"
+    },
+    {
+      "id": "daily-2026-11-11",
+      "workingTitle": "[소재미확정] 2026-11-11 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "drain",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-11T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-12",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "toilet-tank",
-      "workingTitle": "변기 수조 물 새는 소리",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 5,
-      "pillarId": "water",
+      "targetPublishDate": "2026-11-11"
+    },
+    {
+      "id": "daily-2026-11-12",
+      "workingTitle": "[소재미확정] 2026-11-12 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "kitchen",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-12T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-13",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "shower-filter",
-      "workingTitle": "샤워기 필터 한 달에 한 번",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 6,
-      "pillarId": "water",
+      "targetPublishDate": "2026-11-12"
+    },
+    {
+      "id": "daily-2026-11-13",
+      "workingTitle": "[소재미확정] 2026-11-13 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "heating",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-13T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-16",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "drain-trap",
-      "workingTitle": "배수구 트랩 냄새 원인",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 7,
-      "pillarId": "drain",
+      "targetPublishDate": "2026-11-13"
+    },
+    {
+      "id": "daily-2026-11-14",
+      "workingTitle": "[소재미확정] 2026-11-14 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-14T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-17",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "popup-drain",
-      "workingTitle": "세면대 팝업 마개 청소",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 8,
-      "pillarId": "drain",
+      "targetPublishDate": "2026-11-14"
+    },
+    {
+      "id": "daily-2026-11-15",
+      "workingTitle": "[소재미확정] 2026-11-15 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "electric",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-15T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-18",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "gfci-test",
-      "workingTitle": "누전차단기 시험 버튼",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 9,
-      "pillarId": "electric",
+      "targetPublishDate": "2026-11-15"
+    },
+    {
+      "id": "daily-2026-11-16",
+      "workingTitle": "[소재미확정] 2026-11-16 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "air",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-16T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-19",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "breaker-box",
-      "workingTitle": "두꺼비집 내려가면 순서",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 10,
-      "pillarId": "electric",
+      "targetPublishDate": "2026-11-16"
+    },
+    {
+      "id": "daily-2026-11-17",
+      "workingTitle": "[소재미확정] 2026-11-17 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "drain",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-17T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-20",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "multitap-watt",
-      "workingTitle": "멀티탭 정격 2000W",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 11,
-      "pillarId": "electric",
+      "targetPublishDate": "2026-11-17"
+    },
+    {
+      "id": "daily-2026-11-18",
+      "workingTitle": "[소재미확정] 2026-11-18 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "kitchen",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-18T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-23",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "bill-read",
-      "workingTitle": "전기 고지서 이렇게 읽기",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 12,
-      "pillarId": "electric",
+      "targetPublishDate": "2026-11-18"
+    },
+    {
+      "id": "daily-2026-11-19",
+      "workingTitle": "[소재미확정] 2026-11-19 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "heating",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-19T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-24",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "condense-window",
-      "workingTitle": "창 결로 닦기만으로는",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "winter-heating",
       "episode": 13,
-      "pillarId": "air",
+      "targetPublishDate": "2026-11-19"
+    },
+    {
+      "id": "daily-2026-11-20",
+      "workingTitle": "[소재미확정] 2026-11-20 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-20T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-25",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "fan-filter",
-      "workingTitle": "환풍기 필터 먼지",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 14,
-      "pillarId": "air",
+      "targetPublishDate": "2026-11-20"
+    },
+    {
+      "id": "daily-2026-11-21",
+      "workingTitle": "[소재미확정] 2026-11-21 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "electric",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-21T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-26",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "silicone-mold",
-      "workingTitle": "실리콘 곰팡이 초기 대응",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 15,
+      "targetPublishDate": "2026-11-21"
+    },
+    {
+      "id": "daily-2026-11-22",
+      "workingTitle": "[소재미확정] 2026-11-22 일일 게시분",
+      "format": "short",
+      "status": "idea",
       "pillarId": "air",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-22T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-27",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "hood-filter",
-      "workingTitle": "후드 필터 기름때",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 16,
-      "pillarId": "kitchen",
+      "targetPublishDate": "2026-11-22"
+    },
+    {
+      "id": "daily-2026-11-23",
+      "workingTitle": "[소재미확정] 2026-11-23 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "drain",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-23T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-11-30",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
-    },
-    {
-      "id": "doorlock-battery",
-      "workingTitle": "도어락 배터리 교체 타이밍",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "home-basics",
       "episode": 17,
-      "pillarId": "kitchen",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "업로드": "wait"
-      },
-      "checklist": [
-        {
-          "text": "사실검증 PASS",
-          "done": false
-        },
-        {
-          "text": "대본·제목 25자 이내",
-          "done": false
-        },
-        {
-          "text": "AI 에셋·ElevenLabs·편집",
-          "done": false
-        },
-        {
-          "text": "설명란 출처·고정댓글",
-          "done": false
-        },
-        {
-          "text": "해당 플레이리스트 추가",
-          "done": false
-        }
-      ],
-      "targetPublishDate": "2026-12-01",
-      "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "targetPublishDate": "2026-11-23"
     },
     {
-      "id": "gas-flame",
-      "workingTitle": "가스레인지 불꽃 색깔",
+      "id": "daily-2026-11-24",
+      "workingTitle": "[소재미확정] 2026-11-24 일일 게시분",
       "format": "short",
       "status": "idea",
-      "seriesId": "home-basics",
-      "episode": 18,
       "pillarId": "kitchen",
+      "seriesId": "home-basics",
       "steps": {
         "소재": "wait",
         "사실검증": "wait",
         "대본": "wait",
+        "연출": "wait",
         "AI에셋": "wait",
         "음성": "wait",
         "편집": "wait",
-        "업로드": "wait"
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
       },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-24T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "명시재개/사용가능최선모델·예산 승인",
           "done": false
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "주간G0/G1통과소재 배정·안전근거",
           "done": false
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
+          "text": "G2 독립QA",
           "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
+          "text": "G3/G4 담당자 자체검수+총괄확인",
           "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
           "done": false
         }
       ],
-      "targetPublishDate": "2026-12-02",
+      "episode": 18,
+      "targetPublishDate": "2026-11-24"
+    },
+    {
+      "id": "daily-2026-11-25",
+      "workingTitle": "[소재미확정] 2026-11-25 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "heating",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
       "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-25T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 19,
+      "targetPublishDate": "2026-11-25"
+    },
+    {
+      "id": "daily-2026-11-26",
+      "workingTitle": "[소재미확정] 2026-11-26 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-26T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 20,
+      "targetPublishDate": "2026-11-26"
+    },
+    {
+      "id": "daily-2026-11-27",
+      "workingTitle": "[소재미확정] 2026-11-27 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "electric",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-27T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 21,
+      "targetPublishDate": "2026-11-27"
+    },
+    {
+      "id": "daily-2026-11-28",
+      "workingTitle": "[소재미확정] 2026-11-28 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "air",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-28T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 22,
+      "targetPublishDate": "2026-11-28"
+    },
+    {
+      "id": "daily-2026-11-29",
+      "workingTitle": "[소재미확정] 2026-11-29 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "drain",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-29T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 23,
+      "targetPublishDate": "2026-11-29"
+    },
+    {
+      "id": "daily-2026-11-30",
+      "workingTitle": "[소재미확정] 2026-11-30 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "kitchen",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-30T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 24,
+      "targetPublishDate": "2026-11-30"
+    },
+    {
+      "id": "daily-2026-12-01",
+      "workingTitle": "[소재미확정] 2026-12-01 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "heating",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-01T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 25,
+      "targetPublishDate": "2026-12-01"
+    },
+    {
+      "id": "daily-2026-12-02",
+      "workingTitle": "[소재미확정] 2026-12-02 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-02T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 26,
+      "targetPublishDate": "2026-12-02"
+    },
+    {
+      "id": "daily-2026-12-03",
+      "workingTitle": "[소재미확정] 2026-12-03 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "electric",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-03T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 27,
+      "targetPublishDate": "2026-12-03"
+    },
+    {
+      "id": "daily-2026-12-04",
+      "workingTitle": "[소재미확정] 2026-12-04 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "air",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-04T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 28,
+      "targetPublishDate": "2026-12-04"
+    },
+    {
+      "id": "daily-2026-12-05",
+      "workingTitle": "[소재미확정] 2026-12-05 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "drain",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-05T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-30T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 29,
+      "targetPublishDate": "2026-12-05"
+    },
+    {
+      "id": "daily-2026-12-06",
+      "workingTitle": "[소재미확정] 2026-12-06 일일 게시분",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "kitchen",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-06T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-30T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ],
+      "episode": 30,
+      "targetPublishDate": "2026-12-06"
+    },
+    {
+      "id": "g6-stock-a",
+      "workingTitle": "[소재미확정] G6 완성 재고 A",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 최우선미게시완성재고목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 목표재고2중1;현재G6통과0. 재고확보완료시각미정=재개+G1배치확정후임계경로실측. 오늘추가게시아님·공개일없음.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "g6-stock-b",
+      "workingTitle": "[소재미확정] G6 완성 재고 B",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 최우선미게시완성재고목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 목표재고2중1;현재G6통과0. 재고확보완료시각미정=재개+G1배치확정후임계경로실측. 오늘추가게시아님·공개일없음.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-01",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 01",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-02",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 02",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-03",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 03",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-04",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 04",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-05",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 05",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-06",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 06",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-07",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 07",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-08",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 08",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-09",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 09",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-10",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 10",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-11",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 11",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-12",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 12",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-13",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 13",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
+    },
+    {
+      "id": "topic-reserve-14",
+      "workingTitle": "[소재미확정] 승인소재 비축 목표 14",
+      "format": "short",
+      "status": "idea",
+      "pillarId": "water",
+      "seriesId": "home-basics",
+      "steps": {
+        "소재": "wait",
+        "사실검증": "wait",
+        "대본": "wait",
+        "연출": "wait",
+        "AI에셋": "wait",
+        "음성": "wait",
+        "편집": "wait",
+        "게시준비": "wait",
+        "업로드": "wait",
+        "성과": "wait"
+      },
+      "metrics": [],
+      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
+      "createdAt": "2026-11-07T13:44:29+09:00",
+      "updatedAt": "2026-11-07T13:44:29+09:00",
+      "checklist": [
+        {
+          "text": "명시재개/사용가능최선모델·예산 승인",
+          "done": false
+        },
+        {
+          "text": "주간G0/G1통과소재 배정·안전근거",
+          "done": false
+        },
+        {
+          "text": "G2 독립QA",
+          "done": false
+        },
+        {
+          "text": "G3/G4 담당자 자체검수+총괄확인",
+          "done": false
+        },
+        {
+          "text": "G5/G6 독립QA",
+          "done": false
+        },
+        {
+          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "done": false
+        }
+      ]
     }
   ]
 }

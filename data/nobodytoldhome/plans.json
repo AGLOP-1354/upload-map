@@ -2,136 +2,214 @@
   "version": 1,
   "weeks": [
     {
-      "weekOf": "2026-11-09",
-      "hoursAvailable": 10,
+      "weekOf": "2026-11-02",
       "slots": [
         {
           "videoId": "boiler-away-mode",
           "role": "anchor",
+          "due": "2026-11-07",
+          "done": true
+        },
+        {
+          "videoId": "daily-2026-11-08",
+          "role": "short",
+          "due": "2026-11-08",
+          "done": false
+        }
+      ],
+      "retro": "v3 매일1편목표;11/07기게시1호만done。그외예정/대기、실행승인별도。WIP7·단계당1/G6재고2/승인소재14 목표。"
+    },
+    {
+      "weekOf": "2026-11-09",
+      "slots": [
+        {
+          "videoId": "daily-2026-11-09",
+          "role": "short",
           "due": "2026-11-09",
           "done": false
         },
         {
-          "videoId": "boiler-pressure",
+          "videoId": "daily-2026-11-10",
           "role": "short",
           "due": "2026-11-10",
           "done": false
         },
         {
-          "videoId": "distributor-valves",
+          "videoId": "daily-2026-11-11",
           "role": "short",
           "due": "2026-11-11",
           "done": false
         },
         {
-          "videoId": "freeze-meter",
+          "videoId": "daily-2026-11-12",
           "role": "short",
           "due": "2026-11-12",
           "done": false
         },
         {
-          "videoId": "toilet-tank",
+          "videoId": "daily-2026-11-13",
           "role": "short",
           "due": "2026-11-13",
           "done": false
+        },
+        {
+          "videoId": "daily-2026-11-14",
+          "role": "short",
+          "due": "2026-11-14",
+          "done": false
+        },
+        {
+          "videoId": "daily-2026-11-15",
+          "role": "short",
+          "due": "2026-11-15",
+          "done": false
         }
-      ]
+      ],
+      "retro": "v3 매일1편목표;11/07기게시1호만done。그외예정/대기、실행승인별도。WIP7·단계당1/G6재고2/승인소재14 목표。"
     },
     {
       "weekOf": "2026-11-16",
-      "hoursAvailable": 10,
       "slots": [
         {
-          "videoId": "shower-filter",
-          "role": "anchor",
+          "videoId": "daily-2026-11-16",
+          "role": "short",
           "due": "2026-11-16",
           "done": false
         },
         {
-          "videoId": "drain-trap",
+          "videoId": "daily-2026-11-17",
           "role": "short",
           "due": "2026-11-17",
           "done": false
         },
         {
-          "videoId": "popup-drain",
+          "videoId": "daily-2026-11-18",
           "role": "short",
           "due": "2026-11-18",
           "done": false
         },
         {
-          "videoId": "gfci-test",
+          "videoId": "daily-2026-11-19",
           "role": "short",
           "due": "2026-11-19",
           "done": false
         },
         {
-          "videoId": "breaker-box",
+          "videoId": "daily-2026-11-20",
           "role": "short",
           "due": "2026-11-20",
           "done": false
+        },
+        {
+          "videoId": "daily-2026-11-21",
+          "role": "short",
+          "due": "2026-11-21",
+          "done": false
+        },
+        {
+          "videoId": "daily-2026-11-22",
+          "role": "short",
+          "due": "2026-11-22",
+          "done": false
         }
-      ]
+      ],
+      "retro": "v3 매일1편목표;11/07기게시1호만done。그외예정/대기、실행승인별도。WIP7·단계당1/G6재고2/승인소재14 목표。"
     },
     {
       "weekOf": "2026-11-23",
-      "hoursAvailable": 10,
       "slots": [
         {
-          "videoId": "multitap-watt",
-          "role": "anchor",
+          "videoId": "daily-2026-11-23",
+          "role": "short",
           "due": "2026-11-23",
           "done": false
         },
         {
-          "videoId": "bill-read",
+          "videoId": "daily-2026-11-24",
           "role": "short",
           "due": "2026-11-24",
           "done": false
         },
         {
-          "videoId": "condense-window",
+          "videoId": "daily-2026-11-25",
           "role": "short",
           "due": "2026-11-25",
           "done": false
         },
         {
-          "videoId": "fan-filter",
+          "videoId": "daily-2026-11-26",
           "role": "short",
           "due": "2026-11-26",
           "done": false
         },
         {
-          "videoId": "silicone-mold",
+          "videoId": "daily-2026-11-27",
           "role": "short",
           "due": "2026-11-27",
           "done": false
+        },
+        {
+          "videoId": "daily-2026-11-28",
+          "role": "short",
+          "due": "2026-11-28",
+          "done": false
+        },
+        {
+          "videoId": "daily-2026-11-29",
+          "role": "short",
+          "due": "2026-11-29",
+          "done": false
         }
-      ]
+      ],
+      "retro": "v3 매일1편목표;11/07기게시1호만done。그외예정/대기、실행승인별도。WIP7·단계당1/G6재고2/승인소재14 목표。"
     },
     {
       "weekOf": "2026-11-30",
-      "hoursAvailable": 10,
       "slots": [
         {
-          "videoId": "hood-filter",
-          "role": "anchor",
+          "videoId": "daily-2026-11-30",
+          "role": "short",
           "due": "2026-11-30",
           "done": false
         },
         {
-          "videoId": "doorlock-battery",
+          "videoId": "daily-2026-12-01",
           "role": "short",
           "due": "2026-12-01",
           "done": false
         },
         {
-          "videoId": "gas-flame",
+          "videoId": "daily-2026-12-02",
           "role": "short",
           "due": "2026-12-02",
           "done": false
+        },
+        {
+          "videoId": "daily-2026-12-03",
+          "role": "short",
+          "due": "2026-12-03",
+          "done": false
+        },
+        {
+          "videoId": "daily-2026-12-04",
+          "role": "short",
+          "due": "2026-12-04",
+          "done": false
+        },
+        {
+          "videoId": "daily-2026-12-05",
+          "role": "short",
+          "due": "2026-12-05",
+          "done": false
+        },
+        {
+          "videoId": "daily-2026-12-06",
+          "role": "short",
+          "due": "2026-12-06",
+          "done": false
         }
-      ]
+      ],
+      "retro": "v3 매일1편목표;11/07기게시1호만done。그외예정/대기、실행승인별도。WIP7·단계당1/G6재고2/승인소재14 목표。"
     }
   ]
 }

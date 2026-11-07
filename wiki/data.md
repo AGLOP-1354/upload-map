@@ -18,7 +18,7 @@ sources:
   - app/c/[channel]/logo/route.ts
   - next.config.ts
   - vercel.json
-verified: 4ec5dbc329886b2b
+verified: 9a9d3e477315918a
 ---
 
 # 데이터
@@ -83,7 +83,7 @@ env `DATA_STORE=github` 이면 GitHub, 아니면 fs — [lib/data/store.ts:28-30
 
 ### 빌드 생략 — `vercel.json`
 
-`data/`·`content/` 만 바뀐 커밋이면 `ignoreCommand` 가 종료 코드 0 을 내 Vercel 빌드를 건너뛴다 — [vercel.json:3](../vercel.json#L3).
+`ignoreCommand`는 `content/`를 뺀 나머지 diff가 없으면 종료 코드 0, 있으면 1이다. Vercel은 0이면 빌드를 건너뛰고 1이면 진행하므로, `content/`만 바뀐 커밋은 건너뛰고 `data/`가 바뀌면 빌드가 진행된다 — [vercel.json:3](../vercel.json#L3).
 
 ## UI 읽기·쓰기 — `lib/data/index.ts`
 
