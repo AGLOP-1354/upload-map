@@ -117,7 +117,7 @@ interface Credit { service: string; amount?: number; unit?: string; note?: strin
 - **쓰기 경로**: Server Action(`"use server"`) 또는 MCP 도구(`app/api/mcp/route.ts`)에서만, 둘 다 `lib/data` 함수를 거친다. 쓰기 전 zod 스키마로 형태 확인. Server Action은 쓴 뒤 `refresh()` (`next/cache`).
 - **fs 쓰기**: 원자적으로 같은 디렉터리에 `*.tmp` 작성 → `rename`. 모듈 단위 Promise 체인으로 직렬화. 파일 락 라이브러리는 쓰지 않는다.
 - **github 쓰기**: 변경 1회 = 커밋 1개(Git Data API: blob → tree → commit → ref 갱신 `force: false`). ref 갱신이 fast-forward 실패하면 최신 커밋 기준으로 처음부터 한 번만 재시도, 또 실패하면 에러. 커밋 메시지는 한국어로 무엇을 바꿨는지 쓴다.
-- 데이터(`data/`, `content/`)만 바뀐 커밋은 Vercel Ignored Build Step(`vercel.json`)으로 빌드를 건너뛴다.
+- `content/`만 바뀐 커밋은 Vercel Ignored Build Step(`vercel.json`)으로 빌드를 건너뛴다. `data/`가 바뀌면 빌드를 진행한다.
 - 파일이 없으면 빈 기본값으로 시작(`{ version: 1, videos: [] }` 등). 파싱 실패는 삼키지 말고 에러로 올린다 — 데이터 유실 방지.
 - `version` 을 올리는 스키마 변경 시 마이그레이션 함수를 `lib/data/migrate.ts`에 추가하고, 기존 파일은 `data/backup/<timestamp>/`에 복사한 뒤 변환.
 - 날짜: 저장은 ISO 문자열, 표시는 `Asia/Seoul`.
