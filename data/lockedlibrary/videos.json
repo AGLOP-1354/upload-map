@@ -3,7 +3,7 @@
   "videos": [
     {
       "id": "yellow-wallpaper-ep1",
-      "workingTitle": "1화",
+      "workingTitle": "의사 남편이 산후우울증 치료라며 저를 쇠창살 방에 가뒀어요",
       "format": "short",
       "status": "published",
       "seriesId": "yellow-wallpaper",
@@ -43,15 +43,22 @@
       ],
       "publishedAt": "2026-11-05T15:45:00.000Z",
       "youtubeId": "vFHIfex3Iao",
-      "metrics": [],
+      "notes": "[2026-11-09] 조회수 1,306 · 댓글 1",
+      "metrics": [
+        {
+          "capturedAt": "2026-11-09T00:20:56.819Z",
+          "daysSincePublish": 3,
+          "views": 1306
+        }
+      ],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T06:00:00.000Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     },
     {
       "id": "yellow-wallpaper-ep2",
-      "workingTitle": "2화",
+      "workingTitle": "의사 남편이 가둔 방, 벽지 무늬 뒤에서 여자가 기어 다녀요",
       "format": "short",
-      "status": "editing",
+      "status": "published",
       "seriesId": "yellow-wallpaper",
       "episode": 2,
       "steps": {
@@ -59,7 +66,8 @@
         "효과음": "done",
         "쇼츠 파츠": "done",
         "지난 이야기": "done",
-        "캡컷 조립": "part"
+        "캡컷 조립": "done",
+        "업로드": "done"
       },
       "copy": {
         "overlay": "산후우울증 치료라며 2주째 감금\n벽지 뒤로 여자가 기어 다녀요",
@@ -70,43 +78,51 @@
         {
           "text": "콜드오픈(0~3.87s) 바로 뒤에 지난 이야기(11.23s) 삽입",
           "path": "01_영상파츠/00b_지난이야기.mp4",
-          "done": false
+          "done": true
         },
         {
           "text": "나레이션 교체",
           "path": "02_나레이션/00_나레이션_전체_요약포함.wav",
-          "done": false
+          "done": true
         },
         {
           "text": "BGM 교체",
           "path": "04_BGM/02_BGM_덕킹_요약포함_엔딩5초.wav",
-          "done": false
+          "done": true
         },
         {
           "text": "자막 교체",
           "path": "자막_쇼츠_문장_줄바꿈_요약포함.srt",
-          "done": false
+          "done": true
         },
         {
           "text": "콜드오픈 이후 효과음 전부 +11.23초 이동, drone 추가",
           "path": "03_효과음/00b_003.87s_지난이야기_drone.wav",
-          "done": false
+          "done": true
         },
         {
           "text": "제목·설명(공포 썰, 괴담, 누런 벽지)·재생목록·썸네일",
-          "done": false
+          "done": true
         }
       ],
-      "targetPublishDate": "2026-11-07",
-      "metrics": [],
+      "targetPublishDate": "2026-11-06",
+      "publishedAt": "2026-11-06T00:00:00+09:00",
+      "notes": "[2026-11-09] 조회수 1,114 · 댓글 1",
+      "metrics": [
+        {
+          "capturedAt": "2026-11-09T00:20:56.819Z",
+          "daysSincePublish": 3,
+          "views": 1114
+        }
+      ],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T06:00:00.000Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     },
     {
       "id": "yellow-wallpaper-ep3",
-      "workingTitle": "3화",
+      "workingTitle": "산후우울증이라던 남편이 나가자는 말에 저를 노려봤어요",
       "format": "short",
-      "status": "editing",
+      "status": "published",
       "seriesId": "yellow-wallpaper",
       "episode": 3,
       "steps": {
@@ -114,7 +130,8 @@
         "효과음": "done",
         "쇼츠 파츠": "done",
         "지난 이야기": "done",
-        "캡컷 조립": "wait"
+        "캡컷 조립": "done",
+        "업로드": "done"
       },
       "copy": {
         "overlay": "산후우울증이라던 남편이\n나가자는 말에 저를 노려봤어요",
@@ -125,30 +142,40 @@
         {
           "text": "배치표_요약포함.txt대로 새로 조립",
           "path": "09_쇼츠_캡컷_3화/배치표_요약포함.txt",
-          "done": false
+          "done": true
         },
         {
           "text": "제목·설명·재생목록·썸네일",
-          "done": false
+          "done": true
         }
       ],
-      "targetPublishDate": "2026-11-08",
-      "metrics": [],
+      "targetPublishDate": "2026-11-07",
+      "publishedAt": "2026-11-07T00:00:00+09:00",
+      "notes": "[2026-11-09] 조회수 706 · 댓글 1",
+      "metrics": [
+        {
+          "capturedAt": "2026-11-09T00:20:56.819Z",
+          "daysSincePublish": 2,
+          "views": 706
+        }
+      ],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T07:17:44.920Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     },
     {
       "id": "yellow-wallpaper-ep4",
-      "workingTitle": "4화",
+      "workingTitle": "남편이 몰래 보던 벽지 속에 사람 머리가 매달려 있었어요",
       "format": "short",
-      "status": "editing",
+      "status": "published",
       "seriesId": "yellow-wallpaper",
       "episode": 4,
       "steps": {
         "소스": "done",
         "효과음": "done",
         "쇼츠 파츠": "done",
-        "지난 이야기": "done"
+        "지난 이야기": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
       },
       "copy": {
         "overlay": "남편과 시누이가 숨기는 것,\n벽지 속에 거꾸로 매달린 머리들",
@@ -159,30 +186,40 @@
         {
           "text": "배치표_요약포함.txt대로 새로 조립",
           "path": "09_쇼츠_캡컷_4화/배치표_요약포함.txt",
-          "done": false
+          "done": true
         },
         {
           "text": "제목·설명·재생목록·썸네일",
-          "done": false
+          "done": true
         }
       ],
-      "targetPublishDate": "2026-11-09",
-      "metrics": [],
+      "targetPublishDate": "2026-11-08",
+      "publishedAt": "2026-11-08T00:00:00+09:00",
+      "notes": "[2026-11-09] 조회수 1,321 · 댓글 1",
+      "metrics": [
+        {
+          "capturedAt": "2026-11-09T00:20:56.819Z",
+          "daysSincePublish": 1,
+          "views": 1321
+        }
+      ],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T06:00:00.000Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     },
     {
       "id": "yellow-wallpaper-ep5",
-      "workingTitle": "5화",
+      "workingTitle": "의사 남편이 문을 열자마자 그 자리에서 기절한 이유",
       "format": "short",
-      "status": "editing",
+      "status": "scheduled",
       "seriesId": "yellow-wallpaper",
       "episode": 5,
       "steps": {
         "소스": "done",
         "효과음": "done",
         "쇼츠 파츠": "done",
-        "지난 이야기": "done"
+        "지난 이야기": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
       },
       "copy": {
         "overlay": "벽지를 다 뜯어낸 아내,\n문을 연 남편이 쓰러졌어요",
@@ -194,51 +231,157 @@
         {
           "text": "배치표_요약포함.txt대로 새로 조립",
           "path": "09_쇼츠_캡컷_5화/배치표_요약포함.txt",
-          "done": false
+          "done": true
         },
         {
           "text": "제목·설명·재생목록·썸네일",
-          "done": false
+          "done": true
         }
       ],
-      "targetPublishDate": "2026-11-10",
-      "notes": "나레이션: 수진 take2, 준호 take6. S68은 스틸로 대체.",
+      "targetPublishDate": "2026-11-09",
+      "notes": "나레이션: 수진 take2, 준호 take6. S68은 스틸로 대체.\n[2026-11-09] 최종화. 11/9 19:00 공개 예약",
       "metrics": [],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T06:00:00.000Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     },
     {
       "id": "yellow-wallpaper-long",
-      "workingTitle": "롱폼 합본",
+      "workingTitle": "출산 후 의사 남편이 저를 쇠창살 방에 가둔 이유 | 전편 몰아보기",
       "format": "long",
-      "status": "editing",
+      "status": "scheduled",
       "seriesId": "yellow-wallpaper",
       "steps": {
-        "소스": "part"
+        "소스": "done",
+        "효과음": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
       },
       "checklist": [
         {
           "text": "1~5막 초안 이어 붙이기",
           "path": "04_영상/1~5막_초안.mp4",
-          "done": false
+          "done": true
         },
         {
           "text": "효과음·BGM·자막 얹기",
-          "done": false
+          "done": true
         },
         {
           "text": "롱폼 썸네일",
-          "done": false
+          "done": true
         },
         {
           "text": "제목·설명·재생목록",
-          "done": false
+          "done": true
         }
       ],
-      "targetPublishDate": "2026-11-11",
+      "targetPublishDate": "2026-11-10",
+      "notes": "[2026-11-09] 11/10 19:00 공개 예약. 11/10 19:05 고정 댓글 작성·고정 예약 작업 걸려 있음",
       "metrics": [],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T06:00:00.000Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
+    },
+    {
+      "id": "metamorphosis-ep1",
+      "workingTitle": "가족을 혼자 먹여 살리던 아들이 어느 날 아침 벌레가 됐어요",
+      "format": "short",
+      "status": "scheduled",
+      "seriesId": "metamorphosis",
+      "episode": 1,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "skip",
+        "캡컷 조립": "done",
+        "업로드": "done"
+      },
+      "targetPublishDate": "2026-11-11",
+      "notes": "[2026-11-09] 길이 1:32. 11/11 19:00 공개 예약",
+      "metrics": [],
+      "createdAt": "2026-11-09T00:20:56.819Z",
+      "updatedAt": "2026-11-09T00:20:56.819Z"
+    },
+    {
+      "id": "metamorphosis-ep2",
+      "workingTitle": "제가 벌레가 되자 아버지가 숨겨 둔 돈을 꺼냈어요",
+      "format": "short",
+      "status": "scheduled",
+      "seriesId": "metamorphosis",
+      "episode": 2,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
+      },
+      "targetPublishDate": "2026-11-12",
+      "notes": "[2026-11-09] 길이 1:44. 11/12 19:00 공개 예약",
+      "metrics": [],
+      "createdAt": "2026-11-09T00:20:56.819Z",
+      "updatedAt": "2026-11-09T00:20:56.819Z"
+    },
+    {
+      "id": "metamorphosis-ep3",
+      "workingTitle": "벌레가 된 아들에게 아버지가 사과를 던졌어요",
+      "format": "short",
+      "status": "scheduled",
+      "seriesId": "metamorphosis",
+      "episode": 3,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
+      },
+      "targetPublishDate": "2026-11-13",
+      "notes": "[2026-11-09] 길이 2:02. 11/13 19:00 공개 예약",
+      "metrics": [],
+      "createdAt": "2026-11-09T00:20:56.819Z",
+      "updatedAt": "2026-11-09T00:20:56.819Z"
+    },
+    {
+      "id": "metamorphosis-ep4",
+      "workingTitle": "\"저건 오빠가 아니야\" 여동생이 끝내 이렇게 말했어요",
+      "format": "short",
+      "status": "scheduled",
+      "seriesId": "metamorphosis",
+      "episode": 4,
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "쇼츠 파츠": "done",
+        "지난 이야기": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
+      },
+      "targetPublishDate": "2026-11-14",
+      "notes": "[2026-11-09] 길이 2:05 · 최종화. 11/14 19:00 공개 예약",
+      "metrics": [],
+      "createdAt": "2026-11-09T00:20:56.819Z",
+      "updatedAt": "2026-11-09T00:20:56.819Z"
+    },
+    {
+      "id": "metamorphosis-long",
+      "workingTitle": "가족을 먹여 살리던 아들이 벌레가 되자, 가족이 한 소름 돋는 짓 | 전편 몰아보기",
+      "format": "long",
+      "status": "scheduled",
+      "seriesId": "metamorphosis",
+      "steps": {
+        "소스": "done",
+        "효과음": "done",
+        "캡컷 조립": "done",
+        "업로드": "done"
+      },
+      "targetPublishDate": "2026-11-15",
+      "notes": "[2026-11-09] 길이 7:18. 11/15 19:00 공개 예약",
+      "metrics": [],
+      "createdAt": "2026-11-09T00:20:56.819Z",
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     }
   ]
 }
