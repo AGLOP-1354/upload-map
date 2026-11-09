@@ -2,2365 +2,840 @@
   "version": 1,
   "videos": [
     {
-      "id": "boiler-away-mode",
-      "workingTitle": "보일러 '외출', 3가지로 다르게 작동",
+      "id": "en-day-01",
+      "workingTitle": "덜 달게 주문할 때 영어로?",
       "format": "short",
-      "status": "published",
-      "seriesId": "winter-heating",
+      "status": "editing",
+      "seriesId": "situation",
       "episode": 1,
-      "pillarId": "heating",
+      "pillarId": "situation",
       "steps": {
-        "소재": "done",
-        "사실검증": "done",
+        "소재검증": "done",
         "대본": "done",
-        "AI에셋": "done",
-        "음성": "done",
-        "편집": "done",
-        "업로드": "done",
-        "연출": "done",
-        "에셋": "done",
-        "검수": "done",
-        "게시": "done"
+        "승인①": "done",
+        "비주얼": "part",
+        "편집": "part",
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
       "checklist": [
         {
-          "text": "사실검증 PASS",
+          "text": "제목·대본 승인① (2026-11-09 11:02 KST)",
           "done": true
         },
         {
-          "text": "대본·제목 25자 이내",
+          "text": "C01 #3 선택 (2026-11-09 11:16 KST)",
           "done": true
         },
         {
-          "text": "AI 에셋·ElevenLabs·편집",
-          "done": true
+          "text": "C02–C06 패키지 문서 최종검수",
+          "done": false
         },
         {
-          "text": "설명란 출처·고정댓글",
-          "done": true
+          "text": "음성 프리뷰 사용자 컨펌",
+          "done": false
         },
         {
-          "text": "해당 플레이리스트 추가",
-          "done": true
+          "text": "게시 승인③",
+          "done": false
         }
       ],
-      "targetPublishDate": "2026-11-09",
+      "package": {
+        "titles": [
+          "덜 달게 주문할 때 영어로?",
+          "덜 달게, 영어 한마디가 막힐 때"
+        ],
+        "selectedTitle": "덜 달게 주문할 때 영어로?"
+      },
+      "promise": "Less sweet, please.",
       "metrics": [],
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T15:06:43.000Z",
-      "notes": "게시완료 · https://youtube.com/shorts/h9bHcaWai_c · 아동용 NO · PL A+시즌겨울 · 고정댓글",
-      "title": "보일러 '외출', 3가지로 다르게 작동",
-      "youtubeId": "h9bHcaWai_c",
-      "youtubeUrl": "https://youtube.com/shorts/h9bHcaWai_c",
-      "publishedAt": "2026-11-07T00:06:40.196596+09:00"
+      "notes": "Day 1 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 카페에서 \"덜 달게 해주세요\"\n멈칫/한국식: Less sugar please?\n정답 후보(확정 아님): Can I get it less sweet?\n끝 질문: 여러분은 뭐라고 했어요?\n캘린더 후보. Day1 실제 검증·대본은 Less sweet, please.로 교체됨\n확정 문장: Less sweet, please. 캘린더 후보 Can I get it less sweet? 는 이 문장으로 교체됨.\n대본 v2 예상 28초. G-대본 통과, 반려 0.\nC02–C06 파일은 있으나 비주얼 패키지 문서 최종검수와 완료 보고는 미확인.\n음성 프리뷰 v2 24.68초. 사용자 컨펌 대기. 최종 조립 보류. 미게시.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
     },
     {
-      "id": "daily-2026-11-08",
-      "workingTitle": "[소재미확정] 2026-11-08 일일 게시분",
+      "id": "en-day-02",
+      "workingTitle": "식당에서 \"포장해 주세요\"",
       "format": "short",
       "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-08T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ],
+      "seriesId": "compare",
       "episode": 2,
-      "targetPublishDate": "2026-11-08"
-    },
-    {
-      "id": "daily-2026-11-09",
-      "workingTitle": "[소재미확정] 2026-11-09 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "electric",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-09T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 2 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 식당에서 \"포장해 주세요\"\n멈칫/한국식: Take out please\n정답 후보(확정 아님): Can I get this to go?\n끝 질문: 둘 다 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-03",
+      "workingTitle": "공항 체크인 \"창가 자리 주세요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 3,
-      "targetPublishDate": "2026-11-09"
-    },
-    {
-      "id": "daily-2026-11-10",
-      "workingTitle": "[소재미확정] 2026-11-10 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "air",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-10T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 3 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 공항 체크인 \"창가 자리 주세요\"\n멈칫/한국식: Window seat please\n정답 후보(확정 아님): Could I get a window seat, if possible?\n끝 질문: 복도파 vs 창가파?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-04",
+      "workingTitle": "길 물어볼 때 첫마디",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "quiz",
       "episode": 4,
-      "targetPublishDate": "2026-11-10"
-    },
-    {
-      "id": "daily-2026-11-11",
-      "workingTitle": "[소재미확정] 2026-11-11 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "drain",
-      "seriesId": "home-basics",
+      "pillarId": "quiz",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-11T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 4 · 퀴즈 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 길 물어볼 때 첫마디\n멈칫/한국식: Excuse me, ___?\n정답 후보(확정 아님): Excuse me, could you help me find…?\n끝 질문: 정답 맞힌 사람 손\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-05",
+      "workingTitle": "호텔 \"체크아웃 늦게 할 수 있어요?\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 5,
-      "targetPublishDate": "2026-11-11"
-    },
-    {
-      "id": "daily-2026-11-12",
-      "workingTitle": "[소재미확정] 2026-11-12 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "kitchen",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-12T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 5 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 호텔 \"체크아웃 늦게 할 수 있어요?\"\n멈칫/한국식: Late check out?\n정답 후보(확정 아님): Is late checkout available?\n끝 질문: 몇 시까지 됐어요?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-06",
+      "workingTitle": "직장에서 \"잠깐 시간 돼요?\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
       "episode": 6,
-      "targetPublishDate": "2026-11-12"
-    },
-    {
-      "id": "daily-2026-11-13",
-      "workingTitle": "[소재미확정] 2026-11-13 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "heating",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-13T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 6 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 직장에서 \"잠깐 시간 돼요?\"\n멈칫/한국식: Do you have time?\n정답 후보(확정 아님): Do you have a minute?\n끝 질문: 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-07",
+      "workingTitle": "이메일 \"확인 부탁드립니다\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 7,
-      "targetPublishDate": "2026-11-13"
-    },
-    {
-      "id": "daily-2026-11-14",
-      "workingTitle": "[소재미확정] 2026-11-14 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-14T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 7 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 이메일 \"확인 부탁드립니다\"\n멈칫/한국식: Please check\n정답 후보(확정 아님): Could you take a look when you get a chance?\n끝 질문: 회사에서 쓰는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-08",
+      "workingTitle": "\"I'm fine\" vs \"I'm good\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "nuance",
       "episode": 8,
-      "targetPublishDate": "2026-11-14"
-    },
-    {
-      "id": "daily-2026-11-15",
-      "workingTitle": "[소재미확정] 2026-11-15 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "electric",
-      "seriesId": "home-basics",
+      "pillarId": "nuance",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-15T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 8 · 뉴앙스 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: \"I'm fine\" vs \"I'm good\"\n정답 후보(확정 아님): 상황별 차이(vs 형식)\n끝 질문: 어느 쪽 더 많이 써요?\n뉴앙스 포맷. 한국식/정답 단일 문장 구조가 아님\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-09",
+      "workingTitle": "전화 \"잘 안 들려요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 9,
-      "targetPublishDate": "2026-11-15"
-    },
-    {
-      "id": "daily-2026-11-16",
-      "workingTitle": "[소재미확정] 2026-11-16 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "air",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-16T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 9 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 전화 \"잘 안 들려요\"\n멈칫/한국식: I can't hear\n정답 후보(확정 아님): Sorry, you're breaking up.\n끝 질문: 써먹을 일 있는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-10",
+      "workingTitle": "옷가게 \"입어봐도 돼요?\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
       "episode": 10,
-      "targetPublishDate": "2026-11-16"
-    },
-    {
-      "id": "daily-2026-11-17",
-      "workingTitle": "[소재미확정] 2026-11-17 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "drain",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-17T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 10 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 옷가게 \"입어봐도 돼요?\"\n멈칫/한국식: Can I wear this?\n정답 후보(확정 아님): Can I try this on?\n끝 질문: wear라고 한 적 있는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-11",
+      "workingTitle": "환불 요청",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 11,
-      "targetPublishDate": "2026-11-17"
-    },
-    {
-      "id": "daily-2026-11-18",
-      "workingTitle": "[소재미확정] 2026-11-18 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "kitchen",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-18T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 11 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 환불 요청\n멈칫/한국식: I want refund\n정답 후보(확정 아님): I'd like to return this, please.\n끝 질문: 환불 받아본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-12",
+      "workingTitle": "약국에서 두통약",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "quiz",
       "episode": 12,
-      "targetPublishDate": "2026-11-18"
-    },
-    {
-      "id": "daily-2026-11-19",
-      "workingTitle": "[소재미확정] 2026-11-19 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "heating",
-      "seriesId": "home-basics",
+      "pillarId": "quiz",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-19T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 12 · 퀴즈 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 약국에서 두통약\n멈칫/한국식: Do you have something for a ___?\n정답 후보(확정 아님): headache\n끝 질문: 맞혔어요?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-13",
+      "workingTitle": "택시 \"여기 세워주세요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 13,
-      "targetPublishDate": "2026-11-19"
-    },
-    {
-      "id": "daily-2026-11-20",
-      "workingTitle": "[소재미확정] 2026-11-20 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-20T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-09T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 13 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 택시 \"여기 세워주세요\"\n멈칫/한국식: Stop here\n정답 후보(확정 아님): Could you pull over here, please?\n끝 질문: 택시에서 당황한 적?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-14",
+      "workingTitle": "처음 만났을 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
       "episode": 14,
-      "targetPublishDate": "2026-11-20"
-    },
-    {
-      "id": "daily-2026-11-21",
-      "workingTitle": "[소재미확정] 2026-11-21 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "electric",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-21T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
-      "episode": 15,
-      "targetPublishDate": "2026-11-21"
+      "metrics": [],
+      "notes": "Day 14 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 처음 만났을 때\n멈칫/한국식: Nice to meet you만 반복\n정답 후보(확정 아님): It's great to finally meet you.\n끝 질문: 뭐라고 인사해요?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
     },
     {
-      "id": "daily-2026-11-22",
-      "workingTitle": "[소재미확정] 2026-11-22 일일 게시분",
+      "id": "en-day-16",
+      "workingTitle": "정중한 거절 \"다음에요\"",
       "format": "short",
       "status": "idea",
-      "pillarId": "air",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-22T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ],
+      "seriesId": "situation",
       "episode": 16,
-      "targetPublishDate": "2026-11-22"
-    },
-    {
-      "id": "daily-2026-11-23",
-      "workingTitle": "[소재미확정] 2026-11-23 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "drain",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-23T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 16 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 정중한 거절 \"다음에요\"\n멈칫/한국식: No\n정답 후보(확정 아님): I'll pass this time, but thanks.\n끝 질문: 거절 못 하는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-17",
+      "workingTitle": "칭찬 받았을 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "nuance",
       "episode": 17,
-      "targetPublishDate": "2026-11-23"
-    },
-    {
-      "id": "daily-2026-11-24",
-      "workingTitle": "[소재미확정] 2026-11-24 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "kitchen",
-      "seriesId": "home-basics",
+      "pillarId": "nuance",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-24T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 17 · 뉴앙스 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 칭찬 받았을 때\n멈칫/한국식: No no\n정답 후보(확정 아님): Thanks, that means a lot.\n끝 질문: 칭찬에 뭐라고 답해요?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-18",
+      "workingTitle": "사과 \"제 실수예요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 18,
-      "targetPublishDate": "2026-11-24"
-    },
-    {
-      "id": "daily-2026-11-25",
-      "workingTitle": "[소재미확정] 2026-11-25 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "heating",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-25T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 18 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 사과 \"제 실수예요\"\n멈칫/한국식: Sorry sorry\n정답 후보(확정 아님): My bad, I'll fix it.\n끝 질문: 회사에서 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-19",
+      "workingTitle": "단어가 생각 안 날 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
       "episode": 19,
-      "targetPublishDate": "2026-11-25"
-    },
-    {
-      "id": "daily-2026-11-26",
-      "workingTitle": "[소재미확정] 2026-11-26 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-26T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 19 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 단어가 생각 안 날 때\n멈칫/한국식: Uh… what is it\n정답 후보(확정 아님): What's the word for…?\n끝 질문: 자주 막히는 단어?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-20",
+      "workingTitle": "회의에서 \"제 말은요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 20,
-      "targetPublishDate": "2026-11-26"
-    },
-    {
-      "id": "daily-2026-11-27",
-      "workingTitle": "[소재미확정] 2026-11-27 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "electric",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-27T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-16T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 20 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 회의에서 \"제 말은요\"\n멈칫/한국식: My mean is\n정답 후보(확정 아님): What I mean is…\n끝 질문: 회의 영어 어려운 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-21",
+      "workingTitle": "화장실 어디예요",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "quiz",
       "episode": 21,
-      "targetPublishDate": "2026-11-27"
-    },
-    {
-      "id": "daily-2026-11-28",
-      "workingTitle": "[소재미확정] 2026-11-28 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "air",
-      "seriesId": "home-basics",
+      "pillarId": "quiz",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-28T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 21 · 퀴즈 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 화장실 어디예요\n멈칫/한국식: Where is the ___?\n정답 후보(확정 아님): restroom\n끝 질문: toilet이라고 한 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-22",
+      "workingTitle": "\"따로 계산할게요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 22,
-      "targetPublishDate": "2026-11-28"
-    },
-    {
-      "id": "daily-2026-11-29",
-      "workingTitle": "[소재미확정] 2026-11-29 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "drain",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-29T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 22 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: \"따로 계산할게요\"\n멈칫/한국식: Separate\n정답 후보(확정 아님): Can we split the bill?\n끝 질문: 더치페이 영어로 해본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-23",
+      "workingTitle": "와이파이 비번",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 23,
-      "targetPublishDate": "2026-11-29"
-    },
-    {
-      "id": "daily-2026-11-30",
-      "workingTitle": "[소재미확정] 2026-11-30 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "kitchen",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-11-30T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 23 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 와이파이 비번\n멈칫/한국식: Wifi password?\n정답 후보(확정 아님): Could I get the Wi-Fi password?\n끝 질문: 가장 많이 쓴 문장?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-24",
+      "workingTitle": "사진 부탁",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
       "episode": 24,
-      "targetPublishDate": "2026-11-30"
-    },
-    {
-      "id": "daily-2026-12-01",
-      "workingTitle": "[소재미확정] 2026-12-01 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "heating",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-01T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"heating\", \"searchIntent\": \"진단\", \"titleType\": \"손실형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 24 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 사진 부탁\n멈칫/한국식: Picture please\n정답 후보(확정 아님): Would you mind taking a photo of us?\n끝 질문: 여행에서 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-25",
+      "workingTitle": "\"조금 늦을 것 같아요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 25,
-      "targetPublishDate": "2026-12-01"
-    },
-    {
-      "id": "daily-2026-12-02",
-      "workingTitle": "[소재미확정] 2026-12-02 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-02T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"water\", \"searchIntent\": \"예방\", \"titleType\": \"상황형\", \"hookFormula\": \"E\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 25 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: \"조금 늦을 것 같아요\"\n멈칫/한국식: I'm late\n정답 후보(확정 아님): I'm running a few minutes late.\n끝 질문: 지각 변명 영어로?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-26",
+      "workingTitle": "주문이 잘못 나왔을 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 26,
-      "targetPublishDate": "2026-12-02"
-    },
-    {
-      "id": "daily-2026-12-03",
-      "workingTitle": "[소재미확정] 2026-12-03 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "electric",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-03T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"electric\", \"searchIntent\": \"진단\", \"titleType\": \"오해격파형\", \"hookFormula\": \"A\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 26 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 주문이 잘못 나왔을 때\n멈칫/한국식: This is wrong\n정답 후보(확정 아님): I think this isn't what I ordered.\n끝 질문: 그냥 먹은 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-27",
+      "workingTitle": "추천 부탁",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
       "episode": 27,
-      "targetPublishDate": "2026-12-03"
-    },
-    {
-      "id": "daily-2026-12-04",
-      "workingTitle": "[소재미확정] 2026-12-04 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "air",
-      "seriesId": "home-basics",
+      "pillarId": "compare",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-04T18:30:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-23T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"air\", \"searchIntent\": \"예방\", \"titleType\": \"손실형\", \"hookFormula\": \"B\", \"cutOrderVariant\": \"C\", \"narrationPattern\": \"C\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 27 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 추천 부탁\n멈칫/한국식: What is delicious?\n정답 후보(확정 아님): What do you recommend?\n끝 질문: delicious 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-28",
+      "workingTitle": "날씨 스몰톡",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "nuance",
       "episode": 28,
-      "targetPublishDate": "2026-12-04"
-    },
-    {
-      "id": "daily-2026-12-05",
-      "workingTitle": "[소재미확정] 2026-12-05 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "drain",
-      "seriesId": "home-basics",
+      "pillarId": "nuance",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-05T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-30T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"drain\", \"searchIntent\": \"진단\", \"titleType\": \"상황형\", \"hookFormula\": \"C\", \"cutOrderVariant\": \"A\", \"narrationPattern\": \"A\", \"thumbnailTextYPercent\": 35, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 28 · 뉴앙스 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 날씨 스몰톡\n멈칫/한국식: It's hot\n정답 후보(확정 아님): It's been so hot lately, hasn't it?\n끝 질문: 스몰톡 어려운 사람?\nvs 형식\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-29",
+      "workingTitle": "몸이 안 좋을 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 29,
-      "targetPublishDate": "2026-12-05"
-    },
-    {
-      "id": "daily-2026-12-06",
-      "workingTitle": "[소재미확정] 2026-12-06 일일 게시분",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "kitchen",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 일일게시목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 공개목표 2026-12-06T11:00:00+09:00 KST. 제목/실제검색어/수치/차별점/경쟁근거미확정. 배치가용예상 2026-11-30T23:59:00+09:00 > 목표선행시 초기지연위험. 분산계획={\"category\": \"kitchen\", \"searchIntent\": \"비용\", \"titleType\": \"오해격파형\", \"hookFormula\": \"D\", \"cutOrderVariant\": \"B\", \"narrationPattern\": \"B\", \"thumbnailTextYPercent\": 30, \"artStyle\": \"스타일바이블고정·반복변형대상아님\", \"status\": \"편성제약가설·실제G0/G2/G3/G6에서재검증\"}.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
       ],
+      "metrics": [],
+      "notes": "Day 29 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 몸이 안 좋을 때\n멈칫/한국식: I'm sick\n정답 후보(확정 아님): I'm not feeling well today.\n끝 질문: 회사에 뭐라고 말해요?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "en-day-30",
+      "workingTitle": "헤어질 때 \"조심히 가세요\"",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
       "episode": 30,
-      "targetPublishDate": "2026-12-06"
-    },
-    {
-      "id": "g6-stock-a",
-      "workingTitle": "[소재미확정] G6 완성 재고 A",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
+      "pillarId": "situation",
       "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
+        "소재검증": "wait",
         "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
         "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
+        "게시패키지": "wait",
+        "승인③": "wait"
       },
-      "metrics": [],
-      "notes": "v3 최우선미게시완성재고목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 목표재고2중1;현재G6통과0. 재고확보완료시각미정=재개+G1배치확정후임계경로실측. 오늘추가게시아님·공개일없음.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
       "checklist": [
         {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
+          "text": "미착수",
           "done": false
         }
-      ]
-    },
-    {
-      "id": "g6-stock-b",
-      "workingTitle": "[소재미확정] G6 완성 재고 B",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
+      ],
       "metrics": [],
-      "notes": "v3 최우선미게시완성재고목표; 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. 목표재고2중1;현재G6통과0. 재고확보완료시각미정=재개+G1배치확정후임계경로실측. 오늘추가게시아님·공개일없음.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-01",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 01",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-02",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 02",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-03",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 03",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-04",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 04",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-05",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 05",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-06",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 06",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-07",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 07",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-08",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 08",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-09",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 09",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-10",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 10",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-11",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 11",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-12",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 12",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-13",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 13",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
-    },
-    {
-      "id": "topic-reserve-14",
-      "workingTitle": "[소재미확정] 승인소재 비축 목표 14",
-      "format": "short",
-      "status": "idea",
-      "pillarId": "water",
-      "seriesId": "home-basics",
-      "steps": {
-        "소재": "wait",
-        "사실검증": "wait",
-        "대본": "wait",
-        "연출": "wait",
-        "AI에셋": "wait",
-        "음성": "wait",
-        "편집": "wait",
-        "게시준비": "wait",
-        "업로드": "wait",
-        "성과": "wait"
-      },
-      "metrics": [],
-      "notes": "v3 G0/G1승인소재비축목표(미승인); 소재미확정·조사0·검증/게이트통과0. 일일목표와실행승인별도. 최신개정 DAILY_OPERATING_RULES_2026-11-07.md:6,14-19,26-41 적용. 3편감편안폐기. G0/G1실제통과0;월요일주간40카드공급목표에서분배·필요추가발굴은승인조건. 후보/가설을승인비축14로세지않음. G2미착수인승인카드만주제비축으로집계.",
-      "createdAt": "2026-11-07T13:44:29+09:00",
-      "updatedAt": "2026-11-07T13:44:29+09:00",
-      "checklist": [
-        {
-          "text": "명시재개/사용가능최선모델·예산 승인",
-          "done": false
-        },
-        {
-          "text": "주간G0/G1통과소재 배정·안전근거",
-          "done": false
-        },
-        {
-          "text": "G2 독립QA",
-          "done": false
-        },
-        {
-          "text": "G3/G4 담당자 자체검수+총괄확인",
-          "done": false
-        },
-        {
-          "text": "G5/G6 독립QA",
-          "done": false
-        },
-        {
-          "text": "외부게시/댓글 개별사용자승인(목표시각과별도)",
-          "done": false
-        }
-      ]
+      "notes": "Day 30 · 상황·고정 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 헤어질 때 \"조심히 가세요\"\n멈칫/한국식: Go carefully\n정답 후보(확정 아님): Get home safe.\n끝 질문: 여러분은 뭐라고 인사해요?\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
     }
   ]
 }

@@ -2,18 +2,32 @@
   "version": 1,
   "series": [
     {
-      "id": "winter-heating",
-      "title": "겨울 난방·동파",
-      "description": "11~2월 시즌 우선 소재",
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "id": "situation",
+      "title": "상황",
+      "description": "영어 한 문장 포맷. 정답 문장은 후보.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
     },
     {
-      "id": "home-basics",
-      "title": "집 설비 기본",
-      "description": "사계절 공통 설비 사용법",
-      "createdAt": "2026-11-06T11:45:00.000Z",
-      "updatedAt": "2026-11-06T11:45:00.000Z"
+      "id": "compare",
+      "title": "비교",
+      "description": "영어 한 문장 포맷. 정답 문장은 후보.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "quiz",
+      "title": "퀴즈",
+      "description": "영어 한 문장 포맷. 정답 문장은 후보.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
+    },
+    {
+      "id": "nuance",
+      "title": "뉴앙스",
+      "description": "영어 한 문장 포맷. 정답 문장은 후보.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T02:32:00.000Z"
     }
   ]
 }
