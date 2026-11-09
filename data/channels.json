@@ -9,7 +9,7 @@
       "logo": "logo.jpg",
       "niche": "공포 썰",
       "cadence": { "shortsPerWeek": 5, "longPerWeek": 1 },
-      "uploadTime": "00:45",
+      "uploadTime": "19:00",
       "steps": {
         "short": ["소스", "효과음", "쇼츠 파츠", "지난 이야기", "캡컷 조립", "업로드"],
         "long": ["소스", "효과음", "캡컷 조립", "업로드"]
@@ -21,7 +21,7 @@
         "고정댓글·커뮤니티 글 게시 전 문구 확인"
       ],
       "createdAt": "2026-11-06T06:00:00.000Z",
-      "updatedAt": "2026-11-06T06:00:00.000Z"
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     },
     {
       "id": "nobodytoldhome",

@@ -7,6 +7,13 @@
       "description": "쇼츠 5부작 + 전편 합본 롱폼",
       "createdAt": "2026-11-06T06:00:00.000Z",
       "updatedAt": "2026-11-06T06:00:00.000Z"
+    },
+    {
+      "id": "metamorphosis",
+      "title": "변신",
+      "description": "쇼츠 4부작 + 전편 합본 롱폼",
+      "createdAt": "2026-11-09T00:20:56.819Z",
+      "updatedAt": "2026-11-09T00:20:56.819Z"
     }
   ]
 }
