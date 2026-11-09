@@ -3,272 +3,273 @@
   "tasks": [
     {
       "id": "cal-day-01",
-      "text": "Day 1 상황 미완료",
-      "detail": "Day 1 진행 중. 대본·승인①·C01은 확인됨. 음성 컨펌 대기, 미게시. 날짜 미정.",
+      "text": "Day 1 상황 공개됨",
+      "detail": "공개됨. https://youtube.com/shorts/dJmhRLIpzaI . 공개 시각은 요청에 없음.",
       "videoId": "en-day-01",
-      "done": false,
+      "done": true,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-02",
-      "text": "Day 2 비교 미완료",
-      "detail": "식당에서 \"포장해 주세요\" · 게시일 미정 · 예정/미착수",
+      "text": "Day 2 비교 예약",
+      "detail": "포장 요청, 한 문장이면 돼요 · 2026-11-10 18:30 KST 예약 · https://youtube.com/shorts/3ycBtDD3yxA",
       "videoId": "en-day-02",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-03",
-      "text": "Day 3 상황 미완료",
-      "detail": "공항 체크인 \"창가 자리 주세요\" · 게시일 미정 · 예정/미착수",
+      "text": "Day 3 뉘앙스 미완료",
+      "detail": "편의점 계산대에서 봉투가 필요하냐고 물을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-03",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-04",
-      "text": "Day 4 퀴즈 미완료",
-      "detail": "길 물어볼 때 첫마디 · 게시일 미정 · 예정/미착수",
+      "text": "Day 4 비교 미완료",
+      "detail": "사무실에서 동료 자리에 가서 잠깐 얘기를 청할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-04",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-05",
       "text": "Day 5 상황 미완료",
-      "detail": "호텔 \"체크아웃 늦게 할 수 있어요?\" · 게시일 미정 · 예정/미착수",
+      "detail": "동네 길에서 길 잃은 외국인에게 역 위치를 알려줄 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-05",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-06",
       "text": "Day 6 비교 미완료",
-      "detail": "직장에서 \"잠깐 시간 돼요?\" · 게시일 미정 · 예정/미착수",
+      "detail": "식당 테이블에서 주문하려고 직원을 부를 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-06",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-07",
       "text": "Day 7 상황 미완료",
-      "detail": "이메일 \"확인 부탁드립니다\" · 게시일 미정 · 예정/미착수",
+      "detail": "⚠ 검증 보강 필요 · 집에서 배달 기사 전화를 받았을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-07",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-08",
-      "text": "Day 8 뉴앙스 미완료",
-      "detail": "\"I'm fine\" vs \"I'm good\" · 게시일 미정 · 예정/미착수",
+      "text": "Day 8 퀴즈 미완료",
+      "detail": "⚠ 검증 보강 필요 · 약국에서 두통약을 찾을 때 (빈칸: something ___ a headache → for) · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-08",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-09",
       "text": "Day 9 상황 미완료",
-      "detail": "전화 \"잘 안 들려요\" · 게시일 미정 · 예정/미착수",
+      "detail": "길을 걸으며 친구에게 약속에 늦는다고 전화할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-09",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-10",
       "text": "Day 10 비교 미완료",
-      "detail": "옷가게 \"입어봐도 돼요?\" · 게시일 미정 · 예정/미착수",
+      "detail": "옷가게에서 옷을 입어 보고 싶을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-10",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-11",
-      "text": "Day 11 상황 미완료",
-      "detail": "환불 요청 · 게시일 미정 · 예정/미착수",
+      "text": "Day 11 비교 미완료",
+      "detail": "재택 화상회의에서 화면이 멈춰 말을 놓쳤을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-11",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-12",
       "text": "Day 12 퀴즈 미완료",
-      "detail": "약국에서 두통약 · 게시일 미정 · 예정/미착수",
+      "detail": "버스에서 빈 옆자리에 앉기 전 (빈칸: Is this seat ___? → taken) · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-12",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-13",
       "text": "Day 13 상황 미완료",
-      "detail": "택시 \"여기 세워주세요\" · 게시일 미정 · 예정/미착수",
+      "detail": "⚠ 검증 보강 필요 · 월요일 아침 사무실 탕비실에서 동료와 스몰톡 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-13",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-14",
-      "text": "Day 14 비교 미완료",
-      "detail": "처음 만났을 때 · 게시일 미정 · 예정/미착수",
+      "text": "Day 14 상황 미완료",
+      "detail": "⚠ 검증 보강 필요 · 마트에서 직원에게 물건 위치를 물을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-14",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-15",
-      "text": "Day 15 중간점검 (영상 없음)",
-      "detail": "게시성과에 포맷별 저장·댓글·구독 비교를 요청한 뒤 상위 2개 포맷을 정하고, 퀴즈 라인 유지/중단은 사용자 승인. 아직 실행 전. 날짜 미정.",
+      "text": "Day 15 뉘앙스 미완료",
+      "detail": "친구 집에서 내가 만든 것을 칭찬받았을 때 · 게시일 미정 · 예정/미착수",
+      "videoId": "en-day-15",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-16",
-      "text": "Day 16 상황 미완료",
-      "detail": "정중한 거절 \"다음에요\" · 게시일 미정 · 예정/미착수",
+      "text": "Day 16 비교 미완료",
+      "detail": "병원 접수대에서 진료 예약을 말할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-16",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-17",
-      "text": "Day 17 뉴앙스 미완료",
-      "detail": "칭찬 받았을 때 · 게시일 미정 · 예정/미착수",
+      "text": "Day 17 비교 미완료",
+      "detail": "사무실 옆자리 동료에게 보낸 파일 검토를 부탁할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-17",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-18",
       "text": "Day 18 상황 미완료",
-      "detail": "사과 \"제 실수예요\" · 게시일 미정 · 예정/미착수",
+      "detail": "⚠ 검증 보강 필요 · 카페 창가 자리에서 노트북을 펴고 직원에게 물을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-18",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-19",
-      "text": "Day 19 비교 미완료",
-      "detail": "단어가 생각 안 날 때 · 게시일 미정 · 예정/미착수",
+      "text": "Day 19 퀴즈 미완료",
+      "detail": "친구 셋이 저녁을 먹고 식당에서 계산을 따로 할 때 (빈칸: ___ checks → separate) · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-19",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-20",
-      "text": "Day 20 상황 미완료",
-      "detail": "회의에서 \"제 말은요\" · 게시일 미정 · 예정/미착수",
+      "text": "Day 20 비교 미완료",
+      "detail": "⚠ 검증 보강 필요 · 공원을 산책하며 친구와 약속 날짜를 정할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-20",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-21",
-      "text": "Day 21 퀴즈 미완료",
-      "detail": "화장실 어디예요 · 게시일 미정 · 예정/미착수",
+      "text": "Day 21 상황 미완료",
+      "detail": "쇼핑몰 고객센터에서 산 물건을 반품할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-21",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-22",
       "text": "Day 22 상황 미완료",
-      "detail": "\"따로 계산할게요\" · 게시일 미정 · 예정/미착수",
+      "detail": "친구 차 조수석에서 집 근처에 내려 달라고 할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-22",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-23",
-      "text": "Day 23 상황 미완료",
-      "detail": "와이파이 비번 · 게시일 미정 · 예정/미착수",
+      "text": "Day 23 뉘앙스 미완료",
+      "detail": "⚠ 검증 보강 필요 · 사무실 회의실에서 보고서의 작은 실수를 지적받았을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-23",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-24",
-      "text": "Day 24 비교 미완료",
-      "detail": "사진 부탁 · 게시일 미정 · 예정/미착수",
+      "text": "Day 24 퀴즈 미완료",
+      "detail": "집 소파에서 요리하다가 친구 전화를 받았을 때 (빈칸: call you ___ → back) · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-24",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-25",
       "text": "Day 25 상황 미완료",
-      "detail": "\"조금 늦을 것 같아요\" · 게시일 미정 · 예정/미착수",
+      "detail": "편의점에서 도시락을 사면서 데워 달라고 할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-25",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-26",
-      "text": "Day 26 상황 미완료",
-      "detail": "주문이 잘못 나왔을 때 · 게시일 미정 · 예정/미착수",
+      "text": "Day 26 비교 미완료",
+      "detail": "⚠ 검증 보강 필요 · 식당에서 다른 메뉴가 나왔을 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-26",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-27",
-      "text": "Day 27 비교 미완료",
-      "detail": "추천 부탁 · 게시일 미정 · 예정/미착수",
+      "text": "Day 27 뉘앙스 미완료",
+      "detail": "아파트 엘리베이터에서 내리며 이웃에게 인사할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-27",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-28",
-      "text": "Day 28 뉴앙스 미완료",
-      "detail": "날씨 스몰톡 · 게시일 미정 · 예정/미착수",
+      "text": "Day 28 상황 미완료",
+      "detail": "아침에 집 침대에서 팀장에게 몸이 안 좋다고 전화할 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-28",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-29",
-      "text": "Day 29 상황 미완료",
-      "detail": "몸이 안 좋을 때 · 게시일 미정 · 예정/미착수",
+      "text": "Day 29 비교 미완료",
+      "detail": "고깃집에서 친구와 식사를 마치고 내가 살 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-29",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "cal-day-30",
-      "text": "Day 30 상황·고정 미완료",
-      "detail": "헤어질 때 \"조심히 가세요\" · 게시일 미정 · 예정/미착수",
+      "text": "Day 30 비교 미완료",
+      "detail": "⚠ 검증 보강 필요 · 밤에 지하철역 앞에서 친구와 헤어질 때 · 게시일 미정 · 예정/미착수",
       "videoId": "en-day-30",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "day01-approve-script",
@@ -300,11 +301,92 @@
     {
       "id": "day01-voice-confirm",
       "text": "Day 1 음성 프리뷰 컨펌",
-      "detail": "프리뷰 v2 24.68초가 준비됨. 사용자 컨펌 전. 최종 조립 보류. 미게시.",
+      "detail": "프리뷰 v2 24.68초. 사용자 컨펌 기록은 없음. 영상은 이후 공개됨: https://youtube.com/shorts/dJmhRLIpzaI",
       "videoId": "en-day-01",
       "done": false,
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-07",
+      "text": "Day 7 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [DoorDash Dasher 도움말: 'Leave it at my door' 옵션](https://help.doordash.com/en-us/dashers/article/dasher-contract-violations-faqs) (앱 옵션 문구이고 통화 녹취는 아님)",
+      "videoId": "en-day-07",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-08",
+      "text": "Day 8 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [Cambridge 'headache': \"an extremely effective cure for a headache\"](https://dictionary.cambridge.org/dictionary/english/headache) ('for a headache' 결합만 확인, 문장 전체는 미확인)",
+      "videoId": "en-day-08",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-13",
+      "text": "Day 13 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [Lyra Practice: 미국 직장의 \"How was your weekend?\" 문화](https://lyrapractice.com/blog/how-was-your-weekend-at-work/) (학습 사이트)",
+      "videoId": "en-day-13",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-14",
+      "text": "Day 14 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [Learn English on the Internet: 마트 실용 표현](https://learnenglishontheinternet.com/real-life-english-phrases-at-the-supermarket/) (학습 사이트)",
+      "videoId": "en-day-14",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-18",
+      "text": "Day 18 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [Cambridge 'Wi-Fi'](https://dictionary.cambridge.org/dictionary/english/wi-fi) (단어 항목만, 문장 단위 근거 없음)",
+      "videoId": "en-day-18",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-20",
+      "text": "Day 20 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [Cambridge 'work': \"it works for me\"](https://dictionary.cambridge.org/dictionary/english/work) (적합하다는 뜻의 용례만 확인, 일정 질문 문장은 학습 사이트 수준)",
+      "videoId": "en-day-20",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-23",
+      "text": "Day 23 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [mmmEnglish: 작은 실수에는 'My mistake', 더 캐주얼하게는 'My bad'](https://mmmenglish.com/2019/06/14/dont-say-sorry/) (학습 사이트) · [Cambridge 'my bad'](https://dictionary.cambridge.org/dictionary/english/my-bad)",
+      "videoId": "en-day-23",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-26",
+      "text": "Day 26 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [LeanGrammar 주문 회화: \"I didn't order this dish.\"](https://leangrammar.com/ordering-food-english-conversations/) (학습 사이트)",
+      "videoId": "en-day-26",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "verify-day-30",
+      "text": "Day 30 ⚠ 검증 보강 필요",
+      "detail": "사전 예문이나 실제 사용 사례로 보강. 현재 근거: ⚠ [HiNative: 미국 화자 \"the first one(Get home safe) is the most commonly said\"](https://hinative.com/questions/10695919) (Q&A 자기 신고) · [FluentU 작별 인사 목록](https://www.fluentu.com/blog/english/say-goodbye-english/)",
+      "videoId": "en-day-30",
+      "done": false,
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     }
   ]
 }
