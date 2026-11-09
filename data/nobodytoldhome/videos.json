@@ -5,7 +5,7 @@
       "id": "en-day-01",
       "workingTitle": "덜 달게 주문할 때 영어로?",
       "format": "short",
-      "status": "editing",
+      "status": "published",
       "seriesId": "situation",
       "episode": 1,
       "pillarId": "situation",
@@ -49,15 +49,16 @@
       },
       "promise": "Less sweet, please.",
       "metrics": [],
-      "notes": "Day 1 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 카페에서 \"덜 달게 해주세요\"\n멈칫/한국식: Less sugar please?\n정답 후보(확정 아님): Can I get it less sweet?\n끝 질문: 여러분은 뭐라고 했어요?\n캘린더 후보. Day1 실제 검증·대본은 Less sweet, please.로 교체됨\n확정 문장: Less sweet, please. 캘린더 후보 Can I get it less sweet? 는 이 문장으로 교체됨.\n대본 v2 예상 28초. G-대본 통과, 반려 0.\nC02–C06 파일은 있으나 비주얼 패키지 문서 최종검수와 완료 보고는 미확인.\n음성 프리뷰 v2 24.68초. 사용자 컨펌 대기. 최종 조립 보류. 미게시.",
+      "notes": "Day 1 · 상황 · 공개됨. 유튜브 https://youtube.com/shorts/dJmhRLIpzaI . 공개 시각은 요청에 없어 publishedAt은 비움.\n장소·상황: 카페 카운터에서 음료를 덜 달게 주문\n한국식: Less sugar, please.\n목표 문장: Less sweet, please.\n한국어 뜻: 덜 달게 해주세요.\n격식: 중립·공손\nA(나): Can I get a vanilla latte?\nB(상대): Sure. Anything else?\n고정댓글: 카페에서 주문할 때 어떤 표현이 막히셨나요?\n근거: [r/starbucks 바리스타 답변](https://web.archive.org/web/20180615/https://www.reddit.com/r/starbucks/comments/4f29dz/how_to_ask_for_reduced_sweetness/)\n제목은 승인된 「덜 달게 주문할 때 영어로?」.\n확정 문장: Less sweet, please.\n제목·대본 승인① 2026-11-09 11:02 KST. 제작 진행 승인 11:03 KST. C01 #3 선택 11:16 KST.\nC02–C06 최종검수와 음성 컨펌 완료는 이 요청에서 확인되지 않음.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z",
+      "youtubeId": "dJmhRLIpzaI"
     },
     {
       "id": "en-day-02",
-      "workingTitle": "식당에서 \"포장해 주세요\"",
+      "workingTitle": "포장 요청, 한 문장이면 돼요",
       "format": "short",
-      "status": "idea",
+      "status": "scheduled",
       "seriesId": "compare",
       "episode": 2,
       "pillarId": "compare",
@@ -77,18 +78,27 @@
         }
       ],
       "metrics": [],
-      "notes": "Day 2 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 식당에서 \"포장해 주세요\"\n멈칫/한국식: Take out please\n정답 후보(확정 아님): Can I get this to go?\n끝 질문: 둘 다 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 2 · 비교 · 예약 2026-11-10 18:30 KST. 유튜브 https://youtube.com/shorts/3ycBtDD3yxA . 시각은 날짜만 저장되는 필드라 메모에 적음.\n장소·상황: 패스트푸드 카운터에서 포장 요청\n한국식: Take out, please.\n목표 문장: Can I get this to go?\n한국어 뜻: 이거 포장해 주실 수 있나요?\n격식: 중립·공손\nA(나): One cheeseburger, please.\nB(상대): Sure. Anything else?\n고정댓글: 포장할 때 어떤 표현이 막히셨나요?\n근거: [Cambridge 'to go'](https://dictionary.cambridge.org/dictionary/english/to-go)\n예약 문장: Can I get this to go?\n제작 단계 완료는 확인되지 않음.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z",
+      "targetPublishDate": "2026-11-10",
+      "youtubeId": "3ycBtDD3yxA",
+      "promise": "Can I get this to go?",
+      "package": {
+        "titles": [
+          "포장 요청, 한 문장이면 돼요"
+        ],
+        "selectedTitle": "포장 요청, 한 문장이면 돼요"
+      }
     },
     {
       "id": "en-day-03",
-      "workingTitle": "공항 체크인 \"창가 자리 주세요\"",
+      "workingTitle": "편의점 계산대에서 봉투가 필요하냐고 물을 때",
       "format": "short",
       "status": "idea",
-      "seriesId": "situation",
+      "seriesId": "nuance",
       "episode": 3,
-      "pillarId": "situation",
+      "pillarId": "nuance",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -104,19 +114,20 @@
           "done": false
         }
       ],
+      "promise": "I'm good, thanks.",
       "metrics": [],
-      "notes": "Day 3 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 공항 체크인 \"창가 자리 주세요\"\n멈칫/한국식: Window seat please\n정답 후보(확정 아님): Could I get a window seat, if possible?\n끝 질문: 복도파 vs 창가파?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 3 · 뉘앙스 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 편의점 계산대에서 봉투가 필요하냐고 물을 때\n한국식: No bag. / No need.\n목표 문장: I'm good, thanks.\n한국어 뜻: 괜찮아요(필요 없어요).\n격식: 캐주얼\nA(나): Just this, please.\nB(상대): Sure. Do you need a bag?\n고정댓글: \"I'm good\"이 '사양할게요'라는 뜻으로도 쓰이는 거 알고 계셨나요?\n근거: [Cambridge 'good': \"More coffee?\" \"No, I'm good, thanks.\"](https://dictionary.cambridge.org/dictionary/english/good)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-04",
-      "workingTitle": "길 물어볼 때 첫마디",
+      "workingTitle": "사무실에서 동료 자리에 가서 잠깐 얘기를 청할 때",
       "format": "short",
       "status": "idea",
-      "seriesId": "quiz",
+      "seriesId": "compare",
       "episode": 4,
-      "pillarId": "quiz",
+      "pillarId": "compare",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -132,14 +143,15 @@
           "done": false
         }
       ],
+      "promise": "Do you have a minute?",
       "metrics": [],
-      "notes": "Day 4 · 퀴즈 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 길 물어볼 때 첫마디\n멈칫/한국식: Excuse me, ___?\n정답 후보(확정 아님): Excuse me, could you help me find…?\n끝 질문: 정답 맞힌 사람 손\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 4 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 사무실에서 동료 자리에 가서 잠깐 얘기를 청할 때\n한국식: Do you have time?\n목표 문장: Do you have a minute?\n한국어 뜻: 잠깐 시간 돼요?\n격식: 중립\nA(나): Hey, Jake.\nB(상대): Oh, hi. What's up?\n고정댓글: 회사에서 말 걸 때 첫마디 뭐라고 하세요?\n근거: [Cambridge 'minute': have a minute (US got a minute)](https://dictionary.cambridge.org/dictionary/english/minute)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-05",
-      "workingTitle": "호텔 \"체크아웃 늦게 할 수 있어요?\"",
+      "workingTitle": "동네 길에서 길 잃은 외국인에게 역 위치를 알려줄 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -160,14 +172,15 @@
           "done": false
         }
       ],
+      "promise": "It's right over there.",
       "metrics": [],
-      "notes": "Day 5 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 호텔 \"체크아웃 늦게 할 수 있어요?\"\n멈칫/한국식: Late check out?\n정답 후보(확정 아님): Is late checkout available?\n끝 질문: 몇 시까지 됐어요?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 5 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 동네 길에서 길 잃은 외국인에게 역 위치를 알려줄 때\n한국식: There! / That side.\n목표 문장: It's right over there.\n한국어 뜻: 바로 저기예요.\n격식: 중립\nA(나): Hi, are you looking for something?\nB(상대): Yes, the subway station.\n고정댓글: 외국인이 길 물어봤을 때 당황한 적 있나요?\n근거: [Cambridge 'over there'](https://dictionary.cambridge.org/dictionary/english/over-there)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-06",
-      "workingTitle": "직장에서 \"잠깐 시간 돼요?\"",
+      "workingTitle": "식당 테이블에서 주문하려고 직원을 부를 때",
       "format": "short",
       "status": "idea",
       "seriesId": "compare",
@@ -188,14 +201,15 @@
           "done": false
         }
       ],
+      "promise": "We're ready to order.",
       "metrics": [],
-      "notes": "Day 6 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 직장에서 \"잠깐 시간 돼요?\"\n멈칫/한국식: Do you have time?\n정답 후보(확정 아님): Do you have a minute?\n끝 질문: 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 6 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 식당 테이블에서 주문하려고 직원을 부를 때\n한국식: Order, please!\n목표 문장: We're ready to order.\n한국어 뜻: 주문할게요.\n격식: 중립·공손\nA(나): Excuse me!\nB(상대): Hi there! Need a few more minutes?\n고정댓글: 식당에서 직원 부를 때 뭐라고 하세요?\n근거: [Cambridge 'ready': \"Are you ready to order?\" the waiter asked.](https://dictionary.cambridge.org/dictionary/english/ready)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-07",
-      "workingTitle": "이메일 \"확인 부탁드립니다\"",
+      "workingTitle": "집에서 배달 기사 전화를 받았을 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -214,21 +228,26 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "You can leave it at the door.",
       "metrics": [],
-      "notes": "Day 7 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 이메일 \"확인 부탁드립니다\"\n멈칫/한국식: Please check\n정답 후보(확정 아님): Could you take a look when you get a chance?\n끝 질문: 회사에서 쓰는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 7 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 집에서 배달 기사 전화를 받았을 때\n한국식: Door, please. / Front door put.\n목표 문장: You can leave it at the door.\n한국어 뜻: 문 앞에 두고 가시면 돼요.\n격식: 중립·공손\nA(나): Hello?\nB(상대): Hi, I'm here with your food.\n고정댓글: 배달 기사님과 영어로 통화해 본 적 있나요?\n근거: ⚠ [DoorDash Dasher 도움말: 'Leave it at my door' 옵션](https://help.doordash.com/en-us/dashers/article/dasher-contract-violations-faqs) (앱 옵션 문구이고 통화 녹취는 아님)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-08",
-      "workingTitle": "\"I'm fine\" vs \"I'm good\"",
+      "workingTitle": "약국에서 두통약을 찾을 때 (빈칸: something ___ a headache → for)",
       "format": "short",
       "status": "idea",
-      "seriesId": "nuance",
+      "seriesId": "quiz",
       "episode": 8,
-      "pillarId": "nuance",
+      "pillarId": "quiz",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -242,16 +261,21 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "Do you have something for a headache?",
       "metrics": [],
-      "notes": "Day 8 · 뉴앙스 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: \"I'm fine\" vs \"I'm good\"\n정답 후보(확정 아님): 상황별 차이(vs 형식)\n끝 질문: 어느 쪽 더 많이 써요?\n뉴앙스 포맷. 한국식/정답 단일 문장 구조가 아님\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 8 · 퀴즈 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 약국에서 두통약을 찾을 때 (빈칸: something ___ a headache → for)\n한국식: Headache medicine, please.\n목표 문장: Do you have something for a headache?\n한국어 뜻: 두통에 먹는 약 있어요?\n격식: 중립·공손\nA(나): Hi, excuse me.\nB(상대): Hi, how can I help you?\n고정댓글: 빈칸에 뭐가 들어갈지 바로 떠올랐나요?\n근거: ⚠ [Cambridge 'headache': \"an extremely effective cure for a headache\"](https://dictionary.cambridge.org/dictionary/english/headache) ('for a headache' 결합만 확인, 문장 전체는 미확인)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-09",
-      "workingTitle": "전화 \"잘 안 들려요\"",
+      "workingTitle": "길을 걸으며 친구에게 약속에 늦는다고 전화할 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -272,14 +296,15 @@
           "done": false
         }
       ],
+      "promise": "I'm running a few minutes late.",
       "metrics": [],
-      "notes": "Day 9 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 전화 \"잘 안 들려요\"\n멈칫/한국식: I can't hear\n정답 후보(확정 아님): Sorry, you're breaking up.\n끝 질문: 써먹을 일 있는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 9 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 길을 걸으며 친구에게 약속에 늦는다고 전화할 때\n한국식: I'm late.\n목표 문장: I'm running a few minutes late.\n한국어 뜻: 나 몇 분 늦을 것 같아.\n격식: 캐주얼\nA(나): Hey, it's me.\nB(상대): Hey! Where are you?\n고정댓글: 약속에 늦을 때 뭐라고 연락하세요?\n근거: [Cambridge 'run': be running late = 약속 시간에 맞춰 도착하지 못하다](https://dictionary.cambridge.org/dictionary/english/run)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-10",
-      "workingTitle": "옷가게 \"입어봐도 돼요?\"",
+      "workingTitle": "옷가게에서 옷을 입어 보고 싶을 때",
       "format": "short",
       "status": "idea",
       "seriesId": "compare",
@@ -300,19 +325,20 @@
           "done": false
         }
       ],
+      "promise": "Can I try this on?",
       "metrics": [],
-      "notes": "Day 10 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 옷가게 \"입어봐도 돼요?\"\n멈칫/한국식: Can I wear this?\n정답 후보(확정 아님): Can I try this on?\n끝 질문: wear라고 한 적 있는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 10 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 옷가게에서 옷을 입어 보고 싶을 때\n한국식: Can I wear this?\n목표 문장: Can I try this on?\n한국어 뜻: 이거 입어 봐도 돼요?\n격식: 중립\nA(나): Excuse me.\nB(상대): Hi! Can I help you find something?\n고정댓글: 옷가게에서 써 보고 싶은 표현 또 있나요?\n근거: [Cambridge 'try something on'](https://dictionary.cambridge.org/dictionary/english/try-on)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-11",
-      "workingTitle": "환불 요청",
+      "workingTitle": "재택 화상회의에서 화면이 멈춰 말을 놓쳤을 때",
       "format": "short",
       "status": "idea",
-      "seriesId": "situation",
+      "seriesId": "compare",
       "episode": 11,
-      "pillarId": "situation",
+      "pillarId": "compare",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -328,14 +354,15 @@
           "done": false
         }
       ],
+      "promise": "Sorry, could you say that again?",
       "metrics": [],
-      "notes": "Day 11 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 환불 요청\n멈칫/한국식: I want refund\n정답 후보(확정 아님): I'd like to return this, please.\n끝 질문: 환불 받아본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 11 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 재택 화상회의에서 화면이 멈춰 말을 놓쳤을 때\n한국식: Pardon? / One more time, please.\n목표 문장: Sorry, could you say that again?\n한국어 뜻: 죄송한데, 다시 말씀해 주시겠어요?\n격식: 공손\nA(나): Sorry, my screen froze.\nB(상대): Oh, no problem.\n고정댓글: 회의에서 못 알아들었을 때 어떻게 하세요?\n근거: [HiNative: 미국 화자들의 'Pardon' 관련 답변](https://hinative.com/questions/25607070) ('Pardon'은 격식·구식 느낌이고 \"Could you say that again?\" 쪽이 더 흔하다는 자기 신고 답변)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-12",
-      "workingTitle": "약국에서 두통약",
+      "workingTitle": "버스에서 빈 옆자리에 앉기 전 (빈칸: Is this seat ___? → taken)",
       "format": "short",
       "status": "idea",
       "seriesId": "quiz",
@@ -356,14 +383,15 @@
           "done": false
         }
       ],
+      "promise": "Is this seat taken?",
       "metrics": [],
-      "notes": "Day 12 · 퀴즈 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 약국에서 두통약\n멈칫/한국식: Do you have something for a ___?\n정답 후보(확정 아님): headache\n끝 질문: 맞혔어요?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 12 · 퀴즈 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 버스에서 빈 옆자리에 앉기 전 (빈칸: Is this seat ___? → taken)\n한국식: Can I sit? / Is here empty?\n목표 문장: Is this seat taken?\n한국어 뜻: 여기 자리 있어요?\n격식: 중립\nA(나): Excuse me.\nB(상대): Yes?\n고정댓글: 정답 단어 맞히셨나요?\n근거: [Cambridge 'seat': \"Is this seat free/taken?\"](https://dictionary.cambridge.org/dictionary/english/seat)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-13",
-      "workingTitle": "택시 \"여기 세워주세요\"",
+      "workingTitle": "월요일 아침 사무실 탕비실에서 동료와 스몰톡",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -382,48 +410,25 @@
         {
           "text": "미착수",
           "done": false
-        }
-      ],
-      "metrics": [],
-      "notes": "Day 13 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 택시 \"여기 세워주세요\"\n멈칫/한국식: Stop here\n정답 후보(확정 아님): Could you pull over here, please?\n끝 질문: 택시에서 당황한 적?\n예정. 제작·검수·게시 시작 전.",
-      "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
-    },
-    {
-      "id": "en-day-14",
-      "workingTitle": "처음 만났을 때",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "compare",
-      "episode": 14,
-      "pillarId": "compare",
-      "steps": {
-        "소재검증": "wait",
-        "대본": "wait",
-        "승인①": "wait",
-        "비주얼": "wait",
-        "편집": "wait",
-        "게시패키지": "wait",
-        "승인③": "wait"
-      },
-      "checklist": [
+        },
         {
-          "text": "미착수",
+          "text": "⚠ 검증 보강 필요",
           "done": false
         }
       ],
+      "promise": "How was your weekend?",
       "metrics": [],
-      "notes": "Day 14 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 처음 만났을 때\n멈칫/한국식: Nice to meet you만 반복\n정답 후보(확정 아님): It's great to finally meet you.\n끝 질문: 뭐라고 인사해요?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 13 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 월요일 아침 사무실 탕비실에서 동료와 스몰톡\n한국식: What did you do weekend?\n목표 문장: How was your weekend?\n한국어 뜻: 주말 잘 보냈어요?\n격식: 캐주얼·중립\nA(나): Morning, Sarah!\nB(상대): Oh, hey! Good morning.\n고정댓글: 월요일 스몰톡, 뭐라고 시작하세요?\n근거: ⚠ [Lyra Practice: 미국 직장의 \"How was your weekend?\" 문화](https://lyrapractice.com/blog/how-was-your-weekend-at-work/) (학습 사이트)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
-      "id": "en-day-16",
-      "workingTitle": "정중한 거절 \"다음에요\"",
+      "id": "en-day-14",
+      "workingTitle": "마트에서 직원에게 물건 위치를 물을 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
-      "episode": 16,
+      "episode": 14,
       "pillarId": "situation",
       "steps": {
         "소재검증": "wait",
@@ -438,20 +443,25 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "Where can I find the eggs?",
       "metrics": [],
-      "notes": "Day 16 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 정중한 거절 \"다음에요\"\n멈칫/한국식: No\n정답 후보(확정 아님): I'll pass this time, but thanks.\n끝 질문: 거절 못 하는 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 14 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 마트에서 직원에게 물건 위치를 물을 때\n한국식: Where is eggs?\n목표 문장: Where can I find the eggs?\n한국어 뜻: 계란 어디 있어요?\n격식: 중립·공손\nA(나): Excuse me, sorry.\nB(상대): Hi! What can I help you with?\n고정댓글: 마트에서 제일 찾기 어려웠던 물건은?\n근거: ⚠ [Learn English on the Internet: 마트 실용 표현](https://learnenglishontheinternet.com/real-life-english-phrases-at-the-supermarket/) (학습 사이트)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
-      "id": "en-day-17",
-      "workingTitle": "칭찬 받았을 때",
+      "id": "en-day-15",
+      "workingTitle": "친구 집에서 내가 만든 것을 칭찬받았을 때",
       "format": "short",
       "status": "idea",
       "seriesId": "nuance",
-      "episode": 17,
+      "episode": 15,
       "pillarId": "nuance",
       "steps": {
         "소재검증": "wait",
@@ -468,14 +478,73 @@
           "done": false
         }
       ],
+      "promise": "Thanks, that means a lot.",
       "metrics": [],
-      "notes": "Day 17 · 뉴앙스 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 칭찬 받았을 때\n멈칫/한국식: No no\n정답 후보(확정 아님): Thanks, that means a lot.\n끝 질문: 칭찬에 뭐라고 답해요?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 15 · 뉘앙스 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 친구 집에서 내가 만든 것을 칭찬받았을 때\n한국식: No, no… (손사래 겸손)\n목표 문장: Thanks, that means a lot.\n한국어 뜻: 고마워, 그 말 정말 힘이 된다.\n격식: 캐주얼·중립\nA(나): So… what do you think?\nB(상대): Honestly, I love it.\n고정댓글: 칭찬받으면 바로 \"아니에요\"가 나오시나요?\n근거: [Cambridge 'mean': \"Thanks for your support — it means a lot.\"](https://dictionary.cambridge.org/dictionary/english/mean)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T07:50:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "en-day-16",
+      "workingTitle": "병원 접수대에서 진료 예약을 말할 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
+      "episode": 16,
+      "pillarId": "compare",
+      "steps": {
+        "소재검증": "wait",
+        "대본": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
+        "편집": "wait",
+        "게시패키지": "wait",
+        "승인③": "wait"
+      },
+      "checklist": [
+        {
+          "text": "미착수",
+          "done": false
+        }
+      ],
+      "promise": "I have an appointment at three.",
+      "metrics": [],
+      "notes": "Day 16 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 병원 접수대에서 진료 예약을 말할 때\n한국식: I made a reservation.\n목표 문장: I have an appointment at three.\n한국어 뜻: 3시에 예약했어요.\n격식: 중립·공손\nA(나): Hi, good afternoon.\nB(상대): Hi. How can I help you?\n고정댓글: 병원 예약, reservation이라고 해 본 적 있나요?\n근거: [Cambridge 'appointment': \"I have a dental appointment…\"](https://dictionary.cambridge.org/dictionary/english/appointment) · [Cambridge 'reservation': 좌석·식당 테이블](https://dictionary.cambridge.org/dictionary/english/reservation)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "en-day-17",
+      "workingTitle": "사무실 옆자리 동료에게 보낸 파일 검토를 부탁할 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
+      "episode": 17,
+      "pillarId": "compare",
+      "steps": {
+        "소재검증": "wait",
+        "대본": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
+        "편집": "wait",
+        "게시패키지": "wait",
+        "승인③": "wait"
+      },
+      "checklist": [
+        {
+          "text": "미착수",
+          "done": false
+        }
+      ],
+      "promise": "Could you take a look?",
+      "metrics": [],
+      "notes": "Day 17 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 사무실 옆자리 동료에게 보낸 파일 검토를 부탁할 때\n한국식: Please check.\n목표 문장: Could you take a look?\n한국어 뜻: 한번 봐 주실 수 있어요?\n격식: 중립·공손\nA(나): Hey, I just sent you the file.\nB(상대): Oh, okay. Got it.\n고정댓글: 업무 메시지에서 제일 자주 쓰는 영어는?\n근거: [Cambridge 'take a look' (mainly US, UK have a look)](https://dictionary.cambridge.org/dictionary/english/take-a-look)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-18",
-      "workingTitle": "사과 \"제 실수예요\"",
+      "workingTitle": "카페 창가 자리에서 노트북을 펴고 직원에게 물을 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -494,76 +563,25 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "What's the Wi-Fi password?",
       "metrics": [],
-      "notes": "Day 18 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 사과 \"제 실수예요\"\n멈칫/한국식: Sorry sorry\n정답 후보(확정 아님): My bad, I'll fix it.\n끝 질문: 회사에서 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 18 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 카페 창가 자리에서 노트북을 펴고 직원에게 물을 때\n한국식: Wi-Fi password?\n목표 문장: What's the Wi-Fi password?\n한국어 뜻: 와이파이 비밀번호가 뭐예요?\n격식: 중립\nA(나): Hi, sorry to bother you.\nB(상대): No worries. What's up?\n고정댓글: 카페 가면 제일 먼저 묻는 건?\n근거: ⚠ [Cambridge 'Wi-Fi'](https://dictionary.cambridge.org/dictionary/english/wi-fi) (단어 항목만, 문장 단위 근거 없음)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-19",
-      "workingTitle": "단어가 생각 안 날 때",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "compare",
-      "episode": 19,
-      "pillarId": "compare",
-      "steps": {
-        "소재검증": "wait",
-        "대본": "wait",
-        "승인①": "wait",
-        "비주얼": "wait",
-        "편집": "wait",
-        "게시패키지": "wait",
-        "승인③": "wait"
-      },
-      "checklist": [
-        {
-          "text": "미착수",
-          "done": false
-        }
-      ],
-      "metrics": [],
-      "notes": "Day 19 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 단어가 생각 안 날 때\n멈칫/한국식: Uh… what is it\n정답 후보(확정 아님): What's the word for…?\n끝 질문: 자주 막히는 단어?\n예정. 제작·검수·게시 시작 전.",
-      "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
-    },
-    {
-      "id": "en-day-20",
-      "workingTitle": "회의에서 \"제 말은요\"",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "situation",
-      "episode": 20,
-      "pillarId": "situation",
-      "steps": {
-        "소재검증": "wait",
-        "대본": "wait",
-        "승인①": "wait",
-        "비주얼": "wait",
-        "편집": "wait",
-        "게시패키지": "wait",
-        "승인③": "wait"
-      },
-      "checklist": [
-        {
-          "text": "미착수",
-          "done": false
-        }
-      ],
-      "metrics": [],
-      "notes": "Day 20 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 회의에서 \"제 말은요\"\n멈칫/한국식: My mean is\n정답 후보(확정 아님): What I mean is…\n끝 질문: 회의 영어 어려운 사람?\n예정. 제작·검수·게시 시작 전.",
-      "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
-    },
-    {
-      "id": "en-day-21",
-      "workingTitle": "화장실 어디예요",
+      "workingTitle": "친구 셋이 저녁을 먹고 식당에서 계산을 따로 할 때 (빈칸: ___ checks → separate)",
       "format": "short",
       "status": "idea",
       "seriesId": "quiz",
-      "episode": 21,
+      "episode": 19,
       "pillarId": "quiz",
       "steps": {
         "소재검증": "wait",
@@ -580,14 +598,77 @@
           "done": false
         }
       ],
+      "promise": "Could we get separate checks?",
       "metrics": [],
-      "notes": "Day 21 · 퀴즈 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 화장실 어디예요\n멈칫/한국식: Where is the ___?\n정답 후보(확정 아님): restroom\n끝 질문: toilet이라고 한 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 19 · 퀴즈 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 친구 셋이 저녁을 먹고 식당에서 계산을 따로 할 때 (빈칸: ___ checks → separate)\n한국식: Calculate separately, please.\n목표 문장: Could we get separate checks?\n한국어 뜻: 계산 따로 해 주실 수 있어요?\n격식: 공손\nA(나): Excuse me!\nB(상대): Hi! Ready for the check?\n고정댓글: 더치페이 영어로 해 본 적 있나요?\n근거: [Dictionary.com 'separate': \"not shared; individual: separate checks\"](https://www.dictionary.com/browse/separate) · [Cambridge 'check' (US 계산서)](https://dictionary.cambridge.org/dictionary/english/check)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "en-day-20",
+      "workingTitle": "공원을 산책하며 친구와 약속 날짜를 정할 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "compare",
+      "episode": 20,
+      "pillarId": "compare",
+      "steps": {
+        "소재검증": "wait",
+        "대본": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
+        "편집": "wait",
+        "게시패키지": "wait",
+        "승인③": "wait"
+      },
+      "checklist": [
+        {
+          "text": "미착수",
+          "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
+        }
+      ],
+      "promise": "Does Friday work for you?",
+      "metrics": [],
+      "notes": "Day 20 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 공원을 산책하며 친구와 약속 날짜를 정할 때\n한국식: Are you possible Friday?\n목표 문장: Does Friday work for you?\n한국어 뜻: 금요일 괜찮아?\n격식: 캐주얼·중립\nA(나): We should grab dinner soon.\nB(상대): Yes! When are you free?\n고정댓글: 약속 잡을 때 뭐라고 물어보세요?\n근거: ⚠ [Cambridge 'work': \"it works for me\"](https://dictionary.cambridge.org/dictionary/english/work) (적합하다는 뜻의 용례만 확인, 일정 질문 문장은 학습 사이트 수준)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "en-day-21",
+      "workingTitle": "쇼핑몰 고객센터에서 산 물건을 반품할 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
+      "episode": 21,
+      "pillarId": "situation",
+      "steps": {
+        "소재검증": "wait",
+        "대본": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
+        "편집": "wait",
+        "게시패키지": "wait",
+        "승인③": "wait"
+      },
+      "checklist": [
+        {
+          "text": "미착수",
+          "done": false
+        }
+      ],
+      "promise": "I'd like to return this.",
+      "metrics": [],
+      "notes": "Day 21 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 쇼핑몰 고객센터에서 산 물건을 반품할 때\n한국식: Refund, please.\n목표 문장: I'd like to return this.\n한국어 뜻: 이거 반품하고 싶어요.\n격식: 공손\nA(나): Hi, excuse me.\nB(상대): Hi there! What can I do for you?\n고정댓글: 반품하러 가서 말 막힌 적 있나요?\n근거: [Cambridge 'return': \"…so they returned it to the shop.\"](https://dictionary.cambridge.org/dictionary/english/return)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-22",
-      "workingTitle": "\"따로 계산할게요\"",
+      "workingTitle": "친구 차 조수석에서 집 근처에 내려 달라고 할 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -608,19 +689,20 @@
           "done": false
         }
       ],
+      "promise": "You can just drop me off here.",
       "metrics": [],
-      "notes": "Day 22 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: \"따로 계산할게요\"\n멈칫/한국식: Separate\n정답 후보(확정 아님): Can we split the bill?\n끝 질문: 더치페이 영어로 해본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 22 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 친구 차 조수석에서 집 근처에 내려 달라고 할 때\n한국식: Stop here.\n목표 문장: You can just drop me off here.\n한국어 뜻: 여기서 내려 주면 돼.\n격식: 캐주얼\nA(나): Oh, this is my street.\nB(상대): Okay, where should I stop?\n고정댓글: 친구 차 얻어 탈 때 쓰는 말 또 있나요?\n근거: [Cambridge 'drop off': 차로 데려다주고 내려 주다](https://dictionary.cambridge.org/dictionary/english/drop-off)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-23",
-      "workingTitle": "와이파이 비번",
+      "workingTitle": "사무실 회의실에서 보고서의 작은 실수를 지적받았을 때",
       "format": "short",
       "status": "idea",
-      "seriesId": "situation",
+      "seriesId": "nuance",
       "episode": 23,
-      "pillarId": "situation",
+      "pillarId": "nuance",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -634,21 +716,26 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "Sorry, my mistake.",
       "metrics": [],
-      "notes": "Day 23 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 와이파이 비번\n멈칫/한국식: Wifi password?\n정답 후보(확정 아님): Could I get the Wi-Fi password?\n끝 질문: 가장 많이 쓴 문장?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 23 · 뉘앙스 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 사무실 회의실에서 보고서의 작은 실수를 지적받았을 때\n한국식: Sorry, sorry, sorry.\n목표 문장: Sorry, my mistake.\n한국어 뜻: 죄송해요, 제 실수예요.\n격식: 중립(작은 실수용)\nA(나): Hey, about the report…\nB(상대): Yeah, I think the date is wrong.\n고정댓글: 실수했을 때 영어로 뭐라고 하세요?\n근거: ⚠ [mmmEnglish: 작은 실수에는 'My mistake', 더 캐주얼하게는 'My bad'](https://mmmenglish.com/2019/06/14/dont-say-sorry/) (학습 사이트) · [Cambridge 'my bad'](https://dictionary.cambridge.org/dictionary/english/my-bad)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-24",
-      "workingTitle": "사진 부탁",
+      "workingTitle": "집 소파에서 요리하다가 친구 전화를 받았을 때 (빈칸: call you ___ → back)",
       "format": "short",
       "status": "idea",
-      "seriesId": "compare",
+      "seriesId": "quiz",
       "episode": 24,
-      "pillarId": "compare",
+      "pillarId": "quiz",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -664,14 +751,15 @@
           "done": false
         }
       ],
+      "promise": "Can I call you back?",
       "metrics": [],
-      "notes": "Day 24 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 사진 부탁\n멈칫/한국식: Picture please\n정답 후보(확정 아님): Would you mind taking a photo of us?\n끝 질문: 여행에서 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 24 · 퀴즈 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 집 소파에서 요리하다가 친구 전화를 받았을 때 (빈칸: call you ___ → back)\n한국식: I'll call again.\n목표 문장: Can I call you back?\n한국어 뜻: 내가 다시 전화해도 될까?\n격식: 캐주얼·중립\nA(나): Hello?\nB(상대): Hey! Got a sec?\n고정댓글: 정답 단어 맞히셨나요?\n근거: [Cambridge 'call back': \"I'm a bit busy - can I call you back later?\"](https://dictionary.cambridge.org/dictionary/english/call-back)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-25",
-      "workingTitle": "\"조금 늦을 것 같아요\"",
+      "workingTitle": "편의점에서 도시락을 사면서 데워 달라고 할 때",
       "format": "short",
       "status": "idea",
       "seriesId": "situation",
@@ -692,46 +780,19 @@
           "done": false
         }
       ],
+      "promise": "Could you heat this up?",
       "metrics": [],
-      "notes": "Day 25 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: \"조금 늦을 것 같아요\"\n멈칫/한국식: I'm late\n정답 후보(확정 아님): I'm running a few minutes late.\n끝 질문: 지각 변명 영어로?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 25 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 편의점에서 도시락을 사면서 데워 달라고 할 때\n한국식: Microwave, please.\n목표 문장: Could you heat this up?\n한국어 뜻: 이거 데워 주실 수 있어요?\n격식: 공손\nA(나): Hi, just this lunch box.\nB(상대): Okay. Is that all?\n고정댓글: 편의점 최애 메뉴는?\n근거: [Cambridge 'heat up': \"…you can heat it up in a microwave.\"](https://dictionary.cambridge.org/dictionary/english/heat-up) (※ 점원이 데워 주는 설정은 해외 편의점 기준)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-26",
-      "workingTitle": "주문이 잘못 나왔을 때",
-      "format": "short",
-      "status": "idea",
-      "seriesId": "situation",
-      "episode": 26,
-      "pillarId": "situation",
-      "steps": {
-        "소재검증": "wait",
-        "대본": "wait",
-        "승인①": "wait",
-        "비주얼": "wait",
-        "편집": "wait",
-        "게시패키지": "wait",
-        "승인③": "wait"
-      },
-      "checklist": [
-        {
-          "text": "미착수",
-          "done": false
-        }
-      ],
-      "metrics": [],
-      "notes": "Day 26 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 주문이 잘못 나왔을 때\n멈칫/한국식: This is wrong\n정답 후보(확정 아님): I think this isn't what I ordered.\n끝 질문: 그냥 먹은 사람?\n예정. 제작·검수·게시 시작 전.",
-      "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
-    },
-    {
-      "id": "en-day-27",
-      "workingTitle": "추천 부탁",
+      "workingTitle": "식당에서 다른 메뉴가 나왔을 때",
       "format": "short",
       "status": "idea",
       "seriesId": "compare",
-      "episode": 27,
+      "episode": 26,
       "pillarId": "compare",
       "steps": {
         "소재검증": "wait",
@@ -746,20 +807,25 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "Sorry, I didn't order this.",
       "metrics": [],
-      "notes": "Day 27 · 비교 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 추천 부탁\n멈칫/한국식: What is delicious?\n정답 후보(확정 아님): What do you recommend?\n끝 질문: delicious 써본 사람?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 26 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 식당에서 다른 메뉴가 나왔을 때\n한국식: This is wrong.\n목표 문장: Sorry, I didn't order this.\n한국어 뜻: 죄송한데, 이거 안 시켰어요.\n격식: 중립·공손\nA(나): Excuse me.\nB(상대): Yes? Is everything okay?\n고정댓글: 잘못 나온 음식, 그냥 드신 적 있나요?\n근거: ⚠ [LeanGrammar 주문 회화: \"I didn't order this dish.\"](https://leangrammar.com/ordering-food-english-conversations/) (학습 사이트)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
-      "id": "en-day-28",
-      "workingTitle": "날씨 스몰톡",
+      "id": "en-day-27",
+      "workingTitle": "아파트 엘리베이터에서 내리며 이웃에게 인사할 때",
       "format": "short",
       "status": "idea",
       "seriesId": "nuance",
-      "episode": 28,
+      "episode": 27,
       "pillarId": "nuance",
       "steps": {
         "소재검증": "wait",
@@ -776,19 +842,49 @@
           "done": false
         }
       ],
+      "promise": "Have a good one!",
       "metrics": [],
-      "notes": "Day 28 · 뉴앙스 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 날씨 스몰톡\n멈칫/한국식: It's hot\n정답 후보(확정 아님): It's been so hot lately, hasn't it?\n끝 질문: 스몰톡 어려운 사람?\nvs 형식\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 27 · 뉘앙스 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 아파트 엘리베이터에서 내리며 이웃에게 인사할 때\n한국식: Have a nice day! (밤에도 같은 인사)\n목표 문장: Have a good one!\n한국어 뜻: 좋은 하루(저녁) 보내세요!\n격식: 캐주얼\nA(나): Oh, this is my floor.\nB(상대): Okay, see you around!\n고정댓글: 이웃에게 영어로 인사해 본 적 있나요?\n근거: [Cambridge 'have a good one' (informal, 헤어질 때)](https://dictionary.cambridge.org/dictionary/english/have-a-good-one)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
+    },
+    {
+      "id": "en-day-28",
+      "workingTitle": "아침에 집 침대에서 팀장에게 몸이 안 좋다고 전화할 때",
+      "format": "short",
+      "status": "idea",
+      "seriesId": "situation",
+      "episode": 28,
+      "pillarId": "situation",
+      "steps": {
+        "소재검증": "wait",
+        "대본": "wait",
+        "승인①": "wait",
+        "비주얼": "wait",
+        "편집": "wait",
+        "게시패키지": "wait",
+        "승인③": "wait"
+      },
+      "checklist": [
+        {
+          "text": "미착수",
+          "done": false
+        }
+      ],
+      "promise": "I'm not feeling well today.",
+      "metrics": [],
+      "notes": "Day 28 · 상황 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 아침에 집 침대에서 팀장에게 몸이 안 좋다고 전화할 때\n한국식: I'm sick.\n목표 문장: I'm not feeling well today.\n한국어 뜻: 오늘 몸이 좀 안 좋아요.\n격식: 중립·공손\nA(나): Hi, it's Jiwoo.\nB(상대): Oh, hi. What's going on?\n고정댓글: 아플 때 회사에 뭐라고 연락하세요?\n근거: [Cambridge 'well': \"She wasn't feeling well…\" / \"I don't feel well.\"](https://dictionary.cambridge.org/dictionary/english/well)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
+      "createdAt": "2026-11-09T02:32:00.000Z",
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-29",
-      "workingTitle": "몸이 안 좋을 때",
+      "workingTitle": "고깃집에서 친구와 식사를 마치고 내가 살 때",
       "format": "short",
       "status": "idea",
-      "seriesId": "situation",
+      "seriesId": "compare",
       "episode": 29,
-      "pillarId": "situation",
+      "pillarId": "compare",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -804,19 +900,20 @@
           "done": false
         }
       ],
+      "promise": "This one's on me.",
       "metrics": [],
-      "notes": "Day 29 · 상황 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 몸이 안 좋을 때\n멈칫/한국식: I'm sick\n정답 후보(확정 아님): I'm not feeling well today.\n끝 질문: 회사에 뭐라고 말해요?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 29 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n장소·상황: 고깃집에서 친구와 식사를 마치고 내가 살 때\n한국식: I'll shoot! ('내가 쏠게' 직역)\n목표 문장: This one's on me.\n한국어 뜻: 이번엔 내가 살게.\n격식: 캐주얼\nA(나): That was so good.\nB(상대): Right? Let's split it.\n고정댓글: 친구에게 쏠 때 뭐라고 하세요?\n근거: [Cambridge 'on' (informal): 누가 돈을 내는지 나타냄, \"Dinner is on me.\"](https://dictionary.cambridge.org/dictionary/english/on)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     },
     {
       "id": "en-day-30",
-      "workingTitle": "헤어질 때 \"조심히 가세요\"",
+      "workingTitle": "밤에 지하철역 앞에서 친구와 헤어질 때",
       "format": "short",
       "status": "idea",
-      "seriesId": "situation",
+      "seriesId": "compare",
       "episode": 30,
-      "pillarId": "situation",
+      "pillarId": "compare",
       "steps": {
         "소재검증": "wait",
         "대본": "wait",
@@ -830,12 +927,17 @@
         {
           "text": "미착수",
           "done": false
+        },
+        {
+          "text": "⚠ 검증 보강 필요",
+          "done": false
         }
       ],
+      "promise": "Get home safe!",
       "metrics": [],
-      "notes": "Day 30 · 상황·고정 · 게시일 미정. 날짜 매핑이 원문에 없어 날짜를 넣지 않음.\n상황: 헤어질 때 \"조심히 가세요\"\n멈칫/한국식: Go carefully\n정답 후보(확정 아님): Get home safe.\n끝 질문: 여러분은 뭐라고 인사해요?\n예정. 제작·검수·게시 시작 전.",
+      "notes": "Day 30 · 비교 · 게시일 미정. 날짜 매핑이 없어 targetPublishDate는 비움.\n⚠ 검증 보강 필요\n장소·상황: 밤에 지하철역 앞에서 친구와 헤어질 때\n한국식: Go carefully. / Be careful going home.\n목표 문장: Get home safe!\n한국어 뜻: 조심히 들어가!\n격식: 캐주얼\nA(나): This was really fun tonight.\nB(상대): Same! Text me later.\n고정댓글: 헤어질 때 영어로 뭐라고 인사하세요?\n근거: ⚠ [HiNative: 미국 화자 \"the first one(Get home safe) is the most commonly said\"](https://hinative.com/questions/10695919) (Q&A 자기 신고) · [FluentU 작별 인사 목록](https://www.fluentu.com/blog/english/say-goodbye-english/)\n목표 문장은 캘린더 문장이고 검수 완료로 표시하지 않음.\n예정. 제작·검수·게시 시작 전.",
       "createdAt": "2026-11-09T02:32:00.000Z",
-      "updatedAt": "2026-11-09T02:32:00.000Z"
+      "updatedAt": "2026-11-09T07:50:00.000Z"
     }
   ]
 }
